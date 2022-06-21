@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/wolandark/wim/blob/main/wim-logo-transp.png" width=60%>
+<img src="https://github.com/wolandark/wim/blob/main/img/wim-logo-transp.png" width=60%>
 </p>
 
 # Wim

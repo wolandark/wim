@@ -1,4 +1,4 @@
-# backspacevim
+# Wim
 This is a Vim configuration that gets you a smilar experience as spacevim but without it acting like a parasite and sitting on top of your existing Vim. Its made on top of the vanilla Vim with the help of plugins and .vimrc configurations. You will never have to run that horrible curl command again!
 # Dependencies
 - Vim 8
@@ -16,8 +16,8 @@ This is a Vim configuration that gets you a smilar experience as spacevim but wi
   	- Example: <code>:CocInstall coc-css</code> <br>
   
  - Once the downloads are finished you can start using Vim normally<br>
- - Leader key is naturally backspace<br>
-- Press backspace h to view a list of leader key bindings<br>
+ - Leader key is naturally space<br>
+- Press space h to view a list of leader key bindings<br>
 <h4>Optional Dependencies </h4>
 
 - Ranger. See [mine](https://github.com/wolandark/ranger) <br>
@@ -34,7 +34,7 @@ This is a Vim configuration that gets you a smilar experience as spacevim but wi
 
 <h5> Why do you hate spacevim?</h5>
 I don't! In fact I find it amazing if it wasnt for the fact that the installation is done through a curl command and that I'll lose my regular vim hence why i call spacevim a parasite!<br>
-<h5> What features does BackSpacevim offer? </h5>
+<h5> What features does Wim offer? </h5>
 
 - Customizability! It is lightweight and extensible without having to learn a whole new software  <br>
 - Easy tab and split navigation <br>

@@ -46,7 +46,8 @@ This is a Vim configuration that gets you a similar experience as spacevim but w
 - You can review the list of plugins and comment out or delete the lines about the ones you dont want. This must be done before running <code>:PlugInstall</code>
   - If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>
 
-
+Auto NERDTree with Icons using Hack Nerd Font
+<img src="https://github.com/wolandark/wim/blob/main/img/wimnerd.png">
 Start Menu with Everforest Theme
 <img src="https://github.com/wolandark/wim/blob/main/img/win2.png">
 Beautiful Syntax Highlighting With Monokai

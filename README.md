@@ -58,3 +58,12 @@ Because thats the one I use and frankly Vim is fine.
 <h5>But vimplug is installed with curl too!</h5>
 
 Yes! and it does only one thing, adding an easier integration for installing plugins. spacevim's curl writes a lot of files across your system and renames or moves the others!Plus the uninstallation takes another curl command that is not stated in spacevim's website and even after you find the commad it will leave all its files behind! With Wim, if you hate it, just remove the plugins and delete my vimrc. Takes a second! <br>
+
+<img src="https://github.com/wolandark/backspacevim/blob/main/win2.png">
+<img src="https://github.com/wolandark/backspacevim/blob/main/wim4.png">
+<img src="https://github.com/wolandark/backspacevim/blob/main/vim5.png">
+<img src="https://github.com/wolandark/backspacevim/blob/main/wim3.png">
+<img src="https://github.com/wolandark/backspacevim/blob/main/wim1.png">
+<img src="https://github.com/wolandark/backspacevim/blob/main/wim6.png">
+<img src="https://github.com/wolandark/backspacevim/blob/main/wim7.png">
+

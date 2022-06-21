@@ -55,3 +55,5 @@ Yes! Just ask and I will answer. <br>
 <h5> Why didn't you use Neovim like everyone else? </h5>
 Because thats the one I use and frankly Vim is fine.
 
+</h5>But vimplug is installed with curl too! </h5>
+Yes! and it does only one thing, adding an easier integration for installing plugins. spacevim's curl writes a lot of files across your system and renames or moves the others!Plus the uninstallation takes another curl command that is not stated in spacevim's website and even after you find the commad it will leave all its files behind! With Wim, if you hate it, just remove the plugins and delete my vimrc. Takes a second! <br>

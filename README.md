@@ -28,13 +28,14 @@ This is a Vim configuration that gets you a smilar experience as spacevim but wi
 <h4> Notice </h4>
 
 - You can review the list of plugins and comment out or delete the lines about the one you dont want. This must be done before running <code>:PlugInstall</code>
-- I have used folds in my vimrc for better management. Use <code>za</code> to unfold the sections
-  -If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>
+- I have used folds in my vimrc for better management. Use <code>za</code> to unfold the sections<br>
+  - If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>
 <h1>FAQ</h1>
 
 <h5> Why do you hate spacevim?</h5>
 I don't! In fact I find it amazing if it wasnt for the fact that the installation is done through a curl command and that I'll lose my regular vim hence why i call spacevim a parasite!<br>
 <h5> What features does BackSpacevim offer? </h5>
+
 - Customizability! It is lightweight and extensible without having to learn a whole new software  <br>
 - Easy tab and split navigation <br>
 - Complete Markdown and HTML-CSS-JS with live servers for both of them <br>

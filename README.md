@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/wolandark/backspacevim/blob/main/wim-logo-transp.png" width=60%>
+<img src="https://github.com/wolandark/wim/blob/main/wim-logo-transp.png" width=60%>
 </p>
 
 # Wim
@@ -48,19 +48,19 @@ This is a Vim configuration that gets you a smilar experience as spacevim but wi
 
 
 Start Menu with Everforest Theme
-<img src="https://github.com/wolandark/backspacevim/blob/main/img/win2.png">
+<img src="https://github.com/wolandark/wim/blob/main/img/win2.png">
 Beautiful syntax highlighting with Monokai
-<img src="https://github.com/wolandark/backspacevim/blob/main/img/wim4.png">
+<img src="https://github.com/wolandark/wim/blob/main/img/wim4.png">
 Fuzzy file history floating menu
-<img src="https://github.com/wolandark/backspacevim/blob/main/img/vim5.png">
+<img src="https://github.com/wolandark/wim/blob/main/img/vim5.png">
 Dracula theme
-<img src="https://github.com/wolandark/backspacevim/blob/main/img/wim3.png">
+<img src="https://github.com/wolandark/wim/blob/main/img/wim3.png">
 Gruvbox Beauty
-<img src="https://github.com/wolandark/backspacevim/blob/main/img/wim1.png">
+<img src="https://github.com/wolandark/wim/blob/main/img/wim1.png">
 Command history floating menu
-<img src="https://github.com/wolandark/backspacevim/blob/main/img/wim6.png">
+<img src="https://github.com/wolandark/wim/blob/main/img/wim6.png">
 Keybindings popup cheatsheet
-<img src="https://github.com/wolandark/backspacevim/blob/main/img/wim7.png">
+<img src="https://github.com/wolandark/wim/blob/main/img/wim7.png">
 
 <h1>FAQ</h1>
 

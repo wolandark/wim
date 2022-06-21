@@ -4,7 +4,7 @@
 
 # Wim
 
-This is a Vim configuration that gets you a smilar experience as spacevim but without it acting like a parasite and sitting on top of your existing Vim. Its made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. You will never have to run that horrible curl command again!
+This is a Vim configuration that gets you a similar experience as spacevim but without it acting like a parasite and sitting on top of your existing Vim. Its made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. You will never have to run that horrible curl command again!
 # Dependencies
 - Vim 8
 - [vimplug](https://github.com/junegunn/vim-plug)
@@ -14,7 +14,7 @@ This is a Vim configuration that gets you a smilar experience as spacevim but wi
 - Fixed shared clipboard with desktop and other other apps<br>
 - Customizability! It is lightweight and extensible without having to learn a whole new software  <br>
 - Easy tab and split navigation <br>
-- Complete Markdown and HTML-CSS-JS with live servers for both of them <br>
+- Complete Markdown and HTML-CSS-JS support with live servers for both of them <br>
 - Start Screen with bookmarks and file history <br>
 - Beautiful built in colorschemes
 - Easy syntax and alignment with Beautify option  <br>
@@ -39,27 +39,27 @@ This is a Vim configuration that gets you a smilar experience as spacevim but wi
 - Ranger. See [mine](https://github.com/wolandark/ranger) <br>
 - Vifm<br>
 - FZF<br>
-- Fonts with Powerline and Nerd support<br>
+- Powerline and Nerd fonts<br>
 
 <h4> Notice </h4>
 
-- You can review the list of plugins and comment out or delete the lines about the one you dont want. This must be done before running <code>:PlugInstall</code>
+- You can review the list of plugins and comment out or delete the lines about the ones you dont want. This must be done before running <code>:PlugInstall</code>
   - If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>
 
 
 Start Menu with Everforest Theme
 <img src="https://github.com/wolandark/wim/blob/main/img/win2.png">
-Beautiful syntax highlighting with Monokai
+Beautiful Syntax Highlighting With Monokai
 <img src="https://github.com/wolandark/wim/blob/main/img/wim4.png">
-Fuzzy file history floating menu
+Fuzzy File History Floating Menu
 <img src="https://github.com/wolandark/wim/blob/main/img/vim5.png">
-Dracula theme
+Dracula Theme
 <img src="https://github.com/wolandark/wim/blob/main/img/wim3.png">
 Gruvbox Beauty
 <img src="https://github.com/wolandark/wim/blob/main/img/wim1.png">
-Command history floating menu
+Command History Floating Menu
 <img src="https://github.com/wolandark/wim/blob/main/img/wim6.png">
-Keybindings popup cheatsheet
+Keybindings Popup Cheatsheet
 <img src="https://github.com/wolandark/wim/blob/main/img/wim7.png">
 
 <h1>FAQ</h1>
@@ -86,7 +86,7 @@ I don't! In fact I find it amazing if it wasnt for the fact that the installatio
 Yes! Just ask and I will answer. <br>
 
 <h5> Why didn't you use Neovim like everyone else? </h5>
-Because thats the one I use and frankly Vim is fine.
+Because Vim is the one I use and frankly Vim is fine.
 
 <h5>But vimplug is installed with curl too!</h5>
 

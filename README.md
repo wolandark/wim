@@ -89,8 +89,9 @@ Yes! Just ask and I will answer. <br>
 <h5> Why didn't you use Neovim like everyone else? </h5>
 Because Vim is the one I use and frankly Vim is fine.
 
-<h5> Will you make custom vimrc configuratons> </h5>
-Contact [me](https://t.me/inlovewithapenguin)
+<h5> Will you make custom vimrc configuratons? </h5>
+
+[Contact me](https://t.me/inlovewithapenguin)
 
 <h5>But vimplug is installed with curl too!</h5>
 

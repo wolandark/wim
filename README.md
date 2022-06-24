@@ -22,7 +22,7 @@ This is a Vim configuration that gets you a similar experience as spacevim but w
   - Choices! It is all about choices <br>
 
 <h1>Usage</h1>
-
+- Refer to the release page for easy download. Remember to rename the file to .vimrc<br>
 - Place the .vimrc file in your home directory<br>
 - You can rename your already existing .vimrc or move it to another directory. this way; you can always bring it back if you dont like Wim<br>
 - Open Vim from the terminal and get into cmd mode by pressing :<br>
@@ -88,6 +88,9 @@ Yes! Just ask and I will answer. <br>
 
 <h5> Why didn't you use Neovim like everyone else? </h5>
 Because Vim is the one I use and frankly Vim is fine.
+
+<h5> Will you make custom vimrc configuratons> </h5>
+Contact [me](https://t.me/inlovewithapenguin)
 
 <h5>But vimplug is installed with curl too!</h5>
 

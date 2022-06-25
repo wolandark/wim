@@ -45,6 +45,7 @@ This is a Vim configuration that gets you a similar experience as spacevim but w
 
 <h4> Notice </h4>
 
+- Please keep in mind that in case your terminal emulator takes charge of some of your keys, its up to you to figure it out. Some terminals do hold unto your Ctrl or Alt or shift key for their own functions
 - You can review the list of plugins and comment out or delete the lines about the ones you dont want. This must be done before running <code>:PlugInstall</code>
   - If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>
 
@@ -86,7 +87,7 @@ I don't! In fact I find it amazing if it wasnt for the fact that the installatio
 
 
 <h5> Can I expect support? </h5>
-Yes! Just ask and I will answer. <br>
+Yes! Just ask and I will answer. When asking however, provide proper information so that I can help you <br>
 
 <h5> Why didn't you use Neovim like everyone else? </h5>
 Because Vim is the one I use and frankly Vim is fine.

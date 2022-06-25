@@ -9,6 +9,8 @@ This is a Vim configuration that gets you a similar experience as spacevim but w
 - Vim 8
 - [vimplug](https://github.com/junegunn/vim-plug)
 - nodejs and npm
+- xsel
+- FZF
 <h1> Some of the features</h1>
 
 - Fixed shared clipboard with desktop and other other apps<br>

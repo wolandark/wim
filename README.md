@@ -24,6 +24,7 @@ This is a Vim configuration that gets you a similar experience as spacevim but w
   - Choices! It is all about choices <br>
 
 <h1>Usage</h1>
+
 - Refer to the release page for easy download. Remember to rename the file to .vimrc<br>
 - Place the .vimrc file in your home directory<br>
 - You can rename your already existing .vimrc or move it to another directory. this way; you can always bring it back if you dont like Wim<br>

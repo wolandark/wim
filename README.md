@@ -11,6 +11,7 @@ This is a Vim configuration that gets you a similar experience as spacevim but w
 - nodejs and npm
 - xsel
 - FZF
+- Figlet, for the start menu ascii art
 <h1> Some of the features</h1>
 
 - Fixed shared clipboard with desktop and other other apps<br>

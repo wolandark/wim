@@ -44,7 +44,7 @@ This is a Vim configuration that gets you a similar experience as spacevim but w
 - Powerline and Nerd fonts<br>
 
 <h4> Notice </h4>
-
+- It was tested on multiple devices and distros with Vim from the terminal on linux and Gvim on Arch and it works perfectly. If anyone happns to use this on OSX please provide me with your feedback.<br>
 - Please keep in mind that in case your terminal emulator takes charge of some of your keys, its up to you to figure it out. Some terminals do hold unto your Ctrl or Alt or shift key for their own functions
 - You can review the list of plugins and comment out or delete the lines about the ones you dont want. This must be done before running <code>:PlugInstall</code>
   - If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>

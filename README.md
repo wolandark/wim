@@ -4,7 +4,7 @@
 
 # Wim
 
-This is a Vim configuration that gets you a similar experience as spacevim but without it acting like a parasite and sitting on top of your existing Vim. Its made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. You will never have to run that horrible curl command again!
+This is a Vim configuration that gets you a similar experience as a full-featured IDE. Its made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. You will never have to wait for an IDE to launch
 # Dependencies
 - Vim 8
 - [vimplug](https://github.com/junegunn/vim-plug)
@@ -76,8 +76,6 @@ Keybindings Popup Cheatsheet
 <h5> Whats with the name?</h5>
 Woland's Vim = Wim. Get it?
 
-<h5> Why do you hate spacevim?</h5>
-I don't! In fact I find it amazing if it wasnt for the fact that the installation is done through a curl command and that I'll lose my regular vim hence why I call spacevim a parasite!<br>
 <h5> What features does Wim offer? </h5>
 
 - Fixed shared clipboard with desktop and other other apps<br>
@@ -89,7 +87,6 @@ I don't! In fact I find it amazing if it wasnt for the fact that the installatio
 - Easy syntax and alignment with Beautify option  <br>
 - Two options for status bar. Lighline and Airline. The choice is yours! <br>
   - Choices! It is all about choices <br>
-
 
 <h5> Can I expect support? </h5>
 Yes! Just ask and I will answer. When asking however, provide proper information so that I can help you <br>
@@ -105,7 +102,7 @@ Because Vim is the one I use and frankly Vim is fine.
 
 [Contact me](https://t.me/inlovewithapenguin)
 
-<h5>But vimplug is installed with curl too!</h5>
+<h5>But vimplug is installed with curl!</h5>
 
-Yes! and it does only one thing, adding an easier integration for installing plugins. spacevim's curl writes a lot of files across your system and renames or moves the others!Plus the uninstallation takes another curl command that is not stated in spacevim's website and even after you find the commad it will leave all its files behind! With Wim, if you hate it, just remove the plugins and delete my vimrc. Takes a second! <br>
+Yes! and it does only one thing, adding an easier integration for installing plugins. <br>
 

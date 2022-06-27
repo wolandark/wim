@@ -12,6 +12,8 @@ This is a Vim configuration that gets you a similar experience as spacevim but w
 - xsel
 - FZF
 - Figlet, for the start menu ascii art
+- A Nerd Font
+
 <h1> Some of the features</h1>
 
 - Fixed shared clipboard with desktop and other other apps<br>

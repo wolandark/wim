@@ -26,7 +26,7 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 - Two options for status bar. Lighline and Airline. The choice is yours! <br>
   - Choices! It is all about choices <br>
 
-<h1>Usage</h1>
+<h1>Usage / Installation </h1>
 
 - Refer to the release page for easy download. Remember to rename the file to .vimrc<br>
 - Place the .vimrc file in your home directory<br>

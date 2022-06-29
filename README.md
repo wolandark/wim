@@ -54,6 +54,37 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 - You can review the list of plugins and comment out or delete the lines about the ones you dont want. This must be done before running <code>:PlugInstall</code>
   - If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>
 
+|Keys              |Function               |
+| --               | --                    |
+| leader n         | NERDTree              |
+| leader v         | Vifm Floating         |
+| leader r         | Ranger Floating       |
+| leader t         | Terminal              |
+| leader T         | NewTab                |
+| leader d         | Duplicate Cleaner     |
+| leader m         | File History          |
+| leader cc        | Comment Out           |
+| leader 1-9       | Go To Tab             |
+| leader tm        | Move Tab              |
+| leader x         | Close Tab             |
+| leader c         | Fuzzy Colorschemes    |
+| leader b         | Fuzzy Buffers         |
+| leader s         | Fuzzy File Search     |
+| leader W         | Fuzzy Windows         |
+| leader H         | Fuzzy History         |
+| leader M         | Fuzzy Mappings        |
+| leader w         | Quick Save w!         |
+| leader op        | Source Current File   |
+| Alt Arrows       | Go Tabs Right Or Left |
+| Shift Arrows     | Resize Splits         |
+| Ctrl hjkl/Arrows | Focus Between Splits  |
+| F2               | Start Live Webserver  |
+| F3               | Reload Live Webserver |
+| F4               | Stop Live Webserver   |
+| F6               | SpellCheck            |
+| F8               | Markdown Live Server  |
+
+
 Auto NERDTree with Icons using Hack Nerd Font
 <img src="https://github.com/wolandark/wim/blob/main/img/wimnerd.png">
 Start Menu with Everforest Theme

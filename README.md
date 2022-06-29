@@ -62,6 +62,7 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | leader n         | NERDTree              |
 | leader v         | Vifm Floating         |
 | leader r         | Ranger Floating       |
+| leader e         | Netrw On The Left Side |
 | leader t         | Terminal              |
 | leader T         | NewTab                |
 | leader d         | Duplicate Cleaner     |

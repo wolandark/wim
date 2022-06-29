@@ -53,6 +53,9 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 - Please keep in mind that in case your terminal emulator takes charge of some of your keys, its up to you to figure it out. Some terminals do hold unto your Ctrl or Alt or shift key for their own functions
 - You can review the list of plugins and comment out or delete the lines about the ones you dont want. This must be done before running <code>:PlugInstall</code>
   - If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>
+# Keymappings (Always up to date)
+
+<h4>leader is space</h4>
 
 |Keys              |Function               |
 | --               | --                    |

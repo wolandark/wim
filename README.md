@@ -36,7 +36,9 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 - You can rename your already existing .vimrc or move it to another directory. this way; you can always bring it back if you dont like Wim<br>
 - Place the provided nerd fonts in your fonts folder and run fc-cache<br>
 - Select the nerd font in your terminals font settings (only for icons if you want to use Netrw you can skip this) <br>
+
 - Refer to the [list](https://github.com/neoclide/coc.nvim/wiki/Language-servers) of autocompletion languages and add the ones you'd like with 
+
 - <code> :CocInstall </code><br>
   	- Example: <code>:CocInstall coc-css</code> <br>
   

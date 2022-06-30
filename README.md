@@ -50,8 +50,6 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 
 - Ranger. See [mine](https://github.com/wolandark/ranger) <br>
 - Vifm<br>
-- FZF<br>
-- Nerd fonts<br>
 
 <h4> Notice </h4>
 

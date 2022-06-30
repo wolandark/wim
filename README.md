@@ -120,8 +120,8 @@ Floating Filemanagment with Vifm
 <img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wimvifm.png">
 Floating Terminal
 <img src="https://github.com/wolandark/wim/blob/main/img/Ver2/floterm.png">
-
-
+Great Support For Gvim on Windows
+<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/Screenshot%20(1).png">
 
 <h1>FAQ</h1>
 
@@ -136,8 +136,8 @@ Woland's Vim = Wim. Get it?
 - Complete Markdown and HTML-CSS-JS with live servers for both of them <br>
 - Start Screen with bookmarks and file history <br>
 - Beautiful built in colorschemes
-- Easy syntax and alignment with Beautify option  <br>
-- Two options for status bar. Lighline and Airline. The choice is yours! <br>
+- Easy syntax check and debugging <br>
+- Three options for status bar. Lighline, Vim statusline and hackline. The choice is yours! <br>
   - Choices! It is all about choices <br>
 
 <h5> Can I expect support? </h5>

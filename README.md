@@ -69,6 +69,7 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | leader r         | Ranger Floating       |
 | leader e         | Netrw On The Left Side |
 | leader t         | Terminal              |
+| leader i          |  Pop Start Menu   |
 | leader T         | NewTab                |
 | leader d         | Duplicate Cleaner     |
 | leader m         | File History          |

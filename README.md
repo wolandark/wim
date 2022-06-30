@@ -84,6 +84,8 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | leader M         | Fuzzy Mappings        |
 | leader w         | Quick Save w!         |
 | leader op        | Source Current File   |
+| leader z          | Fix Spelling For 1 word |
+| leader l          | Fix Spelling On 1 Line |
 | Alt Arrows       | Go Tabs Right Or Left |
 | Shift Arrows     | Resize Splits         |
 | Ctrl hjkl/Arrows | Focus Between Splits  |

@@ -6,13 +6,13 @@
 
 This is a Vim configuration that gets you a similar experience as a full-featured IDE. Its made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. You will never have to wait for an IDE to launch
 # Dependencies
-- Vim 8
+- Vim 8 (tested and also works on vim 7)
 - [vimplug](https://github.com/junegunn/vim-plug)
-- nodejs and npm
-- xsel
-- FZF
-- Figlet, for the start menu ascii art
-- A Nerd Font
+- nodejs and npm (for coc completion. Unneeded if you want another completion engine like YCM)
+- xsel (An xorg utility that is ESSENTIAL for shared clipboard)
+- FZF 
+- Figlet (for the start menu ascii art, unneeded if you dont care for the ascii art)
+- A Nerd Font (ESSENTIAL for icons in the nerdtree)
 
 <h1> Some of the features</h1>
 
@@ -95,6 +95,8 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | END              | Trigger Snippets       |
 |Ctrl j k          | Move Within Triggered Snippet |
 |Ctrl PGDNN        | List Available Snippets  |
+|V mode c-p | Copies To Shared Clipboard |
+|V mode c-v | Pastes From Shared Clipboard | 
 
 Start menu and auto NERDTree with Icons 
 <img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wim%20start.png">

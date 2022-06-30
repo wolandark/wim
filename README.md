@@ -98,22 +98,28 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 |Ctrl j k          | Move Within Triggered Snippet |
 |Ctrl PGDNN        | List Available Snippets  |
 
-Auto NERDTree with Icons using Hack Nerd Font
-<img src="https://github.com/wolandark/wim/blob/main/img/wimnerd.png">
-Start Menu with Everforest Theme
-<img src="https://github.com/wolandark/wim/blob/main/img/win2.png">
-Beautiful Syntax Highlighting With Monokai
-<img src="https://github.com/wolandark/wim/blob/main/img/wim4.png">
+Start menu and auto NERDTree with Icons 
+<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wim%20start.png">
+Customized Nerdtree-like Netrw
+<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wimnetrw.png">
+Keymappings Help Menu
+<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/helpmenu.png">
 Fuzzy File History Floating Menu
 <img src="https://github.com/wolandark/wim/blob/main/img/vim5.png">
 Dracula Theme
 <img src="https://github.com/wolandark/wim/blob/main/img/wim3.png">
 Gruvbox Beauty
 <img src="https://github.com/wolandark/wim/blob/main/img/wim1.png">
+Nord Theme
+<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wimnord.png">
 Command History Floating Menu
 <img src="https://github.com/wolandark/wim/blob/main/img/wim6.png">
-Keybindings Popup Cheatsheet
-<img src="https://github.com/wolandark/wim/blob/main/img/wim7.png">
+Floating Filemanagment with Vifm
+<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wimvifm.png">
+Floating Terminal
+<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/floterm.png">
+
+
 
 <h1>FAQ</h1>
 

@@ -16,43 +16,47 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 
 <h1> Some of the features</h1>
 
+- Out of the box plugin installation <br>
+- Tab Completion and snippets for fast coding <br>
 - Fixed shared clipboard with desktop and other other apps<br>
-- Customizability! It is lightweight and extensible without having to learn a whole new software  <br>
 - Easy tab and split navigation <br>
 - Complete Markdown and HTML-CSS-JS support with live servers for both of them <br>
 - Start Screen with bookmarks and file history <br>
 - Beautiful built in colorschemes
 - Easy syntax and alignment with Beautify option  <br>
-- Two options for status bar. Lighline and Airline. The choice is yours! <br>
+- Nerdtree-like configuration of Netrw <br>
+- Three options for statusline.Vim's customized statusline, Lighline and hackline. The choice is yours! <br>
   - Choices! It is all about choices <br>
+- Customizability! It is lightweight and extensible without having to learn a whole new software or language  <br>
 
 <h1>Usage / Installation </h1>
-
+- As of version 2, onece you start vim with my .vimrc. vimplug and plugins will be installed automatically. Don't panic and let it work <br>
 - Refer to the release page for easy download. Remember to rename the file to .vimrc<br>
 - Place the .vimrc file in your home directory<br>
 - You can rename your already existing .vimrc or move it to another directory. this way; you can always bring it back if you dont like Wim<br>
-- Open Vim from the terminal and get into cmd mode by pressing :<br>
-- Run <code> :PlugInstall </code><br>
+- Place the provided nerd fonts in your fonts folder and run fc-cache<br>
+- Select the nerd font in your terminals font settings (only for icons if you want to use Netrw you can skip this) <br>
 - Refer to the [list](https://github.com/neoclide/coc.nvim/wiki/Language-servers) of autocompletion languages and add the ones you'd like with 
 - <code> :CocInstall </code><br>
   	- Example: <code>:CocInstall coc-css</code> <br>
   
- - Once the downloads are finished you can start using Vim normally<br>
- - Leader key is naturally space<br>
+- Once the downloads are finished you can start using Vim normally<br>
+- Leader key is naturally space<br>
 - Press space h to view a list of leader key bindings<br>
 <h4>Optional Dependencies </h4>
 
 - Ranger. See [mine](https://github.com/wolandark/ranger) <br>
 - Vifm<br>
 - FZF<br>
-- Powerline and Nerd fonts<br>
+- Nerd fonts<br>
 
 <h4> Notice </h4>
 
-- It was tested on multiple devices and distros with Vim from the terminal on linux and Gvim on Arch and it works perfectly. If anyone happns to use this on OSX please provide me with your feedback.<br>
+- It was tested on multiple devices and distros with Vim from the terminal on linux and Gvim on Arch and Windows and it works perfectly. If anyone happns to use this on OSX please provide me with your feedback.<br>
 - Please keep in mind that in case your terminal emulator takes charge of some of your keys, its up to you to figure it out. Some terminals do hold unto your Ctrl or Alt or shift key for their own functions
 - You can review the list of plugins and comment out or delete the lines about the ones you dont want. This must be done before running <code>:PlugInstall</code>
   - If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>
+
 # Keymappings (Always up to date)
 
 <h4>leader is space</h4>
@@ -87,7 +91,9 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | F4               | Stop Live Webserver   |
 | F6               | SpellCheck            |
 | F8               | Markdown Live Server  |
-
+| END              | Trigger Snippets       |
+|Ctrl j k          | Move Within Triggered Snippet |
+|Ctrl PGDNN        | List Available Snippets  |
 
 Auto NERDTree with Icons using Hack Nerd Font
 <img src="https://github.com/wolandark/wim/blob/main/img/wimnerd.png">

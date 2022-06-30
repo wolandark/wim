@@ -130,6 +130,8 @@ Great Support For Gvim on Windows
 <h5> Whats with the name?</h5>
 Woland's Vim = Wim. Get it?
 
+<h5>leader h works but colors are odd</h5>
+Delete lines 827-829 of vimrc to make whichkey follow your colorscheme <br>
 <h5> What features does Wim offer? </h5>
 
 - Fixed shared clipboard with desktop and other other apps<br>

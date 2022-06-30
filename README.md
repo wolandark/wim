@@ -31,7 +31,7 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 
 <h1>Usage / Installation </h1>
 
-- As of version 2, onece you start vim with my .vimrc. vimplug and plugins will be installed automatically. Don't panic and let it work <br>
+- As of version 2, once you start vim with my .vimrc. vimplug and plugins will be installed automatically. Don't panic and let it work <br>
 - Refer to the release page for easy download. Remember to rename the file to .vimrc<br>
 - Place the .vimrc file in your home directory<br>
 - You can rename your already existing .vimrc or move it to another directory. this way; you can always bring it back if you dont like Wim<br>

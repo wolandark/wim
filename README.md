@@ -30,6 +30,7 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 - Customizability! It is lightweight and extensible without having to learn a whole new software or language  <br>
 
 <h1>Usage / Installation </h1>
+
 - As of version 2, onece you start vim with my .vimrc. vimplug and plugins will be installed automatically. Don't panic and let it work <br>
 - Refer to the release page for easy download. Remember to rename the file to .vimrc<br>
 - Place the .vimrc file in your home directory<br>

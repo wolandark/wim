@@ -102,14 +102,18 @@ Start menu and auto NERDTree with Icons
 <img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wim%20start.png">
 Customized Nerdtree-like Netrw
 <img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wimnetrw.png">
+Great Completion Support
+<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/comp.png">
 Keymappings Help Menu
 <img src="https://github.com/wolandark/wim/blob/main/img/Ver2/helpmenu.png">
 Fuzzy File History Floating Menu
 <img src="https://github.com/wolandark/wim/blob/main/img/vim5.png">
+Default Gruvbox Theme
+<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/default.png">
 Dracula Theme
 <img src="https://github.com/wolandark/wim/blob/main/img/wim3.png">
-Gruvbox Beauty
-<img src="https://github.com/wolandark/wim/blob/main/img/wim1.png">
+Oceanic Theme
+<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wimocean.png">
 Nord Theme
 <img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wimnord.png">
 Command History Floating Menu

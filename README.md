@@ -31,7 +31,7 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 
 <h1>Usage / Installation </h1>
 
-Watch how its installed on [Vimeo](https://vimeo.com/726201897) or [Youtube]()
+Watch how its installed on [Vimeo](https://vimeo.com/726201897) or [Youtube](https://www.youtube.com/watch?v=iZREwWViH6o)
 - As of version 2, once you start vim with my .vimrc. vimplug and plugins will be installed automatically. Don't panic and let it work <br>
 - Refer to the release page for easy download. Remember to rename the file to .vimrc<br>
 - Place the .vimrc file in your home directory<br>

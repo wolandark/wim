@@ -31,6 +31,8 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 
 <h1>Usage / Installation </h1>
 
+Windows users must delete the statement that auto installs vimplug at the beggining of the vimrc and proceed with the manual installation of vimplug, then launch vim with the new vimrc so that the plugins can be installed. Naturally you must use another editor to alter the vimrc. <br>
+
 Watch how its installed on [Vimeo](https://vimeo.com/726201897) or [Youtube](https://www.youtube.com/watch?v=iZREwWViH6o) <br>
 Watch me go through every feature and the entire .vimrc file [here](https://www.youtube.com/watch?v=-8TTb4tf8uE)
 - As of version 2, once you start vim with my .vimrc. vimplug and plugins will be installed automatically. Don't panic and let it work <br>

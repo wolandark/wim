@@ -6,7 +6,7 @@
 
 This is a Vim configuration that gets you a similar experience as a full-featured IDE. Its made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. You will never have to wait for an IDE to launch
 # Dependencies
-- Vim 8 (Tested and also works on vim 7)
+- Vim 8+ upto latest (Tested and also works on vim 7)
 - [vimplug](https://github.com/junegunn/vim-plug) (Will be installed automatically as of version 2. Unix and Linux Only! for windows you must use the windows curl command of vimplug)
 - nodejs and npm (For coc completion. Unneeded if you want another completion engine like YCM)
 - xsel (An xorg utility that is ESSENTIAL for shared clipboard)

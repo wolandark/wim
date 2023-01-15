@@ -170,4 +170,23 @@ Because Vim is the one I use and frankly Vim is fine.
 <h5>But vimplug is installed with curl!</h5>
 
 Yes! and it does only one thing, adding an easier integration for installing plugins. <br>
+<hr>
 
+<h6> Consider Supporting the project</h6>
+
+<strong>BTC</strong><br>
+bc1q7tr3znnrsqq85kalk5zedak9mgn9u3ly849t8z <br>
+<strong>ETH</strong><br>
+0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>
+<strong>Monero</strong><br>
+0xd84c96dDa2E6f9ee9DD0439F6F7812c5b8869fE4<br>
+<strong>Doge</strong><br>
+DJKBgAEQ7n5GyozM8jqmGbxnhcH6U2V8hV<br>
+<strong>Tether</strong><br>
+0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>
+<strong>Tron</strong><br>
+TX8mVZajyy7cmH9vsREyAMPjgtRu23ZmxJ<br>
+<strong>ADA</strong><br>
+addr1qxhv2rfrs37qvs0cllfcnu0rd83wre609s74aufkd82da9528v7xq34usds6t8sdt7zjy0hvkcwdfnp9jwacdn0kwuesatvjx4<br>
+<strong>Avalanche</strong><br>
+0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>

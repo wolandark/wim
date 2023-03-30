@@ -11,12 +11,20 @@
 sudo pacman -S nodejs npm figlet fzf curl git vim
 
 git clone https://github.com/wolandark/wim.git
+git clone https://aur.archlinux.org/boxes.git
 
-mv wim/wim-3.1.vimrc $HOME/.vimrc
+cd ~/boxes
+makepkg -sri
+cd
 
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mv $HOME/wim/wim-3.1.vimrc $HOME/.vimrc
+sudo mv $HOME/wim/roman.flf /usr/share/figlet/fonts/
 
-vim -es -u vimrc -i NONE -c "PlugInstall" -c "qa"
-vim
+echo "All Done! You can now start using Wim"
+exit 0
+#Vim Plug installation command for Unix-Gnu/Linux 
+#curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+#    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+
 

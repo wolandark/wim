@@ -86,13 +86,6 @@ nmap fy <Plug>(easymotion-overwin-f)
 nmap fl <Plug>(easymotion-overwin-line)
 nmap fw <Plug>(easymotion-overwin-w)
 nmap s <Plug>(easymotion-overwin-f2)
-" <Leader>f{char} to move to {char}
-nmap <Leader>f <Plug>(easymotion-bd-f)
-" s{char}{char} to move to {char}{char}
-" Move to line
-nmap <Leader>l <Plug>(easymotion-bd-jk)
-" Move to word
-nmap  <Leader>m <Plug>(easymotion-bd-w)
 Plug 'https://github.com/easymotion/vim-easymotion.git'
 
 "To exchange two words, place your cursor on the first word and type cxiw. Then move to the second word and type cxiw again. Note: the {motion} used in the first and second use of cx don't have to be the same.

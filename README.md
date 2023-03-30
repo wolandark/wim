@@ -7,7 +7,12 @@
 
 This is a Vim configuration that gets you a similar experience as a full-featured IDE. Its made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. You will never have to wait for an IDE to launch
 
-## The devel branch contains my latest personal setup
+## You can use this pathetic bash script that I just put together to automate the proccess on Arch 
+
+```
+bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/main/Wim_Arch_Install.sh)
+```
+
 # Dependencies
 - Vim 8+ upto latest (Tested and also works on vim 7)
 - [vimplug](https://github.com/junegunn/vim-plug) (Will be installed automatically as of version 2. Unix and Linux Only! for windows you must use the windows curl command of vimplug)

@@ -4,7 +4,7 @@
 
 # Wim
 ## Version 3 has been released.
-#### Use this simple installation script fo Arch and Arch-based distros.
+#### Use this simple installation script for Arch and Arch-based distros.
 
 ```
 bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/main/Wim_Arch_Install.sh)

@@ -20,7 +20,7 @@
 " https://github.com/wolandark
 " https://github.com/wolandark/wim
 
-autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+"autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 
 " ┌───────────────────────┐
 " │Coc.Nvim Tab Completion│

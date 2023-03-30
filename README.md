@@ -3,12 +3,13 @@
 </p>
 
 # Wim
-# Version 3 has been released. This README is under revision
-### Use this simple installation script fo Arch and Arch-based distros 
+## Version 3 has been released.
+#### Use this simple installation script fo Arch and Arch-based distros.
 
 ```
 bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/main/Wim_Arch_Install.sh)
 ```
+Otherwise satisfy the dependencies and grab the wim-3.1.vimrc and rename it to .vimrc and start vim. Plugins will install automatically
 
 <br>
 This is a Vim configuration that gets you a similar experience as a full-featured IDE. Its made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. You will never have to wait for an IDE to launch
@@ -35,17 +36,16 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 
 <h1>Usage / Installation </h1>
 
-Windows users must delete the statement that auto installs vimplug at the beggining of the vimrc and proceed with the manual installation of vimplug, then launch vim with the new vimrc so that the plugins can be installed. Naturally you must use another editor to alter the vimrc. <br>
+### On Arch Linux and other derivatives use the provided installation script, otherwise continue manually <br>
 
-Watch how its installed on [Vimeo](https://vimeo.com/726201897) or [Youtube](https://www.youtube.com/watch?v=iZREwWViH6o) <br>
-Watch me go through every feature and the entire .vimrc file [here](https://www.youtube.com/watch?v=-8TTb4tf8uE)
+#### Windows users must delete the statement that auto installs vimplug at the beggining of the vimrc and proceed with the manual installation of vimplug, then launch vim with the new vimrc so that the plugins can be installed. Naturally you must use another editor to alter the vimrc. <br>
+
 - As of version 2, once you start vim with my .vimrc. vimplug and plugins will be installed automatically. Don't panic and let it work <br>
 - Refer to the release page for easy download. Remember to rename the file to .vimrc<br>
 - Place the .vimrc file in your home directory<br>
 - You can rename your already existing .vimrc or move it to another directory. this way; you can always bring it back if you dont like Wim<br>
-- Place the provided nerd fonts in your fonts folder and run fc-cache<br>
-- Select the nerd font in your terminals font settings (only for icons if you want to use Netrw you can skip this) <br>
-
+- Place the roman.flf font in <code>/usr/share/figlet/fonts/</code> <br>
+- Install [boxes](https://github.com/ascii-boxes/boxes/) from repositories or compile it.
 - Refer to the [list](https://github.com/neoclide/coc.nvim/wiki/Language-servers) of autocompletion languages and add the ones you'd like with 
 
 - <code> :CocInstall </code><br>
@@ -53,7 +53,7 @@ Watch me go through every feature and the entire .vimrc file [here](https://www.
   
 - Once the downloads are finished you can start using Vim normally<br>
 - Leader key is naturally space<br>
-- Press space h to view a list of leader key bindings<br>
+- Refer to the table below for a list of key bindings<br>
 <h4>Optional Dependencies </h4>
 
 - Ranger. See [mine](https://github.com/wolandark/ranger) <br>
@@ -113,7 +113,7 @@ Default Gruvbox Colorscheme. Netrw & TagBar
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041732_1920x1080_scrot.png">
 Startify Dashboard with history and shortcuts
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-042007_1920x1080_scrot.png">
-Complition and language support
+Completion and language support
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041527_1920x1080_scrot.png">
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041921_1920x1080_scrot.png">
 Press Leader+c to chose a new colorscheme
@@ -124,18 +124,14 @@ Press Leader+c to chose a new colorscheme
 <h5> Whats with the name?</h5>
 Woland's Vim = Wim. Get it?
 
-<h5>leader h works but colors are odd</h5>
-Delete lines 827-829 of vimrc to make whichkey follow your colorscheme <br>
 <h5> What features does Wim offer? </h5>
 
-- Fixed shared clipboard with desktop and other other apps<br>
 - Customizability! It is lightweight and extensible without having to learn a whole new software  <br>
 - Easy tab and split navigation <br>
-- Complete Markdown and HTML-CSS-JS with live servers for both of them <br>
 - Start Screen with bookmarks and file history <br>
 - Beautiful built in colorschemes
-- Easy syntax check and debugging <br>
-- Three options for status bar. Lighline, Vim statusline and hackline. The choice is yours! <br>
+- Easy completion ctags, syntax check and more <br>
+- Lighline, Vim statusline <br>
   - Choices! It is all about choices <br>
 
 <h5> Can I expect support? </h5>

@@ -110,6 +110,9 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | fl | find lines across splits  |
 | fw | find word across splits  |
 | s | find two chars across splits  |
+| jj | escape |
+| ; | : |
+|  |  |
 
 Default Gruvbox Colorscheme. Netrw & TagBar
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041732_1920x1080_scrot.png">

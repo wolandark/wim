@@ -216,7 +216,7 @@ if &term =~ '256color'
         let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
         set termguicolors
     endif
-    colorscheme base16-horizon-dark
+    colorscheme base16-gruvbox-dark-hard
 endif
 
 if has('gui_running')

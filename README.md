@@ -101,12 +101,15 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | Ctrl hjkl/Arrows | Focus Between Splits  |
 | F6               | SpellCheck            |
 | Ctrl j              | Trigger Snippets       |
-|Ctrl j k          | Move Within Triggered Snippet |
-|Ctrl PGDNN        | List Available Snippets  |
+| Ctrl j k          | Move Within Triggered Snippet |
+| Ctrl PGDNN        | List Available Snippets  |
 | gcc        | Comment Out           |
-|yss(char)|Surround line|
-|ysiw(char)|Surround word|
-
+| yss(char)|Surround line|
+| ysiw(char)|Surround word|
+| fy  | find char across splits  |
+| fl | find lines across splits  |
+| fw | find word across splits  |
+| s | find two chars across splits  |
 
 Default Gruvbox Colorscheme. Netrw & TagBar
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041732_1920x1080_scrot.png">

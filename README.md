@@ -10,7 +10,7 @@
 bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/main/Wim_Arch_Install.sh)
 ```
 Otherwise satisfy the dependencies and grab the wim-3.1.vimrc and rename it to .vimrc and start vim. Plugins will install automatically
-
+#### Watch the script work [here](https://www.youtube.com/watch?v=_yHH8xjcnZA)
 <br>
 This is a Vim configuration that gets you a similar experience as a full-featured IDE. Its made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. You will never have to wait for an IDE to launch
 

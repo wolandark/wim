@@ -50,7 +50,8 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 
 - <code> :CocInstall </code><br>
   	- Example: <code>:CocInstall coc-css</code> <br>
-  
+- <code>:CocInstall coc-explorer</code> for using the [coc-explorer](https://github.com/weirongxu/coc-explorer) file manager instead of netrw
+  - to start netrw <code>:Vexplore</code> 
 - Once the downloads are finished you can start using Vim normally<br>
 - Leader key is naturally space<br>
 - Refer to the table below for a list of key bindings<br>

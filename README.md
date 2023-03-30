@@ -71,48 +71,67 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 
 <h4>leader is space</h4>
 
-|Keys              |Function               |
-| --               | --                    |
-| leader v         | Vifm Floating         |
-| leader r         | Ranger Floating       |
-| leader e         | Coc-Explorer On The Left Side |
-| leader t         | Terminal              |
-| leader i          |  Pop Start Menu   |
-| leader T         | NewTab                |
-| leader d         | Duplicate Cleaner     |
-| leader 1-9       | Go To Tab             |
-| leader tm        | Move Tab              |
-| leader x         | Close Tab             |
-| leader c         | Fuzzy Colorschemes    |
-| leader b         | Fuzzy Buffers         |
-| leader s         | Fuzzy File Search     |
-| leader W         | Fuzzy Windows         |
-| leader H         | Fuzzy History         |
-|leader h|chmod +x current file|
-| leader M         | Fuzzy Mappings        |
-| leader w         | Quick Save w!         |
-| leader op        | Source Current File   |
-| leader z          | Fix Spelling For 1 word |
-| leader l          | Fix Spelling On 1 Line |
-|leader f(char)   |easy motion |
-|leader ww|VimWiki|
-| Alt Arrows       | Go Tabs Right Or Left |
-| Shift Arrows     | Resize Splits         |
-| Ctrl hjkl/Arrows | Focus Between Splits  |
-| F6               | SpellCheck            |
-| Ctrl j              | Trigger Snippets       |
-| Ctrl j k          | Move Within Triggered Snippet |
-| Ctrl PGDNN        | List Available Snippets  |
-| gcc        | Comment Out           |
-| yss(char)|Surround line|
-| ysiw(char)|Surround word|
-| fy  | find char across splits  |
-| fl | find lines across splits  |
-| fw | find word across splits  |
-| s | find two chars across splits  |
-| jj | escape |
-| ; | : |
-|  |  |
+ #### Key Bindings
+
+ | Keys       | Function                         |
+ | --         | --                               |
+ | leader v   | Vifm Floating                    |
+ | leader r   | Ranger Floating                  |
+ | leader e   | Coc-Explorer On The Left Side    |
+ | leader t   | Terminal                         |
+ | leader i   | Pop Start Menu                   |
+ | leader T   | NewTab                           |
+ | leader d   | Duplicate Cleaner                |
+ | leader 1-9 | Go To Tab                        |
+ | leader tm  | Move Tab                         |
+ | leader x   | Close Tab                        |
+ | leader c   | Fuzzy Colorschemes               |
+ | leader b   | Fuzzy Buffers                    |
+ | leader s   | Fuzzy File Search                |
+ | leader W   | Fuzzy Windows                    |
+ | leader H   | Fuzzy History                    |
+ | leader Hc  | Fuzzy Command History            | 
+ | leader h   | chmod +x current file            |
+ | leader M   | Fuzzy Mappings                   |
+ | leader w   | Quick Save w!                    |
+ | leader op  | Source Current File              |
+ | leader z   | Fix Spelling For 1 word          |
+ | leader l   | Fix Spelling On 1 Line           |
+ | leader ww  | VimWiki                          |
+ | leader \   | Border Current line using Toilet |
+ | leader mk  | mkview                           |
+ | leader [   | Add Empty Line Above             |
+ | leader ]   | Add Empty Line Below             |
+ | leader S   | Add Empty Line Above And Below   |
+ | leader u   | Move Current Line A Paragraph Up |
+ | leader k   | Move Current Line One Line Up    |
+ | leader j   | Move Current Line One Line Down  |
+ | Shift Arrows     | Resize Splits                 |
+ | Ctrl hjkl/Arrows | Focus Between Splits          |
+ | F6               | SpellCheck                    |
+ | Ctrl j           | Trigger Snippets              |
+ | Ctrl j k         | Move Within Triggered Snippet |
+ | Ctrl PGDNN       | List Available Snippets       |
+ | gcc              | Comment Out                   |
+ | yss(char)        | Surround line                 |
+ | ysiw(char)       | Surround word                 |
+ | fy               | find char across splits       |
+ | fl               | find lines across splits      |
+ | fw               | find word across splits       |
+ | s                | find two chars across splits  |
+ | jj               | escape                        |
+ | ;                | :                             |
+| Ctrl m        | Center Cursor                 |
+| bs            | #!/bin/bash                   |
+| be            | #!/usr/bin/env bash           |
+| br            | <br>                          |
+| Ctrl h/Arrows | Move Between Splits           |
+| Ctrl j/Arrows | Move Between Splits           |
+| Ctrl k/Arrows | Move Between Splits           |
+| Ctrl l/Arrows | Move Between Splits           |
+| leader R      | Rotate Splits                 |
+| Alt hjkl      | Move With hjkl In Insert Mode |
+| Alt Arrows    | Go Tabs Right Or Left         |
 
 Default Gruvbox Colorscheme. Netrw & TagBar
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041732_1920x1080_scrot.png">

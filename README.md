@@ -107,32 +107,12 @@ Watch me go through every feature and the entire .vimrc file [here](https://www.
 |V mode c-p | Copies To Shared Clipboard |
 |V mode c-v | Pastes From Shared Clipboard | 
 
-Start menu and auto NERDTree with Icons 
-<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wim%20start.png">
-Customized Nerdtree-like Netrw
-<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wimnetrw.png">
-Great Completion Support
-<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/comp.png">
-Keymappings Help Menu
-<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/helpmenu.png">
-Fuzzy File History Floating Menu
-<img src="https://github.com/wolandark/wim/blob/main/img/vim5.png">
-Default Gruvbox Theme
-<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/default.png">
-Dracula Theme
-<img src="https://github.com/wolandark/wim/blob/main/img/wim3.png">
-Oceanic Theme
-<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wimocean.png">
-Nord Theme
-<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wimnord.png">
-Command History Floating Menu
-<img src="https://github.com/wolandark/wim/blob/main/img/wim6.png">
-Floating Filemanagment with Vifm
-<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/wimvifm.png">
-Floating Terminal
-<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/floterm.png">
-Great Support For Gvim on Windows
-<img src="https://github.com/wolandark/wim/blob/main/img/Ver2/Screenshot%20(1).png">
+<img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041732_1920x1080_scrot.png">
+<img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-042007_1920x1080_scrot.png">
+<img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041448_1920x1080_scrot.png">
+<img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041527_1920x1080_scrot.png">
+<img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041921_1920x1080_scrot.png">
+<img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-042030_1920x1080_scrot.png">
 
 <h1>FAQ</h1>
 

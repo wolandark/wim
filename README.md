@@ -88,6 +88,7 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | leader s         | Fuzzy File Search     |
 | leader W         | Fuzzy Windows         |
 | leader H         | Fuzzy History         |
+|leader h|chmod +x current file|
 | leader M         | Fuzzy Mappings        |
 | leader w         | Quick Save w!         |
 | leader op        | Source Current File   |
@@ -103,6 +104,8 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 |Ctrl j k          | Move Within Triggered Snippet |
 |Ctrl PGDNN        | List Available Snippets  |
 | gcc        | Comment Out           |
+|yss(char)|Surround line|
+|ysiw(char)|Surround word|
 
 
 Default Gruvbox Colorscheme. Netrw & TagBar

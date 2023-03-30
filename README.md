@@ -72,7 +72,6 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 
 |Keys              |Function               |
 | --               | --                    |
-| leader n         | NERDTree              |
 | leader v         | Vifm Floating         |
 | leader r         | Ranger Floating       |
 | leader e         | Netrw On The Left Side |
@@ -98,16 +97,11 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | Alt Arrows       | Go Tabs Right Or Left |
 | Shift Arrows     | Resize Splits         |
 | Ctrl hjkl/Arrows | Focus Between Splits  |
-| F2               | Start Live Webserver  |
-| F3               | Reload Live Webserver |
-| F4               | Stop Live Webserver   |
 | F6               | SpellCheck            |
-| F8               | Markdown Live Server  |
-| END              | Trigger Snippets       |
+| Ctrl j              | Trigger Snippets       |
 |Ctrl j k          | Move Within Triggered Snippet |
 |Ctrl PGDNN        | List Available Snippets  |
-|V mode c-p | Copies To Shared Clipboard |
-|V mode c-v | Pastes From Shared Clipboard | 
+
 
 Default Gruvbox Colorscheme. Netrw & TagBar
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041732_1920x1080_scrot.png">

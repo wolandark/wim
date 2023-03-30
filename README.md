@@ -4,14 +4,12 @@
 
 # Wim
 # Version 3 has been released. This README is under revision
-
+# To use current version grab vimrc from releases or by cloning the repo and rename the wim-3.1.vimrc to .vimrc and place it in your home.
+# An install script will be provided shortly 
+<br>
 This is a Vim configuration that gets you a similar experience as a full-featured IDE. Its made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. You will never have to wait for an IDE to launch
 
-## You can use this pathetic bash script that I just put together to automate the proccess on Arch 
 
-```
-bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/main/Wim_Arch_Install.sh)
-```
 
 # Dependencies
 - Vim 8+ upto latest (Tested and also works on vim 7)

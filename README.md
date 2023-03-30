@@ -12,7 +12,6 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 - Vim 8+ upto latest (Tested and also works on vim 7)
 - [vimplug](https://github.com/junegunn/vim-plug) (Will be installed automatically as of version 2. Unix and Linux Only! for windows you must use the windows curl command of vimplug)
 - nodejs and npm (For coc completion. Unneeded if you want another completion engine like YCM)
-- xsel (An xorg utility that is ESSENTIAL for shared clipboard)
 - FZF 
 - Figlet (For the start menu ascii art, unneeded if you dont care for the ascii art)
 

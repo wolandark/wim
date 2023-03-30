@@ -75,13 +75,11 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | --               | --                    |
 | leader v         | Vifm Floating         |
 | leader r         | Ranger Floating       |
-| leader e         | Netrw On The Left Side |
+| leader e         | Coc-Explorer On The Left Side |
 | leader t         | Terminal              |
 | leader i          |  Pop Start Menu   |
 | leader T         | NewTab                |
 | leader d         | Duplicate Cleaner     |
-| leader m         | File History          |
-| leader cc        | Comment Out           |
 | leader 1-9       | Go To Tab             |
 | leader tm        | Move Tab              |
 | leader x         | Close Tab             |
@@ -95,6 +93,8 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | leader op        | Source Current File   |
 | leader z          | Fix Spelling For 1 word |
 | leader l          | Fix Spelling On 1 Line |
+|leader f(letter)   |easy motion |
+|leader ww|VimWiki|
 | Alt Arrows       | Go Tabs Right Or Left |
 | Shift Arrows     | Resize Splits         |
 | Ctrl hjkl/Arrows | Focus Between Splits  |
@@ -102,6 +102,7 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | Ctrl j              | Trigger Snippets       |
 |Ctrl j k          | Move Within Triggered Snippet |
 |Ctrl PGDNN        | List Available Snippets  |
+| gcc        | Comment Out           |
 
 
 Default Gruvbox Colorscheme. Netrw & TagBar

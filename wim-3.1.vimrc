@@ -80,20 +80,21 @@ Plug 'junegunn/goyo.vim'
 Plug 'https://github.com/tpope/vim-commentary.git'
 " ENHANCES F
 Plug 'https://github.com/rhysd/clever-f.vim.git'
-" GIVES COUNTS TO F
-" LEADER w TO TRIGGER WORD MOTION
-" <lEADER>F{CHAR} TO MOVE TO {CHAR}
-" MAP  <lEADER>F <pLUG>(EASYMOTION-BD-F)
-nmap <Leader>F <Plug>(easymotion-overwin-f)
+
+" Across splits mappings
+nmap fy <Plug>(easymotion-overwin-f)
+nmap fl <Plug>(easymotion-overwin-line)
+nmap fw <Plug>(easymotion-overwin-w)
+nmap s <Plug>(easymotion-overwin-f2)
+" <Leader>f{char} to move to {char}
+nmap <Leader>f <Plug>(easymotion-bd-f)
 " s{char}{char} to move to {char}{char}
-" nmap s <Plug>(easymotion-overwin-f2)
 " Move to line
-" map <Leader>L <Plug>(easymotion-bd-jk)
-" nmap <Leader>L <Plug>(easymotion-overwin-line)
+nmap <Leader>l <Plug>(easymotion-bd-jk)
 " Move to word
-" map  <Leader>w <Plug>(easymotion-bd-w)
-" nmap <Leader>W <Plug>(easymotion-overwin-w)
+nmap  <Leader>m <Plug>(easymotion-bd-w)
 Plug 'https://github.com/easymotion/vim-easymotion.git'
+
 "To exchange two words, place your cursor on the first word and type cxiw. Then move to the second word and type cxiw again. Note: the {motion} used in the first and second use of cx don't have to be the same.
 " Plug 'https://github.com/tommcdo/vim-exchange.git'
 

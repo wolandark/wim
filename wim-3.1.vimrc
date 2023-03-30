@@ -326,9 +326,6 @@ nmap <leader>\ :.!toilet -w 200 -f term -F border<Cr>
 "Good fonts with figlet
 ".!figlet -w 200 -f ascii___ future emboss
 
-map <leader>p :PresentingStart<Cr>
-nnoremap <leader>n :NERDTree <Cr>
-
 " nnoremap <leader>e :call ToggleNetrw()<Cr>
 nmap <leader>e <Cmd>CocCommand explorer<CR>
 

@@ -8,9 +8,9 @@
 # https://github.com/wolandark
 # https://github.com/wolandark/wim
 
-sudo pacman -S nodejs npm figlet fzf curl
+sudo pacman -S nodejs npm figlet fzf curl git vim
 
-git clone https://github.com/wolandark.wim.git
+git clone https://github.com/wolandark/wim.git
 
 mv wim/.vimrc $HOME/.vimrc
 

@@ -109,11 +109,14 @@ Watch me go through every feature and the entire .vimrc file [here](https://www.
 |V mode c-p | Copies To Shared Clipboard |
 |V mode c-v | Pastes From Shared Clipboard | 
 
+Default Gruvbox Colorscheme. Netrw & TagBar
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041732_1920x1080_scrot.png">
+Startify Dashboard with history and shortcuts
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-042007_1920x1080_scrot.png">
-<img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041448_1920x1080_scrot.png">
+Complition and language support
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041527_1920x1080_scrot.png">
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041921_1920x1080_scrot.png">
+Press Leader+c to chose a new colorscheme
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-042030_1920x1080_scrot.png">
 
 <h1>FAQ</h1>

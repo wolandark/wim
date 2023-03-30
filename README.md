@@ -3,6 +3,7 @@
 </p>
 
 # Wim
+# Version 3 has been released. This README is under revision
 
 This is a Vim configuration that gets you a similar experience as a full-featured IDE. Its made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. You will never have to wait for an IDE to launch
 
@@ -14,21 +15,16 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 - xsel (An xorg utility that is ESSENTIAL for shared clipboard)
 - FZF 
 - Figlet (For the start menu ascii art, unneeded if you dont care for the ascii art)
-- A Nerd Font (ESSENTIAL for icons in the nerdtree)
 
 <h1> Some of the features</h1>
 
 - Out of the box plugin installation <br>
 - Tab Completion and snippets for fast coding <br>
-- Fixed shared clipboard with desktop and other other apps<br>
 - Easy tab and split navigation <br>
-- Complete Markdown and HTML-CSS-JS support with live servers for both of them <br>
 - Start Screen with bookmarks and file history <br>
-- Beautiful built in colorschemes
-- Easy syntax and alignment with Beautify option  <br>
+- Beautiful built in base16 colorschemes
 - Nerdtree-like configuration of Netrw <br>
-- Three options for statusline.Vim's customized statusline, Lighline and hackline. The choice is yours! <br>
-  - Choices! It is all about choices <br>
+- Customized Lighline statusline <br>
 - Customizability! It is lightweight and extensible without having to learn a whole new software or language  <br>
 
 <h1>Usage / Installation </h1>

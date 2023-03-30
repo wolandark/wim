@@ -4,8 +4,12 @@
 
 # Wim
 # Version 3 has been released. This README is under revision
-# To use current version grab vimrc from releases or by cloning the repo and rename the wim-3.1.vimrc to .vimrc and place it in your home.
-# An install script will be provided shortly 
+### Use this simple installation script fo Arch and Arch-based distros 
+
+```
+bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/main/Wim_Arch_Install.sh)
+```
+
 <br>
 This is a Vim configuration that gets you a similar experience as a full-featured IDE. Its made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. You will never have to wait for an IDE to launch
 
@@ -14,9 +18,9 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 # Dependencies
 - Vim 8+ upto latest (Tested and also works on vim 7)
 - [vimplug](https://github.com/junegunn/vim-plug) (Will be installed automatically as of version 2. Unix and Linux Only! for windows you must use the windows curl command of vimplug)
-- nodejs and npm (For coc completion. Unneeded if you want another completion engine like YCM)
+- nodejs and npm (For coc completion)
 - FZF 
-- Figlet (For the start menu ascii art, unneeded if you dont care for the ascii art)
+- Figlet & boxes (For the start menu ascii art)
 
 <h1> Some of the features</h1>
 

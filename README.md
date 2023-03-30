@@ -93,7 +93,7 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | leader op        | Source Current File   |
 | leader z          | Fix Spelling For 1 word |
 | leader l          | Fix Spelling On 1 Line |
-|leader f(letter)   |easy motion |
+|leader f(char)   |easy motion |
 |leader ww|VimWiki|
 | Alt Arrows       | Go Tabs Right Or Left |
 | Shift Arrows     | Resize Splits         |

@@ -528,6 +528,16 @@ let g:tagbar_autoupdate = 1
 " └───────┘
 let g:vimwiki_global_ext = 0
 let g:vimwiki_root_dir = '$HOME/vimwiki/'
+" ┌────────┐
+" │Terminal│
+" └────────┘
+" Set terminal height
+let g:terminal_height = -10
+set termwinsize=10x200
+nnoremap <Leader>' :botright terminal<CR>
+tnoremap <C-j> <C-\><C-n><C-w>j
+tnoremap <C-k> <C-\><C-n><C-w>k
+set shell=/bin/sh
 
 
 

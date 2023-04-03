@@ -106,6 +106,7 @@ This is a Vim configuration that gets you a similar experience as a full-feature
  | leader u   | Move Current Line A Paragraph Up |
  | leader k   | Move Current Line One Line Up    |
  | leader j   | Move Current Line One Line Down  |
+ | leader '   | Open Vim Terminal                |
  | Shift Arrows     | Resize Splits                 |
  | Ctrl hjkl/Arrows | Focus Between Splits          |
  | F6               | SpellCheck                    |

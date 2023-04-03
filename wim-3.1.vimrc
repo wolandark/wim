@@ -527,7 +527,7 @@ let g:tagbar_autoupdate = 1
 " │VimWiki│
 " └───────┘
 let g:vimwiki_global_ext = 0
-let g:vimwiki_root_dir = '/home/woland/vimwiki/'
+let g:vimwiki_root_dir = '$HOME/vimwiki/'
 
 
 

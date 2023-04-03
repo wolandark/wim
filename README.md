@@ -125,7 +125,7 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | Ctrl m        | Center Cursor                 |
 | bs            | #!/bin/bash                   |
 | be            | #!/usr/bin/env bash           |
-| br            | <br>                          |
+| br            | \<br>\                          |
 | Ctrl h/Arrows | Move Between Splits           |
 | Ctrl j/Arrows | Move Between Splits           |
 | Ctrl k/Arrows | Move Between Splits           |

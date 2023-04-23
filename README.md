@@ -67,6 +67,17 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 - You can review the list of plugins and comment out or delete the lines about the ones you dont want. This must be done before running <code>:PlugInstall</code>
   - If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>
 
+# Coc tab completion set up
+- Open your CocConfig by typing
+    <code>:CocConfig</code> into vim's command mode
+- add the following lines to improve Coc's Tab behavior 
+```
+{
+     "suggest.noselect": true
+}
+```
+<code>:wq</code> to save and quit
+
 # Keymappings (Always up to date)
 
 <h4>leader is space</h4>

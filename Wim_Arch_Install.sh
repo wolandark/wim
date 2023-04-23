@@ -2,7 +2,7 @@
 
 # Written By Woland
 
-# A pathetic shell script that installs Wim and its dependencies on Arch and
+# A simple shell script that installs Wim and its dependencies on Arch and
 # other arch-based distros
 
 # https://github.com/wolandark

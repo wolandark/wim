@@ -2,19 +2,28 @@
 <img src="https://github.com/wolandark/wim/blob/main/img/wim-logo-png-transparent1.png" width=60%>
 </p>
 
-# Wim
-## Version 3 has been released.
+# Wim News
+#### Version 3.1 has been released
+    - Improved style and workflow
+    - Cleaned up the config
+    - Corrections on Coc.nvim's behavior
+    - and many more ...
+#### Version 3.2 has been released
+```
+   - Replaced vim-css plugin with vim-hexokinase due to vim-css's inability to highlight colors in C files properly (you need go for this new plugin)
+   - Improved easy motion bindings
+   - Added Catpuciino theme
+```    
 #### Use this simple installation script for Arch and Arch-based distros.
-
 ```
 bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/main/Wim_Arch_Install.sh)
 ```
 Otherwise satisfy the dependencies and grab the wim-3.1.vimrc and rename it to .vimrc and start vim. Plugins will install automatically
 #### Watch the script work [here](https://www.youtube.com/watch?v=_yHH8xjcnZA)
 <br>
+
+# Intro
 This is a Vim configuration that gets you a similar experience as a full-featured IDE. Its made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. You will never have to wait for an IDE to launch
-
-
 
 # Dependencies
 - Vim 8+ upto latest (Tested and also works on vim 7)
@@ -67,7 +76,7 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 - You can review the list of plugins and comment out or delete the lines about the ones you dont want. This must be done before running <code>:PlugInstall</code>
   - If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>
 
-# Coc tab completion set up
+### Coc tab completion set up
 - Open your CocConfig by typing
     <code>:CocConfig</code> into vim's command mode
 - add the following lines to improve Coc's Tab behavior 
@@ -129,6 +138,7 @@ This is a Vim configuration that gets you a similar experience as a full-feature
  | ysiw(char)       | Surround word                 |
  | fy               | find char across splits       |
  | fl               | find lines across splits      |
+ | ml |             Move to LIne |
  | fw               | find word across splits       |
  | s                | find two chars across splits  |
  | jj               | escape                        |

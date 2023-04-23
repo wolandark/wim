@@ -155,6 +155,8 @@ This is a Vim configuration that gets you a similar experience as a full-feature
 | Alt hjkl      | Move With hjkl In Insert Mode |
 | Alt Arrows    | Go Tabs Right Or Left         |
 
+New Catpuccino theme
+![wim-catpuccino](https://user-images.githubusercontent.com/107309764/233864390-5562711e-e252-41b3-a1fe-cb14932eed95.png)
 Default Gruvbox Colorscheme. Netrw & TagBar
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041732_1920x1080_scrot.png">
 Startify Dashboard with history and shortcuts

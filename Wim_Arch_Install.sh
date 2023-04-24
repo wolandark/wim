@@ -9,7 +9,7 @@
 # https://github.com/wolandark/wim
 
 # Define required files and directories
-WIM_VIMRC="$HOME/wim/wim-3.1.vimrc"
+WIM_VIMRC="$HOME/wim/wim-3.2.vimrc"
 ROMAN_FLF="/usr/share/figlet/fonts/roman.flf"
 BOXES_DIR="$HOME/boxes"
 

@@ -4,16 +4,15 @@
 
 # Wim News
 #### Version 3.1 has been released
-    - Improved style and workflow
-    - Cleaned up the config
-    - Corrections on Coc.nvim's behavior
-    - and many more ...
+- Improved style and workflow
+- Cleaned up the config
+- Corrections on Coc.nvim's behavior
+- and many more ...
 #### Version 3.2 has been released
-```
-  - Replaced vim-css plugin with vim-hexokinase due to vim-css's inability to highlight colors in C files properly (you need go for this new plugin)
-  - Improved easy motion bindings
-  - Added Catpuccino theme
-```    
+- Replaced vim-css plugin with vim-hexokinase due to vim-css's inability to highlight colors in C files properly (you need go for this new plugin)
+- Improved easy motion bindings
+- Added Catpuccino theme
+    
 #### Use this simple installation script for Arch and Arch-based distros.
 ```
 bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/main/Wim_Arch_Install.sh)

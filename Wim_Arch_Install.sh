@@ -37,6 +37,7 @@ if [[ ! -f "$WIM_VIMRC" ]]; then
 fi
 
 if [[ ! -f "$ROMAN_FLF" ]]; then
+sudo mv "wim/roman.flf" "$ROMAN_FLF" || {
     echo "Error: $ROMAN_FLF does not exist"
     exit 1
 fi
@@ -57,11 +58,6 @@ cd -
 # Move files to their respective locations
 mv "$WIM_VIMRC" "$HOME/.vimrc" || {
     echo "Error: Failed to move wim-3.1.vimrc to $HOME/.vimrc"
-    exit 1
-}
-
-sudo mv "$HOME/wim/roman.flf" "$ROMAN_FLF" || {
-    echo "Error: Failed to move roman.flf to $ROMAN_FLF"
     exit 1
 }
 

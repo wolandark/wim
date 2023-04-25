@@ -9,9 +9,9 @@
 # https://github.com/wolandark/wim
 
 # Define required files and directories
-WIM_VIMRC="$HOME/wim/wim-3.2.vimrc"
+WIM_VIMRC="wim/wim-3.2.vimrc"
 ROMAN_FLF="/usr/share/figlet/fonts/roman.flf"
-BOXES_DIR="$HOME/boxes"
+BOXES_DIR="boxes"
 
 # Install required packages
 sudo pacman -S nodejs npm figlet fzf curl git vim || {

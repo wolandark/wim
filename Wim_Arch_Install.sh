@@ -63,7 +63,6 @@ mv "$WIM_VIMRC" "$HOME/.vimrc" || {
 mkdir $HOME/.vimhis
 
 # All done!
-printf "%-25s \033[7;32mPackages\033[0m\n" "Installed"
-printf "%-25s \033[7;32mUnlimited history\033[0m\n" "Configured"
-printf "%-25s \033[7;32mYou should now start vim and wait for plugins to install\033[0m\n" "That's it!"
+printf "%-25s \033[7;32mDone\033[0m\n"
+printf "%-25s \033[7;32mYou should now start vim and wait for the plugins to install\033[0m\n"
 exit 0

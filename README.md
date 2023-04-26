@@ -18,6 +18,10 @@
 ```
 bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/main/Wim_Arch_Install.sh)
 ```
+#### Use this simple installation script for Debian 12 and Testing.
+```
+bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/main/Wim_Arch_Debian.sh)
+```
 Otherwise satisfy the dependencies and grab the wim-3.1.vimrc and rename it to .vimrc and start vim. Plugins will install automatically
 #### Watch the script work [here](https://www.youtube.com/watch?v=_yHH8xjcnZA)
 <br>

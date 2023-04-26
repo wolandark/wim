@@ -37,9 +37,7 @@ if [[ ! -f "$WIM_VIMRC" ]]; then
 fi
 
 if [[ ! -f "$ROMAN_FLF" ]]; then
-sudo mv "wim/roman.flf" "$ROMAN_FLF" || {
-    echo "Error: $ROMAN_FLF does not exist"
-    exit 1
+sudo mv "wim/roman.flf" "$ROMAN_FLF" 
 fi
 
 if [[ ! -d "$BOXES_DIR" ]]; then
@@ -53,7 +51,7 @@ makepkg -sri || {
     echo "Error: Failed to build and install boxes"
     exit 1
 }
-cd -
+cd ..
 
 # Move files to their respective locations
 mv "$WIM_VIMRC" "$HOME/.vimrc" || {

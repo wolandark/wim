@@ -10,7 +10,7 @@
 
 # VARS
 WIM_VIMRC="wim/wim-3.2.vimrc"
-ROMAN_FLF="/usr/share/figlet/fonts/roman.flf"
+ROMAN_FLF="/usr/share/figlet/roman.flf"
 
 # Install required packages
 sudo apt install golang nodejs npm figlet fzf curl git vim || {

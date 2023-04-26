@@ -8,13 +8,13 @@
 # https://github.com/wolandark
 # https://github.com/wolandark/wim
 
-# Define required files and directories
+# VARS
 WIM_VIMRC="wim/wim-3.2.vimrc"
 ROMAN_FLF="/usr/share/figlet/fonts/roman.flf"
 BOXES_DIR="boxes"
 
 # Install required packages
-sudo pacman -S nodejs npm figlet fzf curl git vim || {
+sudo pacman -S go nodejs npm figlet fzf curl git vim || {
     echo "Error: Failed to install required packages"
     exit 1
 }
@@ -59,6 +59,11 @@ mv "$WIM_VIMRC" "$HOME/.vimrc" || {
     exit 1
 }
 
+# Unlimited history dir
+mkdir $HOME/.vimhis
+
 # All done!
-echo "All Done! You can now start using Wim"
+printf "%-25s \033[7;32mPackages\033[0m\n" "Installed"
+printf "%-25s \033[7;32mUnlimited history\033[0m\n" "Configured"
+printf "%-25s \033[7;32mYou should now start vim and wait for plugins to install\033[0m\n" "That's it!"
 exit 0

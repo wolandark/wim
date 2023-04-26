@@ -9,10 +9,11 @@
 - Corrections on Coc.nvim's behavior
 - and many more ...
 #### Version 3.2 has been released
-- Replaced vim-css plugin with vim-hexokinase due to vim-css's inability to highlight colors in C files properly (you need go for this new plugin)
+- Replaced vim-css plugin with vim-hexokinase due to vim-css's inability to highlight colors in C files properly (you need go for this new plugin which the installation script will take care of)
 - Improved easy motion bindings
 - Added Catpuccino theme
-    
+- Updated and improved the installation script
+
 #### Use this simple installation script for Arch and Arch-based distros.
 ```
 bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/main/Wim_Arch_Install.sh)

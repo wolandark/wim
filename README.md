@@ -27,7 +27,7 @@ Otherwise satisfy the dependencies and grab the wim-3.1.vimrc and rename it to .
 <br>
 
 # Intro
-The purpose of this project is to not only provide an IDE-like vimrc, but also to teach you how it is constructed.It is made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. 
+The purpose of this project is to not only provide an IDE-like vimrc, but also to teach you how it is constructed. It is made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. 
 
 # Dependencies
 - Vim 8+ upto latest (Tested and also works on vim 7)

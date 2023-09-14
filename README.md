@@ -1,6 +1,6 @@
-<p align="center">
+<div align="center">
 <img src="https://github.com/wolandark/wim/blob/main/img/wim-logo-png-transparent1.png" width=60%>
-</p>
+</div>
 
 # Wim News
 #### Version 3.1 has been released

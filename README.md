@@ -1,7 +1,6 @@
-<!--<div align="center">
+<div align="center">
 <img src="https://github.com/wolandark/wim/blob/main/img/wim-logo-png-transparent1.png" style="width=60%;">
 </div>
--->
 
 # Wim News
 #### Version 3.1 has been released
@@ -160,7 +159,7 @@ The purpose of this project is to not only provide an IDE-like vimrc, but also t
 | Alt hjkl      | Move With hjkl In Insert Mode |
 | Alt Arrows    | Go Tabs Right Or Left         |
 
-<!--
+
 New Catpuccino theme
 ![wim-catpuccino](https://user-images.githubusercontent.com/107309764/233864390-5562711e-e252-41b3-a1fe-cb14932eed95.png)
 Default Gruvbox Colorscheme. Netrw & TagBar
@@ -172,7 +171,7 @@ Completion and language support
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041921_1920x1080_scrot.png">
 Press Leader+c to chose a new colorscheme
 <img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-042030_1920x1080_scrot.png">
--->
+
 
 <h1>FAQ</h1>
 

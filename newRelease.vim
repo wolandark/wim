@@ -9,6 +9,7 @@ set encoding=utf-8
 "===[ Plugins ]==="
 call plug#begin()
 Plug 'voldikss/vim-floaterm'
+Plug 'lifepillar/vim-cheat40'
 Plug 'ptzz/lf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'itchyny/lightline.vim'
@@ -218,7 +219,7 @@ set wildmode=longest,list,full
 function! FixSpell()
   normal! 1z=<CR>
 endfunction
-" map <C-f> :call FixSpell()<CR>
+map <leader>z :call FixSpell()<CR>
 
 "===[ Custom Mappings ]==="
 let mapleader =" "
@@ -612,11 +613,9 @@ function! ListKeymapFiles()
 endfunction
 
 "===[ ab Mappings ]==="
-iab sh #!/bin/sh
-iab ds #!/bin/dash
-iab bsh #!/usr/bin/env bash
-iab tcl #!/usr/bin/tclsh
-iab wsh #!/usr/bin/wish
+iab sh! #!/bin/sh
+iab ds! #!/bin/dash
+iab bsh! #!/usr/bin/env bash
 iab br <br>
 iab Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at
 \ massa et est vulputate sollicitudin vitae at libero. Pellentesque iaculis neque
@@ -633,3 +632,10 @@ let g:lf_map_keys = 0
 let g:lf_width = 100
 let g:lf_height = 40
 nnoremap <leader>l :Lf<CR>
+
+let g:cheat40_use_default = 0
+
+
+
+nnoremap <leader>t :FloatermToggle<CR>
+noremap <nowait><leader>M :Maps <CR>

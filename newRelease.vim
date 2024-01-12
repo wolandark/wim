@@ -42,7 +42,7 @@ endfunction
 function! SetupWim()
   call VimplugInstaller()
   call DownloadCheat()
-  call DownloadASCII()
+  " call DownloadASCII()
   echo "Wim has been setup successfully! Enjoy!"
 endfunction
 call SetupWim()
@@ -125,19 +125,32 @@ endif
 "===[ Startify ]==="
 " let g:startify_padding_left = 3
 let g:startify_disable_at_vimenter = 0
-let g:startify_custom_header =
-            \ startify#pad(readfile('~/.vim/vim-ascii.txt'))
-            " \ startify#pad(split(system('figlet -f roman Vim|boxes -d parchment' ), '\n'))
-  let g:startify_custom_footer =
-           \ ['', "Once you get in, There is no getting out  ", '']
+let g:startify_custom_header = [
+      \' ___________________________________________',
+      \'/\                                          \',
+      \'\_| oooooo     oooo  o8o                    |',
+      \'  |  `888.     .8'   `"'                    |',
+      \'  |   `888.   .8'   oooo  ooo. .oo.  .oo.   |',
+      \'  |    `888. .8'    `888  `888P"Y88bP"Y88b  |',
+      \'  |     `888.8'      888   888   888   888  |',
+      \'  |      `888'       888   888   888   888  |',
+      \'  |       `8'       o888o o888o o888o o888o |',
+      \'  |                                         |',
+      \'  |                                         |',
+      \'  |                                         |',
+      \'  |   ______________________________________|_',
+      \'   \_/________________________________________/',
+      \ ]
+let g:startify_custom_footer =
+      \ ['', "Once you get in, There is no getting out  ", '']
 "Bookmarks. Syntax is clear.add yours
 let g:startify_bookmarks = [ {'B': '~/.bashrc'},{'V': '~/.vimrc'}]
-    let g:startify_lists = [
-          \ { 'type': 'bookmarks' , 'header': ['   Bookmarks']      } ,
-          \ { 'type': 'files'     , 'header': ['   Recent'   ]      } ,
-          \ { 'type': 'sessions'  , 'header': ['   Sessions' ]      } ,
-          \ { 'type': 'commands'  , 'header': ['   Commands' ]      } ,
-          \ ]
+let g:startify_lists = [
+      \ { 'type': 'bookmarks' , 'header': ['   Bookmarks']      } ,
+      \ { 'type': 'files'     , 'header': ['   Recent'   ]      } ,
+      \ { 'type': 'sessions'  , 'header': ['   Sessions' ]      } ,
+      \ { 'type': 'commands'  , 'header': ['   Commands' ]      } ,
+      \ ]
 
 hi StartifyBracket ctermfg=240
 hi StartifyFile    ctermfg=147

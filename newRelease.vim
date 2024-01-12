@@ -113,8 +113,9 @@ let g:startify_custom_header = [
 			\'    ╚███╔███╔╝██║██║ ╚═╝ ██║',
 			\'     ╚══╝╚══╝ ╚═╝╚═╝     ╚═╝',
 			\ ]
-let g:startify_custom_footer =
-           \ ['RIP Bram Moolenaar', '', 'Wim, an opionated Vim configuration', 'By Wolandark', ]
+let g:startify_custom_footer = split(system('fortune'), '\n') + ['','']
+" let g:startify_custom_footer =
+           " \ ['RIP Bram Moolenaar', '', 'Wim, an opionated Vim configuration', 'By Wolandark', ]
 "Bookmarks. Syntax is clear.add yours
 let g:startify_bookmarks = [ {'B': '~/.bashrc'},{'V': '~/.vimrc'}]
 let g:startify_lists = [

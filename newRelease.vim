@@ -7,7 +7,7 @@ endif
 
 function! DownloadCheat40IfNeeded()
     let local_file_path = expand('~/.vim/cheat40.txt')
-    let github_url = 'https://github.com/wolandark/wim/blob/Devel/cheat40.txt'
+    let github_url = 'https://raw.githubusercontent.com/wolandark/wim/Devel/cheat40.txt'
 
     if !filereadable(local_file_path)
         echo "Downloading cheat40.txt..."

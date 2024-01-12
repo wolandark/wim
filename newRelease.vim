@@ -4,6 +4,25 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -flo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd vimenter * plugInstall --sync | source $myvimrc
 endif
+
+function! DownloadCheat40IfNeeded()
+    let local_file_path = expand('~/.vim/cheat40.txt')
+    let github_url = 'https://github.com/wolandark/wim/blob/Devel/cheat40.txt'
+
+    if !filereadable(local_file_path)
+        echo "Downloading cheat40.txt..."
+        execute 'silent !curl -fLo ' . shellescape(local_file_path) . ' --create-dirs ' . shellescape(github_url)
+        if filereadable(local_file_path)
+            echo "Downloaded cheat40.txt successfully."
+        else
+            echoerr "Failed to download cheat40.txt."
+        endif
+    else
+        echo "cheat40.txt already exists."
+    endif
+endfunction
+call DownloadCheat40IfNeeded()
+
 "===[ Encoding ]==="
 set encoding=utf-8
 "===[ Plugins ]==="

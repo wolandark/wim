@@ -24,18 +24,18 @@ function! DownloadCheat()
 endfunction
 
 function! DownloadASCII()
-    let local_file_path = expand('~/.vim/cheat40.txt')
+    let local_file_path = expand('~/.vim/vim-ascii.txt')
     let github_url = 'https://raw.githubusercontent.com/wolandark/wim/Devel/vim-ascii.txt'
     if !filereadable(local_file_path)
-        echo "Downloading cheat40.txt..."
+        echo "Downloading ASCII art for vim ..."
         execute 'silent !curl -fLo ' . shellescape(local_file_path) . ' --create-dirs ' . shellescape(github_url)
         if filereadable(local_file_path)
-            echo "Downloaded cheat40.txt successfully."
+            echo "Downloaded ASCII art successfully."
         else
-            echoerr "Failed to download cheat40.txt."
+            echoerr "Failed to download ASCII art."
         endif
     else
-        echo "cheat40.txt already exists."
+        echo "ASCII art already exists."
     endif
 endfunction
 
@@ -126,7 +126,7 @@ endif
 " let g:startify_padding_left = 3
 let g:startify_disable_at_vimenter = 0
 let g:startify_custom_header =
-            \ startify#pad(readfile('/home/woland/vim-ascii.txt'))
+            \ startify#pad(readfile('~/.vim/vim-ascii.txt'))
             " \ startify#pad(split(system('figlet -f roman Vim|boxes -d parchment' ), '\n'))
   let g:startify_custom_footer =
            \ ['', "Once you get in, There is no getting out  ", '']

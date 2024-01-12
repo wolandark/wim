@@ -1,14 +1,15 @@
-"===[ Plugins Auto Install ]==="
-let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
-if empty(glob(data_dir . '/autoload/plug.vim'))
-  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
+"===[ Setting up Wim ]==="
+function! VimplugInstaller()
+  let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+  if empty(glob(data_dir . '/autoload/plug.vim'))
+    silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  endif
+endfunction
 
-function! DownloadCheat40IfNeeded()
+function! DownloadCheat()
     let local_file_path = expand('~/.vim/cheat40.txt')
     let github_url = 'https://raw.githubusercontent.com/wolandark/wim/Devel/cheat40.txt'
-
     if !filereadable(local_file_path)
         echo "Downloading cheat40.txt..."
         execute 'silent !curl -fLo ' . shellescape(local_file_path) . ' --create-dirs ' . shellescape(github_url)
@@ -21,7 +22,30 @@ function! DownloadCheat40IfNeeded()
         echo "cheat40.txt already exists."
     endif
 endfunction
-call DownloadCheat40IfNeeded()
+
+function! DownloadASCII()
+    let local_file_path = expand('~/.vim/cheat40.txt')
+    let github_url = 'https://raw.githubusercontent.com/wolandark/wim/Devel/vim-ascii.txt'
+    if !filereadable(local_file_path)
+        echo "Downloading cheat40.txt..."
+        execute 'silent !curl -fLo ' . shellescape(local_file_path) . ' --create-dirs ' . shellescape(github_url)
+        if filereadable(local_file_path)
+            echo "Downloaded cheat40.txt successfully."
+        else
+            echoerr "Failed to download cheat40.txt."
+        endif
+    else
+        echo "cheat40.txt already exists."
+    endif
+endfunction
+
+function! SetupWim()
+  call VimplugInstaller()
+  call DownloadCheat()
+  call DownloadASCII()
+  echo "Wim has been setup successfully! Enjoy!"
+endfunction
+call SetupWim()
 
 "===[ Encoding ]==="
 set encoding=utf-8

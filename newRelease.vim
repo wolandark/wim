@@ -18,32 +18,12 @@ function! DownloadCheat()
         else
             echoerr "Failed to download cheat40.txt."
         endif
-    else
-        echo "cheat40.txt already exists."
-    endif
-endfunction
-
-function! DownloadASCII()
-    let local_file_path = expand('~/.vim/vim-ascii.txt')
-    let github_url = 'https://raw.githubusercontent.com/wolandark/wim/Devel/vim-ascii.txt'
-    if !filereadable(local_file_path)
-        echo "Downloading ASCII art for vim ..."
-        execute 'silent !curl -fLo ' . shellescape(local_file_path) . ' --create-dirs ' . shellescape(github_url)
-        if filereadable(local_file_path)
-            echo "Downloaded ASCII art successfully."
-        else
-            echoerr "Failed to download ASCII art."
-        endif
-    else
-        echo "ASCII art already exists."
     endif
 endfunction
 
 function! SetupWim()
   call VimplugInstaller()
   call DownloadCheat()
-  " call DownloadASCII()
-  echo "Wim has been setup successfully! Enjoy!"
 endfunction
 call SetupWim()
 
@@ -85,7 +65,6 @@ call plug#end()
 
 " Plug 'https://github.com/wolandark/Mitra-Vim.git'
 " Plug 'https://github.com/wolandark/mysticpsum.git'
-" Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
 " Plug 'prettier/vim-prettier', {
 "   \ 'do': 'yarn install --frozen-lockfile --production',
@@ -126,23 +105,16 @@ endif
 " let g:startify_padding_left = 3
 let g:startify_disable_at_vimenter = 0
 let g:startify_custom_header = [
-      \' ___________________________________________',
-      \'/\                                          \',
-      \'\_|oooooo     oooo  o8o                     |',
-      \'  |  888.     .8   `"                       |',
-      \'  |   888.   .8   oooo  ooo. .oo.  .oo.     |',
-      \'  |    888. .8    `888  `888P"Y88bP"Y88b    |',
-      \'  |     888.8      888   888   888   888    |',
-      \'  |      888       888   888   888   888    |',
-      \'  |       8       o888o o888o o888o o888o   |',
-      \'  |                                         |',
-      \'  |                                         |',
-      \'  |                                         |',
-      \'  |   ______________________________________|_',
-      \'   \_/________________________________________/',
-      \ ]
+			\'                        ',
+			\'    ██╗    ██╗██╗███╗   ███╗',
+			\'    ██║    ██║██║████╗ ████║',
+			\'    ██║ █╗ ██║██║██╔████╔██║',
+			\'    ██║███╗██║██║██║╚██╔╝██║',
+			\'    ╚███╔███╔╝██║██║ ╚═╝ ██║',
+			\'     ╚══╝╚══╝ ╚═╝╚═╝     ╚═╝',
+			\ ]
 let g:startify_custom_footer =
-      \ ['', "Once you get in, There is no getting out  ", '']
+           \ ['RIP Bram Moolenaar', '', 'Wim, an opionated Vim configuration', 'By Wolandark', ]
 "Bookmarks. Syntax is clear.add yours
 let g:startify_bookmarks = [ {'B': '~/.bashrc'},{'V': '~/.vimrc'}]
 let g:startify_lists = [
@@ -474,26 +446,6 @@ tnoremap <C-PageUp> :tabprevious<CR>
 tnoremap <C-PageDown> :tabnext<CR>
 set shell=/bin/bash
 
-"===[ Hexokinase ]==="
-" Patterns to match for all filetypes
-" Can be a comma separated string or a list of strings
-
-" Default value:
-" let g:Hexokinase_optInPatterns = 'full_hex,rgb,rgba,hsl,hsla,colour_names'
-
-" All possible values
-let g:Hexokinase_optInPatterns = [
-\     'full_hex',
-\     'triple_hex',
-\     'rgb',
-\     'rgba',
-\     'hsl',
-\     'hsla',
-\     'colour_names'
-\ ]
-
-let g:Hexokinase_highlighters = [ 'backgroundfull' ]
-
 "===[ Runtime Macros ]==="
 runtime macros/emoji-ab.vim
 runtime macros/justify.vim 
@@ -639,7 +591,6 @@ function! SetBackToEng()
 endfunction
 command! SetEng call SetBackToEng()
 
-
 let g:alt_keymap = 'persian'
 let g:alt_enabled = 1
 
@@ -668,7 +619,7 @@ function! ListKeymapFiles()
     :Explore $VIMRUNTIME/keymap/
 endfunction
 
-"===[ ab Mappings ]==="
+"===[ Abbreviations ]==="
 iab sh! #!/bin/sh
 iab ds! #!/bin/dash
 iab bsh! #!/usr/bin/env bash
@@ -689,9 +640,8 @@ let g:lf_width = 100
 let g:lf_height = 40
 nnoremap <leader>l :Lf<CR>
 
+"===[ Custom Cheat40.txt ]==="
 let g:cheat40_use_default = 0
-
-
 
 nnoremap <leader>t :FloatermToggle<CR>
 noremap <nowait><leader>M :Maps <CR>

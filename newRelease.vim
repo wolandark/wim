@@ -377,29 +377,29 @@ let g:html_indent_attribute = 1
 let g:html_indent_inctags = "html,body,head,tbody"
 
 function! EnsureXMLExists()
-    let xml_path = expand('~/.vim/skeleton.xml')
-    
-    if !filereadable(xml_path)
-        let lines = [
-                \ '<!DOCTYPE html>',
-                \ '<html lang="en">',
-                \ '  <head>',
-                \ '    <meta charset="UTF-8">',
-                \ '    <meta http-equiv="X-UA-Compatible" content="IE=edge">',
-                \ '    <meta name="viewport" content="width=device-width, initial-scale=1.0">',
-                \ '    <title>New Page</title>',
-                \ '    <link rel="stylesheet" href="styles.css">',
-                \ '  </head>',
-                \ '  <body>',
-                \ '    <header>Hello World</header>',
-                \ '  </body>',
-                \ '</html>',
-                \ ]
-        call writefile(lines, xml_path)
-        " echo "Created file with content: " . xml_path
+  let xml_path = expand('~/.vim/skeleton.xml')
+  if !filereadable(xml_path)
+    let lines = [
+          \ '<!DOCTYPE html>',
+          \ '<html lang="en">',
+          \ '  <head>',
+          \ '    <meta charset="UTF-8">',
+          \ '    <meta http-equiv="X-UA-Compatible" content="IE=edge">',
+          \ '    <meta name="viewport" content="width=device-width, initial-scale=1.0">',
+          \ '    <title>New Page</title>',
+          \ '    <link rel="stylesheet" href="style.css">',
+          \ '  </head>',
+          \ '  <body>',
+          \ '    <h1><header>Hello World</header></h1>',
+          \ '   <script src="app.js"></script>',
+          \ '  </body>',
+          \ '</html>',
+          \ ]
+    call writefile(lines, xml_path)
+    " echo "Created file with content: " . xml_path
     " else
-        " echo "File already exists: " . xml_path
-    endif
+    " echo "File already exists: " . xml_path
+  endif
 endfunction
 call EnsureXMLExists()
 

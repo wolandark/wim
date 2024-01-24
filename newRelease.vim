@@ -33,7 +33,7 @@ set encoding=utf-8
 call plug#begin()
 Plug 'wolandark/Mitra-Vim'
 Plug 'wolandark/vim-live-server'
-Plug 'wolandark/vim-loremipsum.git'
+Plug 'wolandark/vim-loremipsum'
 Plug 'yegappan/mru'
 Plug 'DougBeney/pickachu'
 Plug 'alvan/vim-closetag'

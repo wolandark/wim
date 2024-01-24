@@ -31,6 +31,12 @@ call SetupWim()
 set encoding=utf-8
 "===[ Plugins ]==="
 call plug#begin()
+Plug 'wolandark/Mitra-Vim'
+Plug 'wolandark/vim-live-server'
+Plug 'wolandark/vim-loremipsum.git'
+Plug 'yegappan/mru'
+Plug 'DougBeney/pickachu'
+Plug 'alvan/vim-closetag'
 Plug 'voldikss/vim-floaterm'
 Plug 'lifepillar/vim-cheat40'
 Plug 'ptzz/lf.vim'
@@ -46,30 +52,25 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-fugitive'
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'https://github.com/ap/vim-css-color.git'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'https://github.com/godlygeek/tabular.git'
 Plug 'mhinz/vim-startify'
 Plug 'https://github.com/markonm/traces.vim.git'
 Plug 'vimwiki/vimwiki'
-Plug 'https://github.com/wolandark/vim-live-server', { 'do': 'sudo npm install -g browser-sync' }
 Plug 'https://github.com/rstacruz/sparkup.git'
 Plug 'https://github.com/Valloric/MatchTagAlways.git'
 Plug 'https://github.com/preservim/tagbar.git'
 Plug 'junegunn/vim-peekaboo'
 Plug 'https://github.com/907th/vim-auto-save.git'
 Plug 'https://github.com/sedm0784/vim-you-autocorrect.git'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install --frozen-lockfile --production',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 call plug#end()
-
-" Plug 'https://github.com/wolandark/Mitra-Vim.git'
-" Plug 'https://github.com/wolandark/mysticpsum.git'
-" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
-" Plug 'prettier/vim-prettier', {
-"   \ 'do': 'yarn install --frozen-lockfile --production',
-"   \ 'branch': 'release/0.x'
-"   \ }
 
 "===[ Auto Save ]==="
 let g:auto_save = 1  
@@ -148,18 +149,6 @@ if has("autocmd")
 endif
 
 "===[ Persistent Undo History ]==="
-" function! EnsureVimhisExists()
-    " let vimhis_path = expand('~/.vimhis')
-    
-    " if !filereadable(vimhis_path)
-        " call system('touch ' . shellescape(vimhis_path))
-        " echo "Created file: " . vimhis_path
-    " else
-        " echo "File already exists: " . vimhis_path
-    " endif
-" endfunction
-" call EnsureVimhisExists()
-
 function! EnsureVimhisExists()
     let vimhis_path = expand('~/.vimhis')
 
@@ -420,6 +409,11 @@ augroup Xml
     " set filetype=html
 augroup end
 
+"===[ Close Tag ]==="
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.md'
+let g:closetag_filetypes = 'html,xhtml,phtml'
+let g:closetag_shortcut = '>'
+
 "===[ Tagbar ]==="
 let g:tagbar_type_vimwiki = {
           \   'ctagstype':'vimwiki'
@@ -471,8 +465,8 @@ let g:mkdp_auto_close = 0
 let g:mkdp_refresh_slow = 0
 let g:mkdp_command_for_global = 0
 let g:mkdp_open_to_the_world = 1
-let g:mkdp_open_ip = '127.0.0.1'
-let g:mkdp_browser = '/usr/bin/waterfox-g'
+let g:mkdp_open_ip = ''
+let g:mkdp_browser = ''
 let g:mkdp_echo_preview_url = 0
 let g:mkdp_browserfunc = ''
 let g:mkdp_preview_options = {
@@ -489,7 +483,7 @@ let g:mkdp_preview_options = {
     \ 'disable_filename': 0,
     \ 'toc': {}
     \ }
-let g:mkdp_markdown_css = '/home/woland/style-md.css'
+let g:mkdp_markdown_css = ''
 let g:mkdp_highlight_css = ''
 let g:mkdp_port = ''
 let g:mkdp_page_title = '「${name}」'

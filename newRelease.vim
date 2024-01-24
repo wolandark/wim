@@ -148,14 +148,26 @@ if has("autocmd")
 endif
 
 "===[ Persistent Undo History ]==="
-function! EnsureVimhisExists()
-    let vimhis_path = expand('~/.vimhis')
+" function! EnsureVimhisExists()
+    " let vimhis_path = expand('~/.vimhis')
     
-    if !filereadable(vimhis_path)
-        call system('touch ' . shellescape(vimhis_path))
-        echo "Created file: " . vimhis_path
+    " if !filereadable(vimhis_path)
+        " call system('touch ' . shellescape(vimhis_path))
+        " echo "Created file: " . vimhis_path
     " else
         " echo "File already exists: " . vimhis_path
+    " endif
+" endfunction
+" call EnsureVimhisExists()
+
+function! EnsureVimhisExists()
+    let vimhis_path = expand('~/.vimhis')
+
+    if !isdirectory(vimhis_path)
+        call mkdir(vimhis_path, 'p')
+        echo "Created directory: " . vimhis_path
+    " else
+        " echo "Directory already exists: " . vimhis_path
     endif
 endfunction
 call EnsureVimhisExists()

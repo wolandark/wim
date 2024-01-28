@@ -34,6 +34,7 @@ call plug#begin()
 Plug 'wolandark/Mitra-Vim'
 Plug 'wolandark/vim-live-server'
 Plug 'wolandark/vim-loremipsum'
+Plug 'jiangmiao/auto-pairs'
 Plug 'yegappan/mru'
 Plug 'DougBeney/pickachu'
 Plug 'alvan/vim-closetag'
@@ -45,6 +46,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'https://github.com/rhysd/clever-f.vim.git'
+Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
@@ -254,14 +256,21 @@ map <leader>z :call FixSpell()<CR>
 "===[ Custom Mappings ]==="
 let mapleader =" "
 
+nnoremap <leader>t :FloatermToggle<CR>
+noremap <nowait><leader>M :Maps <CR>
+
+" Bilingual 
 inoremap <C-p> <C-o>:SwitchKeymap<CR>
 nnoremap <C-p> :SwitchKeymap<CR>
 
-nnoremap <A-s> :bn<CR>
-nnoremap <A-a> :bp<CR>
+" Switch Buffers
+nnoremap <PageUp> :bn<Cr>
+nnoremap <PageDown> :bp<CR>
 
+" Center Cursor Easier
 nnoremap <C-m> gM
 
+" Border Around 
 nnoremap <leader>\ :.!toilet -w 200 -f term -F border<CR>
 
 " nnoremap <leader>e :Ex <CR>
@@ -271,7 +280,6 @@ nnoremap <leader>T :tabnew file <CR>
 nnoremap <leader>mk :mkview <CR>
 
 nnoremap <leader>i :Startify <CR> 
-
 
 "adding empty line above and below cursor
 nnoremap <leader>S :normal! O<ESC>jo<ESC>kzzk<CR>
@@ -287,8 +295,6 @@ vnoremap <leader>j :m .+1<CR>
 nnoremap <leader>k :m .-2<CR>
 nnoremap <leader>j :m .+1<CR>
 inoremap <nowait> jj <ESC>
-
-nnoremap cs iconsole.log()<ESC><LEFT>0
 
 " VimPlug
 nnoremap <leader>pli :PlugInstall<CR>
@@ -343,26 +349,10 @@ noremap <nowait><leader>W :Windows<CR>
 noremap <nowait><leader>H :History<CR>
 noremap <nowait><leader>h :Chmod +x <CR>
 
-inoremap<nowait>" ""<left>
-inoremap<nowait>' ''<left>
-inoremap<nowait>( ()<left>
-inoremap<nowait>[ []<left>
-
 "===[ Live Server ]==="
 nnoremap <F2> :StartBrowserSync <CR>
 nnoremap <F3> :KillBrowserSync <CR>
-" noremap <F8> :!gcc % && ./a.out <CR>
 
-"===[ Compile and Run C ]==="
-noremap <F8> :call CompileAndRun()<CR>
-
-function! CompileAndRun()
-  let current_file = expand('%')
-  let file_name = fnamemodify(current_file, ':t:r')
-  let compile_cmd = 'gcc ' . current_file . ' -o ' . file_name . ' && ./' . file_name
-  execute '!'.compile_cmd
-endfunction
-      
 "===[ GitGutter ]==="
 let g:gitgutter_enabled = 1
 let g:gitgutter_sign_added = '√' 
@@ -544,26 +534,43 @@ let g:coc_explorer_global_mirror = 0
 let g:coc_explorer_disable_default_keybindings = 1
 let g:coc_explorer_global_root = 'current'
 
-""===[ Coc-Snippets ]==="
-"" " Use <C-l> for trigger snippet expand.
+"===[ Coc Global Extensions ]==="
+let g:coc_global_extensions = [
+  \ 'coc-tsserver',
+  \ 'coc-sh',
+  \ 'coc-explorer'
+  \ ]
+
+"===[ Coc-Snippets ]==="
+"Use <C-l> for trigger snippet expand.
 "imap <C-l> <Plug>(coc-snippets-expand)
 
-"" " Use <C-j> for select text for visual placeholder of snippet.
+"Use <C-j> for select text for visual placeholder of snippet.
 "vmap <C-j> <Plug>(coc-snippets-select)
 
-"" " Use <C-j> for jump to next placeholder, it's default of coc.nvim
+"Use <C-j> for jump to next placeholder, it's default of coc.nvim
 "let g:coc_snippet_next = '<c-j>'
 
-"" " Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+"Use <C-k> for jump to previous placeholder, it's default of coc.nvim
 "let g:coc_snippet_prev = '<c-k>'
 
-"" " Use <C-j> for both expand and jump (make expand higher priority.)
+"Use <C-j> for both expand and jump (make expand higher priority.)
 "imap <C-j> <Plug>(coc-snippets-expand-jump)
 
-"" " Use <leader>x for convert visual selected code to snippet
+"Use <leader>x for convert visual selected code to snippet
 "xmap <leader>x  <Plug>(coc-convert-snippet)
 
-"===[ Execute From SHELL ]==="
+"===[ Compile and Run C ]==="
+noremap <F8> :call CompileAndRun()<CR>
+
+function! CompileAndRun()
+  let current_file = expand('%')
+  let file_name = fnamemodify(current_file, ':t:r')
+  let compile_cmd = 'gcc ' . current_file . ' -o ' . file_name . ' && ./' . file_name
+  execute '!'.compile_cmd
+endfunction
+
+"===[ Execute From Vim ]==="
 function! ExecuteCustomCommand()
     if &ft ==# 'python'
         execute 'RPy'
@@ -649,6 +656,3 @@ nnoremap <leader>l :Lf<CR>
 
 "===[ Custom Cheat40.txt ]==="
 let g:cheat40_use_default = 0
-
-nnoremap <leader>t :FloatermToggle<CR>
-noremap <nowait><leader>M :Maps <CR>

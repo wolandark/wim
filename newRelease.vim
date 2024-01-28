@@ -34,6 +34,7 @@ call plug#begin()
 Plug 'wolandark/Mitra-Vim'
 Plug 'wolandark/vim-live-server'
 Plug 'wolandark/vim-loremipsum'
+Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'yegappan/mru'
 Plug 'DougBeney/pickachu'

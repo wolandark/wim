@@ -1,11 +1,13 @@
 # Development Branch of Wim
-### Testing
-<strong>Backup your ~/.vim and ~/.vimrc</strong>
+### Installation Tl;Dr
+<strong>Backup your ~/.vim and ~/.vimrc</strong> <br> 
+<strong>Backup your ~/.config/nvim and ~/.local/share/nvim</strong><br> 
+
 ```
 mv ~/.vim{,-bk} ; mv ~/.vimrc{,-bk}
 ```
 Install nodejs, npm, yarn and curl. <br>
-rename and move `newRelease` to `~/.vimrc` and start vim normally.
+rename and move `wim-vim` or `wim-neovim` to `~/.vimrc` or `~/.config/nvim/init.vim` and start vim/nvim normally.
 
 # Installation 
 ## Vim 

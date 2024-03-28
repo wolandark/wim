@@ -413,13 +413,13 @@ nnoremap <nowait><leader>mkd :Mkdir
 "===[ Floaterm ]==="
 let g:floaterm_autoclose = 1
 nnoremap \\t  :FloatermToggle<CR>
-nnoremap \\q :FloatermKill <CR>
-nnoremap \\n  :FloatermNext<CR>
-nnoremap \\p  :FloatermPrev<CR>
+nnoremap \q :FloatermKill <CR>
+nnoremap \n  :FloatermNext<CR>
+nnoremap \p  :FloatermPrev<CR>
 
 " Filemanagers
-nnoremap \\v :FloatermNew! vifm <CR>
-nnoremap \\ra :FloatermNew! ranger <CR>
+nnoremap \v :FloatermNew! vifm <CR>
+nnoremap \ra :FloatermNew! ranger <CR>
 " Terminal Right/Bottom
 nnoremap \\tr :FloatermNew --wintype=vsplit --position=right --width=0.4
 nnoremap \\tb :FloatermNew --wintype=split --position=bottom --height=0.2

@@ -100,17 +100,17 @@ Enuch {{{2
 Floaterm {{{2
 == FloaTerm ==
  \\t                FloatermToggle                          
- \\q                FloatermKill                            
- \\n                FloatermNext                            
- \\p                FloatermPrev                            
- \\v                vifm Inside FloaTerm                      
- \\ra               ranger Inside FloaTerm
  \\tr               Terminal Right
  \\tb               Terminal Bottom
- \\rg               Run Go In Terminal
- \\rb               Run Bash In Terminal
- \\rj               Run Nodejs In Terminal
- \\rp               Run Python In Terminal
+ \q                 FloatermKill                            
+ \n                 FloatermNext                            
+ \p                 FloatermPrev                            
+ \v                 vifm Inside FloaTerm                      
+ \ra                ranger Inside FloaTerm
+ \rg                Run Go In Terminal
+ \rb                Run Bash In Terminal
+ \rj                Run Nodejs In Terminal
+ \rp                Run Python In Terminal
  <leader>l          Lf                                     
 }}}
 Terminal {{{2

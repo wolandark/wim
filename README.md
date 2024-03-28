@@ -157,11 +157,11 @@ nvim
 | Key         | Function               |
 | ---         | ---                    |
 | \\t         | FloatermToggle         |
-| \\q         | FloatermKill           |
-| \\n         | FloatermNext           |
-| \\p         | FloatermPrev           |
-| \\v         | vifm Inside FloaTerm   |
-| \\ra        | ranger Inside FloaTerm |
+| \q         | FloatermKill           |
+| \n         | FloatermNext           |
+| \p         | FloatermPrev           |
+| \v         | vifm Inside FloaTerm   |
+| \ra        | ranger Inside FloaTerm |
 | \\tr        | Terminal Right         |
 | \\tb        | Terminal Bottom        |
 | \rg         | Run Go In Terminal     |

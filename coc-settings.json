@@ -1,0 +1,8 @@
+{
+	"suggest.noselect": true,
+	"css.completion.completePropertyWithSemicolon": false,
+	"scss.completion.completePropertyWithSemicolon": false,
+	"less.completion.completePropertyWithSemicolon": false,
+	"pyright.inlayHints.enable": false
+}
+

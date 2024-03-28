@@ -229,4 +229,4 @@ Refer to the [official guide](https://github.com/tpope/vim-unimpaired/blob/maste
 </details>
 
 #### To Do 
-- [x] Improve the rest of FloaTerm shortcuts that start with backslashes
+- [x] Improve the rest of FloaTerm shortcuts that start with backslashes (DONE)

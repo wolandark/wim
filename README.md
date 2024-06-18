@@ -1,4 +1,8 @@
 # Development Branch of Wim
+
+## Next release will be coming out soon with drastic changes and improvements. 
+## The next release of Wim will be mostly configured in vim9script.
+
 ### Installation Tl;Dr
 <strong>Backup your ~/.vim and ~/.vimrc</strong> <br> 
 <strong>Backup your ~/.config/nvim and ~/.local/share/nvim</strong><br> 

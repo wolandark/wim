@@ -5,11 +5,13 @@ _VIM_PATH="$HOME/.vim/"
 _VIM_BK_PATH="$HOME/vim-bk/"
 _ARCHIVE_NAME="uctags-2024.06.20-linux-x86_64.tar.gz"
 _ARCHIVE_EXTRACTED_NAME="uctags-2024.06.20-linux-x86_64.tar.gz"
-_COC_JSON="https://codeberg.org/wolandark/wim/raw/branch/Devel/coc-settings.json"
-_CHEAT_FILE="https://codeberg.org/wolandark/wim/raw/branch/Devel/cheat40.txt"
-_VIMRC_FILE=""
-_VIMRC_PATH=""
+_COC_JSON="https://raw.githubusercontent.com/wolandark/wim/master/config/coc-settings.json"
+_CHEAT_FILE="https://raw.githubusercontent.com/wolandark/wim/master/config/cheat40.txt"
+_VIMRC_FILE="$_VIM_PATH/vimrc"
 _VIMWIKI_PATH="$_VIM_PATH/vimwiki"
+_VIMWIKI_INDEX="$_VIMWIKI_PATH/index.wiki"
+_VIMWIKI_WIM="$_VIMWIKI_PATH/Wim.wiki"
+_VIMWIKI_WIM_REMOTE="https://raw.githubusercontent.com/wolandark/wim/master/config/Wim.wiki"
 
 # backup
 backup()
@@ -42,7 +44,8 @@ getFiles()
 setupVimWiki()
 {
 	mkdir -p "$_VIMWIKI_PATH"
-	curl -fLo "$_VIMWIKI_PATH" #URL to index.wiki
+	curl -fLo "$_VIMWIKI_PATH" "$_VIMWIKI_WIM_REMOTE"
+	echo "[[Wim]]" > "$_VIMWIKI_PATH"/"$_VIMWIKI_INDEX"
 }
 
 vim 

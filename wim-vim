@@ -7,40 +7,7 @@ function! VimplugInstaller()
   endif
 endfunction
 
-function! DownloadCheat()
-    let local_file_path = expand('~/.vim/cheat40.txt')
-    let github_url = 'https://codeberg.org/wolandark/wim/raw/branch/Devel/cheat40.txt'
-    if !filereadable(local_file_path)
-        echo "Downloading cheat40.txt..."
-        silent execute '!curl -fLo ' . shellescape(local_file_path) . ' --create-dirs ' . shellescape(github_url)
-        if filereadable(local_file_path)
-            echo "Downloaded cheat40.txt successfully."
-        else
-            echoerr "Failed to download cheat40.txt."
-        endif
-    endif
-endfunction
-
-function! DownloadCocSettings()
-    let local_file_path = expand('~/.vim/coc-settings.json')
-    let github_url = 'https://codeberg.org/wolandark/wim/raw/branch/Devel/coc-settings.json'
-    if !filereadable(local_file_path)
-        echo "Downloading CocConfig ..."
-        silent execute '!curl -fLo ' . shellescape(local_file_path) . ' --create-dirs ' . shellescape(github_url)
-        if filereadable(local_file_path)
-            echo "Downloaded coc-settings.json successfully."
-        else
-            echoerr "Failed to download coc-settings.json."
-        endif
-    endif
-endfunction
-
-function! SetupWim()
-  call VimplugInstaller()
-  call DownloadCheat()
-  call DownloadCocSettings()
-endfunction
-call SetupWim()
+call VimplugInstaller()
 
 "===[ Encoding ]==="
 set encoding=utf-8
@@ -48,6 +15,7 @@ set encoding=utf-8
 "===[ VimWiki Prefix ]==="
 "has to come before the plugin is loaded
 let g:vimwiki_map_prefix = '<leader>v'
+let g:vimwiki_list = [{'path': '~/.vim/vimwiki'}]
 
 "===[ Plugins ]==="
 call plug#begin()
@@ -71,8 +39,10 @@ Plug 'DougBeney/pickachu'
 " Git
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
+Plug 'rhysd/git-messenger.vim'
 
 " Usability, Enhancements
+Plug 'ryanoasis/vim-devicons'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-peekaboo'
@@ -85,10 +55,14 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'https://github.com/godlygeek/tabular.git'
-Plug 'https://github.com/rhysd/clever-f.vim.git'
 Plug 'https://github.com/markonm/traces.vim.git'
 Plug 'https://github.com/907th/vim-auto-save.git'
 Plug 'mhinz/vim-startify'
+
+" Jumping Around
+Plug 'https://github.com/rhysd/clever-f.vim.git'
+Plug 'https://github.com/justinmk/vim-sneak.git'
+Plug 'https://github.com/monkoose/vim9-stargate.git'
 
 " Utility, Integrations
 Plug 'ptzz/lf.vim'
@@ -114,12 +88,6 @@ if &term =~ '256color'
 		set termguicolors
 		set mouse=a
 		colorscheme catppuccin_mocha
-	endif
-	if expand('%:e') == 'wiki'
-		colorscheme base16-horizon-terminal-dark
-		let &t_TI = ""
-		let &t_TE = ""
-		autocmd VimEnter * :set rnu!
 	endif
 else
 	colorscheme catppuccin_mocha
@@ -191,11 +159,8 @@ endfunction
 call EnsureVimhisExists()
 
 if has('persistent_undo')
-	" Save all undo files in a single location (less messy, more risky)...
 	set undodir=$HOME/.vim/history
-	" Save a lot of back-history...
 	set undolevels=5000
-	" Actually switch on persistent undo
 	set undofile
 endif
 
@@ -270,7 +235,6 @@ function! FixSpell()
 	normal! 1z=<CR>
 endfunction
 nnoremap gs :call FixSpell()<CR>
-" map <leader>z :call FixSpell()<CR>
 
 "===[ Custom Mappings ]==="
 let mapleader =" "
@@ -357,37 +321,30 @@ nnoremap <leader>tm :tabmove<CR>
 
 " FZF 🙂 
 nnoremap \c :Colors<CR>
-nnoremap <nowait><leader>b :Buffers<CR>
-nnoremap <nowait><leader>ff :Files<CR>
-nnoremap <nowait><leader>W :Windows<CR>
-nnoremap <nowait><leader>h :History<CR>
-nnoremap <nowait><leader>hc :History:<CR>
-nnoremap <nowait><leader>rg :Rg <CR>
-nnoremap <nowait><leader>li :Lines <CR>
-nnoremap <nowait><leader>bli :BLines <CR>
+nnoremap <nowait><leader>bu :Buffers<CR>
+" nnoremap <nowait><leader>fi :Files<CR>
+" nnoremap <nowait><leader>W :Windows<CR>
+" nnoremap <nowait><leader>hi :History<CR>
+" nnoremap <nowait><leader>hc :History:<CR>
+" nnoremap <nowait><leader>rg :Rg <CR>
+" nnoremap <nowait><leader>li :Lines <CR>
+" nnoremap <nowait><leader>bli :BLines <CR>
 " nnoremap <nowait><leader>ju :Jumps <CR>
-nnoremap <nowait><leader>ma :Marks <CR>
-nnoremap <nowait><leader>sn :Snippets <CR>
-nnoremap <nowait><leader>com :Commands <CR>
-nnoremap <nowait><leader>ag :Ag <CR>
-nnoremap <nowait><leader>tag :Tags <CR>
-
-"===[ Tabular ]==="
-" Align md tables with the | character
-vnoremap \at :Tabularize /\|<CR> 
-" Call the plugin and define what to align (save the trouble of typing the
-" plugin's name)
-vnoremap \ta :Tabularize /
+" nnoremap <nowait><leader>ma :Marks <CR>
+" nnoremap <nowait><leader>sn :Snippets <CR>
+" nnoremap <nowait><leader>com :Commands <CR>
+" nnoremap <nowait><leader>ag :Ag <CR>
+" nnoremap <nowait><leader>tag :Tags <CR>
 
 "===[ Enuch ]==="
 nnoremap <nowait><leader>ch :Chmod +x <CR>
-nnoremap <nowait><leader>suw :SudoWrite <CR>
-nnoremap <nowait><leader>sue :SudoEdit <CR>
-nnoremap <nowait><leader>rm :Remove <CR>
-nnoremap <nowait><leader>del :Delete! <CR>
-nnoremap <nowait><leader>mv :Move 
-nnoremap <nowait><leader>dup :Duplicate 
-nnoremap <nowait><leader>mkd :Mkdir
+" nnoremap <nowait><leader>suw :SudoWrite <CR>
+" nnoremap <nowait><leader>sue :SudoEdit <CR>
+" nnoremap <nowait><leader>rm :Remove <CR>
+" nnoremap <nowait><leader>del :Delete! <CR>
+" nnoremap <nowait><leader>mv :Move 
+" nnoremap <nowait><leader>dup :Duplicate 
+" nnoremap <nowait><leader>mkd :Mkdir
 
 "===[ Live Server ]==="
 " nnoremap <F2> :StartBrowserSync <CR>
@@ -395,7 +352,7 @@ nnoremap <nowait><leader>mkd :Mkdir
 
 "===[ Floaterm ]==="
 let g:floaterm_autoclose = 1
-nnoremap \\t  :FloatermToggle<CR>
+nnoremap \t  :FloatermToggle<CR>
 nnoremap \q :FloatermKill <CR>
 nnoremap \n  :FloatermNext<CR>
 nnoremap \p  :FloatermPrev<CR>
@@ -431,6 +388,7 @@ let g:closetag_shortcut = '>'
 
 "===[ Tagbar ]==="
 let g:tagbar_ctags_bin = '~/.vim/ctags/bin/ctags'
+
 "===[ Terminal ]==="
 " let g:terminal_height = -10
 " This wont work in neovim
@@ -450,7 +408,7 @@ nnoremap \l :!clear<CR><CR>
 
 "===[ Runtime Macros ]==="
 runtime macros/emoji-ab.vim
-" use _j to activate
+" use _j to justify
 runtime macros/justify.vim 
 runtime macros/matchit.vim
 
@@ -466,14 +424,14 @@ let g:UltiSnipsJumpBackwardTrigger='<C-k>'
 let g:copypath_copy_to_unnamed_register = 1
 
 "===[ CleverF ]==="
+let g:clever_f_across_no_line=1
 let g:clever_f_mark_cursor=1
 let g:clever_f_mark_char=1
-let g:clever_f_mark_cursor_color = "DiffDelete"
-let g:clever_f_mark_char_color = "SpellBad"
-let g:clever_f_across_no_line=0
 let g:clever_f_ignore_case=0
 let g:clever_f_smart_case=0
 let g:clever_f_show_prompt=0
+let g:clever_f_mark_char_color = "SpellBad"
+let g:clever_f_mark_cursor_color = "DiffDelete"
 
 "===[ Disable a lot of unnecessary internal plugins ]==="
 let g:loaded_2html_plugin = 1
@@ -502,22 +460,74 @@ inoremap <silent><expr> <Tab>
       \ coc#refresh()
 inoremap <expr><s-tab> coc#pum#visible() ? coc#pum#prev(1) : "\<c-h>"
 
+" Enhanced <CR> for pairs
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+			\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" Disable < expansion for pairs
+autocmd FileType * let b:coc_pairs_disabled = ["<"]
+
+" on demand hover diagnostics 
+nnoremap <silent> <leader>? :call CocAction('diagnosticInfo') <CR>
+" refresh 
+" nnoremap <silent><expr> \co coc#refresh()
+ nnoremap <silent> \r :CocRestart<CR>
 "===[ Coc-Explorer ]==="
 " set up coc-explorer to open in the current directory
 let g:coc_explorer_global_mirror = 0
 let g:coc_explorer_disable_default_keybindings = 1
 let g:coc_explorer_global_root = 'current'
+nnoremap <leader>e <Cmd>CocCommand explorer<CR>
 
 "===[ Coc Global Extensions ]==="
 let g:coc_global_extensions = [
+  \ 'coc-explorer',
   \ 'coc-tsserver',
   \ 'coc-sh',
-  \ 'coc-explorer'
-  \ ]
+  \ 'coc-vimlsp',
+  \ 'coc-html',
+  \ 'coc-css',
+  \ 'coc-pairs',
+  \ 'coc-emmet',
+  \ 'coc-prettier',
+  \ 'coc-marketplace'
+\ ]
+
+" Navigations
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+"
+" List code actions available for the current buffer
+nmap <leader>ca  <Plug>(coc-codeaction)
+
+nnoremap <silent> K :call ShowDocumentation()<CR>
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+
+" Add `:Format` command to format current buffer
+command! -nargs=0 Format :call CocActionAsync('format')
+" Formatting selected code
+vmap <leader>f  <Plug>(coc-format-selected)
+
+" coc-pairs
+" disable characters for a specified filetypes
+autocmd FileType markdown let b:coc_pairs_disabled = ['txt']
 
 "===[ Coc-Snippets ]==="
 "Use <C-l> for trigger snippet expand.
-"imap <C-l> <Plug>(coc-snippets-expand)
+" imap <C-l> <Plug>(coc-snippets-expand)
 
 "Use <C-j> for select text for visual placeholder of snippet.
 "vmap <C-j> <Plug>(coc-snippets-select)

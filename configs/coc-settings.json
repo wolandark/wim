@@ -1,0 +1,17 @@
+{
+	"phpactor.enable": true,
+	"phpactor.path": "/usr/bin/phpactor",
+	"suggest.noselect": true,
+	"css.completion.completePropertyWithSemicolon": false,
+	"scss.completion.completePropertyWithSemicolon": false,
+	"less.completion.completePropertyWithSemicolon": false,
+	"pyright.inlayHints.enable": false,
+	"pyright.inlayHints.functionReturnTypes": false,
+	"pyright.inlayHints.variableTypes": false,
+	"pyright.inlayHints.parameterTypes": false,
+	"explorer.icon.enableNerdfont": true,
+	"explorer.file.reveal.auto": true,
+	"coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "html"]
+}
+
+

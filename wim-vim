@@ -12,7 +12,7 @@ function! DownloadCheat()
     let github_url = 'https://codeberg.org/wolandark/wim/raw/branch/Devel/cheat40.txt'
     if !filereadable(local_file_path)
         echo "Downloading cheat40.txt..."
-        execute 'silent !curl -fLo ' . shellescape(local_file_path) . ' --create-dirs ' . shellescape(github_url)
+        silent execute '!curl -fLo ' . shellescape(local_file_path) . ' --create-dirs ' . shellescape(github_url)
         if filereadable(local_file_path)
             echo "Downloaded cheat40.txt successfully."
         else
@@ -26,7 +26,7 @@ function! DownloadCocSettings()
     let github_url = 'https://codeberg.org/wolandark/wim/raw/branch/Devel/coc-settings.json'
     if !filereadable(local_file_path)
         echo "Downloading CocConfig ..."
-        execute 'silent !curl -fLo ' . shellescape(local_file_path) . ' --create-dirs ' . shellescape(github_url)
+        silent execute '!curl -fLo ' . shellescape(local_file_path) . ' --create-dirs ' . shellescape(github_url)
         if filereadable(local_file_path)
             echo "Downloaded coc-settings.json successfully."
         else
@@ -57,36 +57,25 @@ Plug 'sheerun/vim-polyglot'
 Plug 'honza/vim-snippets'
 Plug 'SirVer/ultisnips'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install --frozen-lockfile --production',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 
 " Colors
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
-Plug 'wolandark/Mitra-Vim'
 Plug 'chriskempson/base16-vim'
-Plug 'fcpg/vim-fahrenheit'
 
 " Web Development
 Plug 'wolandark/vim-live-server'
-Plug 'wolandark/vim-loremipsum'
 Plug 'alvan/vim-closetag'
 Plug 'https://github.com/ap/vim-css-color.git'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 Plug 'DougBeney/pickachu'
-Plug 'https://github.com/rstacruz/sparkup.git'
-Plug 'https://github.com/Valloric/MatchTagAlways.git'
 
 " Git
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-fugitive'
 
 " Usability, Enhancements
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-peekaboo'
-Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'voldikss/vim-floaterm'
 Plug 'tpope/vim-rsi'
@@ -98,15 +87,13 @@ Plug 'tpope/vim-unimpaired'
 Plug 'https://github.com/godlygeek/tabular.git'
 Plug 'https://github.com/rhysd/clever-f.vim.git'
 Plug 'https://github.com/markonm/traces.vim.git'
-Plug 'mhinz/vim-startify'
 Plug 'https://github.com/907th/vim-auto-save.git'
-Plug 'https://github.com/sedm0784/vim-you-autocorrect.git'
+Plug 'mhinz/vim-startify'
 
 " Utility, Integrations
 Plug 'ptzz/lf.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'https://github.com/preservim/tagbar.git'
-Plug 'yegappan/mru'
 Plug 'lifepillar/vim-cheat40'
 
 call plug#end()
@@ -132,12 +119,12 @@ if &term =~ '256color'
 		colorscheme base16-horizon-terminal-dark
 		let &t_TI = ""
 		let &t_TE = ""
-        autocmd VimEnter * :set rnu!
-	else
-		colorscheme catppuccin_mocha
-		let &t_TI = ""
-		let &t_TE = ""
+		autocmd VimEnter * :set rnu!
 	endif
+else
+	colorscheme catppuccin_mocha
+	let &t_TI = ""
+	let &t_TE = ""
 endif
 
 if has('gui_running')
@@ -192,7 +179,7 @@ endif
 
 "===[ Persistent Undo History ]==="
 function! EnsureVimhisExists()
-    let vimhis_path = expand('~/.vimhis')
+    let vimhis_path = expand('~/.vim/history')
 
     if !isdirectory(vimhis_path)
         call mkdir(vimhis_path, 'p')
@@ -205,23 +192,20 @@ call EnsureVimhisExists()
 
 if has('persistent_undo')
 	" Save all undo files in a single location (less messy, more risky)...
-	set undodir=$HOME/.vimhis
+	set undodir=$HOME/.vim/history
 	" Save a lot of back-history...
 	set undolevels=5000
 	" Actually switch on persistent undo
 	set undofile
 endif
 
-" set foldenable
 set emoji
 set autochdir
 set hidden
-set ma
+set modifiable
 set conceallevel=0
 set concealcursor=n
-set so=6
-set nocompatible
-set modifiable
+set scrolloff=6
 set autoread
 set cmdheight=1 
 set foldmethod=manual
@@ -230,21 +214,19 @@ set foldclose=all
 set path+=**
 set noswapfile
 set autoindent
-set ic
+set ignorecase
 set incsearch
-set smartcase
 set noerrorbells
 set novisualbell
 set t_vb=
-set noeb vb t_vb=
 set relativenumber
 set number
 set hlsearch
-nnoremap <silent><ESC> <ESC>:noh<CR><ESC>
 set termbidi
 set autowrite
 set autowriteall
 set laststatus=2
+set showtabline=2
 set noshowmode
 set colorcolumn=80
 set shiftwidth=4
@@ -265,7 +247,7 @@ let g:lightline = {
           \ 'colorscheme': 'catppuccin_mocha',
 		  \ 'active': {
 		  \ 'right': [ [ 'lineinfo' ], [ 'percent' ], [ 'filetype' ], [ 'bufname' ] ],
-		  \ 'left': [ [ 'mode' ], [ 'readonly', 'absolutepath', 'modified', 'gitbranch' ] ],
+		  \ 'left': [ [ 'mode' ], [ 'readonly' ], [ 'absolutepath' ], [ 'modified' ], [ 'gitbranch' ] ],
 		  \ },
 		  \ 'component_function': {
 		  \ 'gitbranch': 'FugitiveHead',
@@ -442,80 +424,17 @@ let g:gitgutter_sign_removed = '×'
 let g:gitgutter_sign_removed_first_line ='▲'
 let g:gitgutter_sign_modified_removed = '-'
 
-"===[ HTML ]==="
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
-let g:html_indent_attribute = 1
-let g:html_indent_inctags = "html,body,head,tbody"
-
-function! EnsureXMLExists()
-  let xml_path = expand('~/.vim/skeleton.xml')
-  if !filereadable(xml_path)
-    let lines = [
-          \ '<!DOCTYPE html>',
-          \ '<html lang="en">',
-          \ '  <head>',
-          \ '    <meta charset="UTF-8">',
-          \ '    <meta http-equiv="X-UA-Compatible" content="IE=edge">',
-          \ '    <meta name="viewport" content="width=device-width, initial-scale=1.0">',
-          \ '    <title>New Page</title>',
-          \ '    <link rel="stylesheet" href="style.css">',
-          \ '  </head>',
-          \ '  <body>',
-          \ '    <h1><header>Hello World</header></h1>',
-          \ '   <script src="app.js"></script>',
-          \ '  </body>',
-          \ '</html>',
-          \ ]
-    call writefile(lines, xml_path)
-    " echo "Created file with content: " . xml_path
-    " else
-    " echo "File already exists: " . xml_path
-  endif
-endfunction
-call EnsureXMLExists()
-
-augroup Xml
-    au BufNewFile *.html 0r ~/.vim/skeleton.xml
-    " set filetype=html
-augroup end
-
 "===[ Close Tag ]==="
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.md'
 let g:closetag_filetypes = 'html,xhtml,phtml'
 let g:closetag_shortcut = '>'
 
 "===[ Tagbar ]==="
-let g:tagbar_type_vimwiki = {
-          \   'ctagstype':'vimwiki'
-          \ , 'kinds':['h:header']
-          \ , 'sro':'&&&'
-          \ , 'kind2scope':{'h':'header'}
-          \ , 'sort':0
-          \ , 'ctagsbin':'/home/woland/vwtags.py'
-          \ , 'ctagsargs': 'default'
-          \ }
-let g:tagbar_autofocus = 1
-let g:tagbar_autoupdate = 1
-
-"===[ VimWiki ]==="
-let wiki = {}
-let g:vimwiki_global_ext = 0
-let g:vimwiki_root_dir = '~/vimwiki/'
-let wiki.nested_syntaxes = {'bash': 'bash', 'python': 'python', 'c++': 'cpp', 'javascript': 'javascript', 'awk': 'awk'}
-let g:vimwiki_list = [wiki]
-
-command! Diary VimwikiDiaryIndex
-augroup vimwikigroup
-    autocmd!
-    " automatically update links on read diary
-    autocmd BufRead,BufNewFile diary.wiki VimwikiDiaryGenerateLinks
-augroup end
-
+let g:tagbar_ctags_bin = '~/.vim/ctags/bin/ctags'
 "===[ Terminal ]==="
-let g:terminal_height = -10
+" let g:terminal_height = -10
 " This wont work in neovim
-set termwinsize=10x200
+" set termwinsize=10x200
 
 nnoremap <leader>' :botright terminal<CR>
 tnoremap <C-j> <C-\><C-n><C-w>j
@@ -534,37 +453,6 @@ runtime macros/emoji-ab.vim
 " use _j to activate
 runtime macros/justify.vim 
 runtime macros/matchit.vim
-
-"===[ Markdown Preview ]==="
-let g:mkdp_auto_start = 0
-let g:mkdp_auto_close = 0
-let g:mkdp_refresh_slow = 0
-let g:mkdp_command_for_global = 0
-let g:mkdp_open_to_the_world = 1
-let g:mkdp_open_ip = ''
-let g:mkdp_browser = ''
-let g:mkdp_echo_preview_url = 0
-let g:mkdp_browserfunc = ''
-let g:mkdp_preview_options = {
-    \ 'mkit': {},
-    \ 'katex': {},
-    \ 'uml': {},
-    \ 'maid': {},
-    \ 'disable_sync_scroll': 0,
-    \ 'sync_scroll_type': 'middle',
-    \ 'hide_yaml_meta': 1,
-    \ 'sequence_diagrams': {},
-    \ 'flowchart_diagrams': {},
-    \ 'content_editable': v:false,
-    \ 'disable_filename': 0,
-    \ 'toc': {}
-    \ }
-let g:mkdp_markdown_css = ''
-let g:mkdp_highlight_css = ''
-let g:mkdp_port = ''
-let g:mkdp_page_title = '「${name}」'
-let g:mkdp_filetypes = ['markdown']
-let g:mkdp_theme = 'dark'
 
 "===[ SNIPPETS ]==="
 "Use Ctrl j key to trigger the snippets, default was TAB but that conflicts with

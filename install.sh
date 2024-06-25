@@ -53,7 +53,7 @@ setupVimWiki()
 main()
 {
 	backup 
-	downloadCtags 
+	#downloadCtags 
 	getFiles
 	setupVimWiki
 }

@@ -144,7 +144,7 @@ Then simply start Vim and wait for the installation to finish.
 If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
 </details>
 
-# ScreenshotsNew
+# Screenshots
 ![image](https://github.com/wolandark/wim/assets/107309764/743a4d18-0218-4318-b9c8-b9d85aa3b4ee)
 
 <!--![image](https://github.com/wolandark/wim/assets/107309764/fa6b3775-951f-4c97-aebc-b97341cabdd3)

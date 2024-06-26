@@ -165,9 +165,12 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
     <td><img src="https://github.com/wolandark/wim/assets/107309764/99fd350c-a8df-4cda-89cc-393f745f689b" alt="image" width="400">Instal Any LSP Extension </td>
     <td><img src="https://github.com/wolandark/wim/assets/107309764/9b5ed56b-b70c-44e1-b61c-35df26674b0c" alt="image" width="400">Shortcuts Cheatsheet</td>
   </tr>
+	<tr>
+		<td><img src="https://github.com/wolandark/wim/assets/107309764/3879b912-c56d-4f6f-800d-372cd67b2896" alt="image" width="400">Peekabo For Registers</td>
+		<td><img src="https://github.com/wolandark/wim/assets/107309764/8b6dafb5-6a69-4b82-bdf1-88f4d773bef2" alt="image" width="400">Jump Anywhere</td>
+		<td><img src="https://github.com/wolandark/wim/assets/107309764/874c48a9-73eb-4c13-943a-f665598beb5c" alt="image" width="400">Hover Dictionary</td>
+	</tr>
 </table>
-
-
 <hr>
 
 ## Table of Keybindings

@@ -4,10 +4,12 @@
 <img src="https://github.com/wolandark/wim/assets/107309764/8bf3528b-9751-4bda-95e4-70c3b958cd5f" style="width:50%;">
 </div>
 
-# Intro
-The purpose of this project is to not only provide an IDE-like vimrc, but also to teach you how it is constructed. This project tries to maintain a fairly small `vimrc` and provide a *great* _out of the box experience_ as well serving as a ground for further customization.
-
 # Wim News
+#### Version 3.3 has been released with great improvements
+
+<details>
+<summary> Older Versions</summary>
+
 #### Version 3.1 has been released
 - Improved style and workflow
 - Cleaned up the config
@@ -19,18 +21,26 @@ The purpose of this project is to not only provide an IDE-like vimrc, but also t
 - Added Catpuccino theme
 - Updated and improved the installation script
 
+</details>
+
+# Intro
+The purpose of this project is to not only provide an IDE-like vimrc, but also to teach you how it is constructed. This project tries to maintain a fairly small `vimrc` and provide a **great out of the box experience**  as well serving as a ground for further customization.
+
+
 # Dependencies 
 - Vim 9.0 or later 
-	- Note: This Config Will defenitly also work with Vim 8.0 and later as well, but dont miss out on the great features of Vim 9.1! Grab the latest Vim!
+	- Note: This Config Will definitely work with Vim 8.0 and later, but don't miss out on the great features of Vim 9.1! Grab the latest Vim!
 - Nodejs 
 - npm 
 
-*Example:* <br> 
+**Example:**  <br> 
+Debian:<br> 
 `sudo apt install nodejs npm` <br> 
+Arch:<br> 
 `sudo pacman -S nodejs npm`
 
 # Installation 
-Startify the Dependencies, then run the installer script. The script works sudoless.
+After installing the dependencies, run the `install.sh` script. The script is **safe** and works sudo-less.
 
 ```
 bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/master/install.sh)
@@ -55,56 +65,7 @@ bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/master/install.sh
   - If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>
 
 # ScreenshotsNew
-
-<h1>FAQ</h1>
-
-<h5> Whats with the name?</h5>
-Woland's Vim = Wim. Get it?
-
-<h5> What features does Wim offer? </h5>
-
-- Maintainace, extensiblility and customizability!
-- Easy tab and split navigation <br>
-- Start Screen with bookmarks and file history <br>
-- Beautiful built in colorschemes
-- Easy completion ctags, syntax check and more <br>
-- Lighline, Vim statusline <br>
-  - Choices! It is all about choices <br>
-
-<h5> Can I expect support? </h5>
-Yes! Just ask and I will answer. When asking however, provide proper information so that I can help you <br>
-
-<h5> Why didn't you use Neovim like everyone else? </h5>
-Because Vim is the one I use and frankly Vim is better!
-
-<h5> Will you make custom vimrc configurations? </h5>
-
-[Contact me](https://t.me/inlovewithapenguin)
-
-<h5> Are you open to collaborations? </h5>
-
-[Contact me](https://t.me/inlovewithapenguin)
-
 <hr>
-
-<h6> Consider Supporting the project</h6>
-
-<strong>BTC</strong><br>
-bc1q7tr3znnrsqq85kalk5zedak9mgn9u3ly849t8z <br>
-<strong>ETH</strong><br>
-0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>
-<strong>Monero</strong><br>
-0xd84c96dDa2E6f9ee9DD0439F6F7812c5b8869fE4<br>
-<strong>Doge</strong><br>
-DJKBgAEQ7n5GyozM8jqmGbxnhcH6U2V8hV<br>
-<strong>Tether</strong><br>
-0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>
-<strong>Tron</strong><br>
-TX8mVZajyy7cmH9vsREyAMPjgtRu23ZmxJ<br>
-<strong>ADA</strong><br>
-addr1qxhv2rfrs37qvs0cllfcnu0rd83wre609s74aufkd82da9528v7xq34usds6t8sdt7zjy0hvkcwdfnp9jwacdn0kwuesatvjx4<br>
-<strong>Avalanche</strong><br>
-0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>
 
 ## Table of Keybindings
 <details>
@@ -303,6 +264,54 @@ Refer to the [official guide](https://github.com/tpope/vim-unimpaired/blob/maste
 | [e         | Exchange the current line with [count] lines above it. |
 | ]e         | Exchange the current line with [count] lines below it. |
 </details>
+
+<h6> Consider Supporting the project</h6>
+
+<strong>BTC</strong><br>
+bc1q7tr3znnrsqq85kalk5zedak9mgn9u3ly849t8z <br>
+<strong>ETH</strong><br>
+0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>
+<strong>Monero</strong><br>
+0xd84c96dDa2E6f9ee9DD0439F6F7812c5b8869fE4<br>
+<strong>Doge</strong><br>
+DJKBgAEQ7n5GyozM8jqmGbxnhcH6U2V8hV<br>
+<strong>Tether</strong><br>
+0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>
+<strong>Tron</strong><br>
+TX8mVZajyy7cmH9vsREyAMPjgtRu23ZmxJ<br>
+<strong>ADA</strong><br>
+addr1qxhv2rfrs37qvs0cllfcnu0rd83wre609s74aufkd82da9528v7xq34usds6t8sdt7zjy0hvkcwdfnp9jwacdn0kwuesatvjx4<br>
+<strong>Avalanche</strong><br>
+0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>
+
+<h1>FAQ</h1>
+
+<h5> Whats with the name?</h5>
+Woland's Vim = Wim. Get it?
+
+<h5> What features does Wim offer? </h5>
+
+- Maintainace, extensiblility and customizability!
+- Easy tab and split navigation <br>
+- Start Screen with bookmarks and file history <br>
+- Beautiful built in colorschemes
+- Easy completion ctags, syntax check and more <br>
+- Lighline, Vim statusline <br>
+  - Choices! It is all about choices <br>
+
+<h5> Can I expect support? </h5>
+Yes! Just ask and I will answer. When asking however, provide proper information so that I can help you <br>
+
+<h5> Why didn't you use Neovim like everyone else? </h5>
+Because Vim is the one I use and frankly Vim is better!
+
+<h5> Will you make custom vimrc configurations? </h5>
+
+[Contact me](https://t.me/inlovewithapenguin)
+
+<h5> Are you open to collaborations? </h5>
+
+[Contact me](https://t.me/inlovewithapenguin)
 
 #### To Do 
 - [x] Improve the rest of FloaTerm shortcuts that start with backslashes (DONE)

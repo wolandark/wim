@@ -1,5 +1,9 @@
 ## This repository is under maintenance. Please come back later (like in a day)
-todo: Update keymappings in readme, wiki and cheat file.
+todo: 
+
+Update keymappings in readme, wiki and cheat file.
+
+Add symlink method of installation to keey users up to date with upstream
 
 <div align="center">
 <img src="https://github.com/wolandark/wim/assets/107309764/8bf3528b-9751-4bda-95e4-70c3b958cd5f" style="width:50%;">

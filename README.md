@@ -156,7 +156,7 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
 
 <table align="center">
   <tr>
-    <td><img src="https://github.com/wolandark/wim/assets/107309764/743a4d18-0218-4318-b9c8-b9d85aa3b4ee" alt="image" width="400">Explorer & Tagbar</td>
+    <td><img src="https://github.com/wolandark/wim/assets/107309764/31cc76e9-7670-4f2c-9507-e558fc377882" alt="image" width="400">Startify Dashboard</td>
     <td><img src="https://github.com/wolandark/wim/assets/107309764/fa6b3775-951f-4c97-aebc-b97341cabdd3" alt="image" width="400">Diagnostics </td>
     <td><img src="https://github.com/wolandark/wim/assets/107309764/762c507c-0654-42a5-bb8f-8426720a3356" alt="image" width="400">Leaderf</td>
   </tr>

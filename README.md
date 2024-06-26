@@ -110,6 +110,16 @@ Arch:<br>
 `sudo pacman -S nodejs npm`
 
 # Installation 
+### Method I (Recommended)
+After installing the dependencies, clone the repo and run the `symlink.sh` script. Then simply launch vim and wait for the setup to complete.
+
+**Tl;Dr:**
+- Install Dependencies 
+- Clone This Repo ` git clone https://github.com/wolandark/wim.git`
+- cd Into The Cloned Repo `cd wim`
+- Run the `symlink.sh` script `./symlink.sh`
+
+### Method II
 After installing the dependencies, run the `install.sh` script. The script is **safe** and works sudo-less.
 ```
 bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/master/install.sh)
@@ -117,6 +127,11 @@ bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/master/install.sh
 ### Watch it work
 ![Peek 2024-06-26 09-10](https://github.com/wolandark/wim/assets/107309764/6e8e6252-d939-4a4c-874f-9579f7430234)
 This is recorded on Devuan (in case that matters).
+
+**Tl;Dr:**
+- Install Dependencies 
+- Run the `install.sh` Using Curl
+
 <br>
 
 # Some of the features

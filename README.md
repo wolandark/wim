@@ -1,7 +1,7 @@
 ## This repository is under maintenance. Come back later
 
 <div align="center">
-<img src="https://github.com/wolandark/wim/blob/main/img/wim-logo-png-transparent1.png" style="width:60%;">
+<img src="https://github.com/wolandark/wim/assets/107309764/8bf3528b-9751-4bda-95e4-70c3b958cd5f" style="width:50%;">
 </div>
 
 # Intro

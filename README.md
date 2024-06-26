@@ -119,20 +119,24 @@ After installing the dependencies, clone the repo and run the `symlink.sh` scrip
 - cd Into The Cloned Repo `cd wim`
 - Run the `symlink.sh` script `./symlink.sh`
 
+#### Watch it work
+![Peek 2024-06-27 00-35](https://github.com/wolandark/wim/assets/107309764/a5be2192-4e3c-44fc-a257-a05398280f05)
+This is recorded on Devuan (in case that matters).
+
+
 ### Method II
 After installing the dependencies, run the `install.sh` script. The script is **safe** and works sudo-less.
 ```
 bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/master/install.sh)
 ```
-### Watch it work
-
-![Peek 2024-06-26 09-10](https://github.com/wolandark/wim/assets/107309764/6e8e6252-d939-4a4c-874f-9579f7430234)
-
-This is recorded on Devuan (in case that matters).
 
 **Tl;Dr:**
 - Install Dependencies 
 - Run the `install.sh` Using Curl
+
+#### Watch it work
+![Peek 2024-06-26 09-10](https://github.com/wolandark/wim/assets/107309764/6e8e6252-d939-4a4c-874f-9579f7430234)
+This is recorded on Devuan (in case that matters).
 
 <br>
 

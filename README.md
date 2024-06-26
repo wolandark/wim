@@ -144,6 +144,8 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
 </details>
 
 # ScreenshotsNew
+![image](https://github.com/wolandark/wim/assets/107309764/743a4d18-0218-4318-b9c8-b9d85aa3b4ee)
+
 <hr>
 
 ## Table of Keybindings

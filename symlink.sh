@@ -9,6 +9,7 @@ _COC_FILE="config/coc-settings.json"
 _WIKI_FILE="config/Wim.wiki"
 _VIMRC_FILE="wim-vim"
 _CHEAT_FILE="cheat40.txt"
+_VIMWIKI_INDEX="index.wiki"
 
 _VIMRC_FILE_DEST="$HOME/.vim/vimrc"
 _COC_FILE_DEST="$HOME/.vim/coc-settings.json"
@@ -76,6 +77,7 @@ linkFiles()
 	printf "\e[42;30mSymlinking Latest Cheat File\e[0m\n"
 	ln -sf "$(pwd)/$_CHEAT_FILE" "$_CHEAT_FILE_DEST"
 	echo ""
+    echo "[[Wim]]" > "$_WIKI_DIR/$_VIMWIKI_INDEX"
 }
 
 main()

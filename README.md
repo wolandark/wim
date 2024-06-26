@@ -134,6 +134,8 @@ bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/master/install.sh
 - Install Dependencies 
 - Run the `install.sh` Using Curl
 
+This method enables you to update Wim without having to clone the repo again or run the install script. Simply `git pull` every once in a while and re-run the `symlink.sh` script.
+
 #### Watch it work
 ![Peek 2024-06-26 09-10](https://github.com/wolandark/wim/assets/107309764/6e8e6252-d939-4a4c-874f-9579f7430234)
 This is recorded on Devuan (in case that matters).

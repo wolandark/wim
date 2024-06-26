@@ -1,0 +1,107 @@
+## This repository is under maintenance. Come back later
+<!--
+<div align="center">
+<img src="https://github.com/wolandark/wim/blob/main/img/wim-logo-png-transparent1.png" style="width:60%;">
+</div>
+
+# Intro
+The purpose of this project is to not only provide an IDE-like vimrc, but also to teach you how it is constructed. This project tries to maintain a fairly small `vimrc` and provide a *great* _out of the box experience_ as well serving as a ground for further customization.
+
+# Wim News
+#### Version 3.1 has been released
+- Improved style and workflow
+- Cleaned up the config
+- Corrections on Coc.nvim's behavior
+- and many more ...
+#### Version 3.2 has been released
+- Replaced vim-css plugin with vim-hexokinase due to vim-css's inability to highlight colors in C files properly (you need go for this new plugin which the installation script will take care of)
+- Improved easy motion bindings
+- Added Catpuccino theme
+- Updated and improved the installation script
+
+# Dependencies 
+- Vim 9.0 or later 
+	- Note: This Config Will defenitly also work with Vim 8.0 and later as well, but dont miss out on the great features of Vim 9.1! Grab the latest Vim!
+- Nodejs 
+- npm 
+
+*Example:* <br> 
+`sudo apt install nodejs npm` <br> 
+`sudo pacman -S nodejs npm`
+
+# Installation 
+Startify the Dependencies, then run the installer script. The script works sudoless.
+
+```
+bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/master/install.sh)
+```
+
+<br>
+
+# Some of the features</h1>
+
+- Out of the box plugin installation <br>
+- Tab Completion and snippets for fast coding <br>
+- Easy tab and split navigation <br>
+- Start Screen with bookmarks and file history <br>
+- Beautiful catpuccino and base16 colorschemes
+- Customized Lighline statusline <br>
+- Customizability! It is lightweight and extensible without having to learn a whole new software or language  <br>
+
+<h4> Notice </h4>
+
+- Please keep in mind that in case your terminal emulator takes charge of some of your keys, its up to you to figure it out. Some terminals do hold unto your Ctrl or Alt or shift key for their own functions
+- You can review the list of plugins and comment out or delete the lines about the ones you dont want.
+  - If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>
+
+# ScreenshotsNew
+
+<h1>FAQ</h1>
+
+<h5> Whats with the name?</h5>
+Woland's Vim = Wim. Get it?
+
+<h5> What features does Wim offer? </h5>
+
+- Maintainace, extensiblility and customizability!
+- Easy tab and split navigation <br>
+- Start Screen with bookmarks and file history <br>
+- Beautiful built in colorschemes
+- Easy completion ctags, syntax check and more <br>
+- Lighline, Vim statusline <br>
+  - Choices! It is all about choices <br>
+
+<h5> Can I expect support? </h5>
+Yes! Just ask and I will answer. When asking however, provide proper information so that I can help you <br>
+
+<h5> Why didn't you use Neovim like everyone else? </h5>
+Because Vim is the one I use and frankly Vim is better!
+
+<h5> Will you make custom vimrc configurations? </h5>
+
+[Contact me](https://t.me/inlovewithapenguin)
+
+<h5> Are you open to collaborations? </h5>
+
+[Contact me](https://t.me/inlovewithapenguin)
+
+<hr>
+
+<h6> Consider Supporting the project</h6>
+
+<strong>BTC</strong><br>
+bc1q7tr3znnrsqq85kalk5zedak9mgn9u3ly849t8z <br>
+<strong>ETH</strong><br>
+0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>
+<strong>Monero</strong><br>
+0xd84c96dDa2E6f9ee9DD0439F6F7812c5b8869fE4<br>
+<strong>Doge</strong><br>
+DJKBgAEQ7n5GyozM8jqmGbxnhcH6U2V8hV<br>
+<strong>Tether</strong><br>
+0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>
+<strong>Tron</strong><br>
+TX8mVZajyy7cmH9vsREyAMPjgtRu23ZmxJ<br>
+<strong>ADA</strong><br>
+addr1qxhv2rfrs37qvs0cllfcnu0rd83wre609s74aufkd82da9528v7xq34usds6t8sdt7zjy0hvkcwdfnp9jwacdn0kwuesatvjx4<br>
+<strong>Avalanche</strong><br>
+0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>

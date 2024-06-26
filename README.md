@@ -1,229 +1,238 @@
-## This repository is under maintenance. Come back later
-<!--
-<div align="center">
-<img src="https://github.com/wolandark/wim/blob/main/img/wim-logo-png-transparent1.png" style="width:60%;">
-</div>
+# Development Branch of Wim
 
-# Wim News
-#### Version 3.1 has been released
-- Improved style and workflow
-- Cleaned up the config
-- Corrections on Coc.nvim's behavior
-- and many more ...
-#### Version 3.2 has been released
-- Replaced vim-css plugin with vim-hexokinase due to vim-css's inability to highlight colors in C files properly (you need go for this new plugin which the installation script will take care of)
-- Improved easy motion bindings
-- Added Catpuccino theme
-- Updated and improved the installation script
+## Next release will be coming out soon with drastic changes and improvements. 
+## The next release of Wim will be mostly configured in vim9script.
 
-#### Use this simple installation script for Arch and Arch-based distros.
+### Installation Tl;Dr
+<strong>Backup your ~/.vim and ~/.vimrc</strong> <br> 
+<strong>Backup your ~/.config/nvim and ~/.local/share/nvim</strong><br> 
+
 ```
-bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/main/Wim_Arch_Install.sh)
+mv ~/.vim{,-bk} ; mv ~/.vimrc{,-bk}
 ```
-#### Use this simple installation script for Debian 12 and Testing.
+Install nodejs, npm, yarn and curl. <br>
+rename and move `wim-vim` or `wim-neovim` to `~/.vimrc` or `~/.config/nvim/init.vim` and start vim/nvim normally.
+
+# Installation 
+## Vim 
+<strong>Backup your ~/.vim and ~/.vimrc</strong>
+
 ```
-bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/main/Wim_Debian_Install.sh)
+mv ~/.vim{,-bk} ; mv ~/.vimrc{,-bk}
+git clone URL
+cp wim/wim-vim ~/.vimrc 
+vim
 ```
-Otherwise satisfy the dependencies and grab the wim-3.1.vimrc and rename it to .vimrc and start vim. Plugins will install automatically
-#### Watch the script work [here](https://www.youtube.com/watch?v=_yHH8xjcnZA)
-<br>
 
-# Intro
-The purpose of this project is to not only provide an IDE-like vimrc, but also to teach you how it is constructed. It is made from the ground up from the vanilla Vim with the help of plugins and .vimrc configurations. 
+## Neovim
+<strong>Backup your ~/.config/nvim and ~/.local/share/nvim</strong>
 
-# Dependencies
-- Vim 8+ upto latest (Tested and also works on vim 7)
-- [vimplug](https://github.com/junegunn/vim-plug) (Will be installed automatically as of version 2. Unix and Linux Only! for windows you must use the windows curl command of vimplug)
-- nodejs and npm (For coc completion)
-- FZF 
-- Figlet & boxes (For the start menu ascii art)
-
-<h1> Some of the features</h1>
-
-- Out of the box plugin installation <br>
-- Tab Completion and snippets for fast coding <br>
-- Easy tab and split navigation <br>
-- Start Screen with bookmarks and file history <br>
-- Beautiful built in base16 colorschemes
-- Nerdtree-like configuration of Netrw <br>
-- Customized Lighline statusline <br>
-- Customizability! It is lightweight and extensible without having to learn a whole new software or language  <br>
-
-<h1>Usage / Installation </h1>
-
-### On Arch Linux and other derivatives use the provided installation script, otherwise continue manually <br>
-
-#### Windows users must delete the statement that auto installs vimplug at the beggining of the vimrc and proceed with the manual installation of vimplug, then launch vim with the new vimrc so that the plugins can be installed. Naturally you must use another editor to alter the vimrc. <br>
-
-- As of version 2, once you start vim with my .vimrc. vimplug and plugins will be installed automatically. Don't panic and let it work <br>
-- Refer to the release page for easy download. Remember to rename the file to .vimrc<br>
-- Place the .vimrc file in your home directory<br>
-- You can rename your already existing .vimrc or move it to another directory. this way; you can always bring it back if you dont like Wim<br>
-- Place the roman.flf font in <code>/usr/share/figlet/fonts/</code> <br>
-- Install [boxes](https://github.com/ascii-boxes/boxes/) from repositories or compile it.
-- Refer to the [list](https://github.com/neoclide/coc.nvim/wiki/Language-servers) of autocompletion languages and add the ones you'd like with 
-
-- <code> :CocInstall </code><br>
-  	- Example: <code>:CocInstall coc-css</code> <br>
-- <code>:CocInstall coc-explorer</code> for using the [coc-explorer](https://github.com/weirongxu/coc-explorer) file manager instead of netrw
-  - to start netrw <code>:Vexplore</code> 
-- Once the downloads are finished you can start using Vim normally<br>
-- Leader key is naturally space<br>
-- Refer to the table below for a list of key bindings<br>
-<h4>Optional Dependencies </h4>
-
-- Ranger. See [mine](https://github.com/wolandark/ranger) <br>
-- Vifm<br>
-
-<h4> Notice </h4>
-
-- It was tested on multiple devices and distros with Vim from the terminal on linux and Gvim on Arch and Windows and it works perfectly. If anyone happens to use this on OSX please provide me with your feedback.<br>
-- Please keep in mind that in case your terminal emulator takes charge of some of your keys, its up to you to figure it out. Some terminals do hold unto your Ctrl or Alt or shift key for their own functions
-- You can review the list of plugins and comment out or delete the lines about the ones you dont want. This must be done before running <code>:PlugInstall</code>
-  - If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>
-
-### Coc tab completion set up
-- Open your CocConfig by typing
-    <code>:CocConfig</code> into vim's command mode
-- add the following lines to improve Coc's Tab behavior 
 ```
-{
-     "suggest.noselect": true
-}
+mv ~/.config/nvim/{,-bk} ; mv ~/.local/share/nvim{,-bk}
+[[ ! -d ~/.config/nvim ]] && mkdir -p ~/.config/nvim/
+
+git clone URL
+cp wim/wim-neovim ~/.config/nvim/init.vim
+nvim
 ```
-<code>:wq</code> to save and quit
 
-# Keymappings (Always up to date)
+## Table of Keybindings
+<details>
+  <summary>Misc Keybindings</summary>
 
-<h4>leader is space</h4>
+| Keys           | Function                                  |
+| ---            | ---                                       |
+| \<F6\>         | Turn on SpellChecking                     |
+| \<F8\>         | Compile and Run Basic C Code              |
+| \<F12\>        | Execute Bash, Python, Nodejs & Go Files   |
+| gs             | Fix Spelling To The First Immediate Match |
+| \<ESC\>\<ESC\> | Turn Off Search Highlights                |
+| \a             | Auto Save Toggle                          |
+| \<leader\>t    | FloatermToggle                            |
+| \<leader\>M    | Maps                                      |
+| \<PageUp\>     | Buffer Next                               |
+| \<PageDown\>   | Buffer Previous                           |
+| \<C-m\>        | gM, Center Cursor                         |
+| \<leader\>\    | Border Around Current Line Using Toilet   |
+| \<space\>e     | File Explorer                             |
+| \<leader\>T    | New Tab                                   |
+| \<leader\>mk   | Make View                                 |
+| \<leader\>i    | Startify Dashboard                        |
+| \<leader\>S    | Add Empty Line Above & Below Current Line |
+| \<leader\>[    | Add Empty Line Above                      |
+| \<leader\>]    | Add Empty Line Below                      |
+| \<leader\>w    | Save                                      |
+| \<leader\>so   | Save & Source Buffer                      |
+| \<leader\>k    | Move Line Up                              |
+| \<leader\>j    | Move Line Down                            |
+| jj             | \<ESC\>                                   |
+| \<leader\>pli  | PlugInstall                               |
+| \<leader\>plc  | PlugClean                                 |
+| \<leader\>plu  | PlugUpdate                                |
+| \<leader\>pld  | PlugUpgrade                               |
 
- #### Key Bindings
+</details>
 
- | Keys       | Function                         |
- | --         | --                               |
- | leader v   | Vifm Floating                    |
- | leader r   | Ranger Floating                  |
- | leader e   | Coc-Explorer On The Left Side    |
- | leader t   | Terminal                         |
- | leader i   | Pop Start Menu                   |
- | leader T   | NewTab                           |
- | leader d   | Duplicate Cleaner                |
- | leader 1-9 | Go To Tab                        |
- | leader tm  | Move Tab                         |
- | leader x   | Close Tab                        |
- | leader c   | Fuzzy Colorschemes               |
- | leader b   | Fuzzy Buffers                    |
- | leader s   | Fuzzy File Search                |
- | leader W   | Fuzzy Windows                    |
- | leader H   | Fuzzy History                    |
- | leader Hc  | Fuzzy Command History            | 
- | leader h   | chmod +x current file            |
- | leader M   | Fuzzy Mappings                   |
- | leader w   | Quick Save w!                    |
- | leader op  | Source Current File              |
- | leader z   | Fix Spelling For 1 word          |
- | leader l   | Fix Spelling On 1 Line           |
- | leader ww  | VimWiki                          |
- | leader \   | Border Current line using Toilet |
- | leader mk  | mkview                           |
- | leader [   | Add Empty Line Above             |
- | leader ]   | Add Empty Line Below             |
- | leader S   | Add Empty Line Above And Below   |
- | leader u   | Move Current Line A Paragraph Up |
- | leader k   | Move Current Line One Line Up    |
- | leader j   | Move Current Line One Line Down  |
- | leader '   | Open Vim Terminal                |
- | Shift Arrows     | Resize Splits                 |
- | Ctrl hjkl/Arrows | Focus Between Splits          |
- | F6               | SpellCheck                    |
- | Ctrl j           | Trigger Snippets              |
- | Ctrl j k         | Move Within Triggered Snippet |
- | Ctrl PGDNN       | List Available Snippets       |
- | gcc              | Comment Out                   |
- | yss(char)        | Surround line                 |
- | ysiw(char)       | Surround word                 |
- | fy               | find char across splits       |
- | fl               | find lines across splits      |
- | ml |             Move to LIne |
- | fw               | find word across splits       |
- | s                | find two chars across splits  |
- | jj               | escape                        |
- | ;                | :                             |
-| Ctrl m        | Center Cursor                 |
-| bs            | #!/bin/bash                   |
-| be            | #!/usr/bin/env bash           |
-| br            | \<br>                         |
-| Ctrl h/Arrows | Move Between Splits           |
-| Ctrl j/Arrows | Move Between Splits           |
-| Ctrl k/Arrows | Move Between Splits           |
-| Ctrl l/Arrows | Move Between Splits           |
-| leader R      | Rotate Splits                 |
-| Alt hjkl      | Move With hjkl In Insert Mode |
-| Alt Arrows    | Go Tabs Right Or Left         |
+<details>
+  <summary>Split Navigation</summary>
 
+| Key         | Function                 |
+| ---         | ---                      |
+| \<C-h\>     | Focus Left Split         |
+| \<C-j\>     | Focus Bottom Split       |
+| \<C-k\>     | Focus Top Split          |
+| \<C-l\>     | Focus Right Split        |
+| \<C-LEFT\>  | Focus Left Split         |
+| \<C-DOWN\>  | Focus Bottom Split       |
+| \<C-UP\>    | Focus Top Split          |
+| \<C-RIGHT\> | Focus Right Split        |
+| \<leader\>R | Rotate Window Up/Left    |
+| \<leader\>r | Rotate Window Down/Right |
+| \<s-Right\> | Resize Split Right       |
+| \<s-LEFT\>  | Resize Split Left        |
+| \<s-UP\>    | Resize Split Up          |
+| \<s-DOWN\>  | Resize Split Down        |
 
-New Catpuccino theme
-![wim-catpuccino](https://user-images.githubusercontent.com/107309764/233864390-5562711e-e252-41b3-a1fe-cb14932eed95.png)
-Default Gruvbox Colorscheme. Netrw & TagBar
-<img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041732_1920x1080_scrot.png">
-Startify Dashboard with history and shortcuts
-<img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-042007_1920x1080_scrot.png">
-Completion and language support
-<img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041527_1920x1080_scrot.png">
-<img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-041921_1920x1080_scrot.png">
-Press Leader+c to chose a new colorscheme
-<img src="https://github.com/wolandark/wim/blob/main/img/v3/2023-03-30-042030_1920x1080_scrot.png">
+</details>
 
+<details>
+    <summary>Tabs</summary>
 
-<h1>FAQ</h1>
+| Key            | Function                       |
+| ---            | ---                            |
+| \<M-Left\>     | Tab Previous                   |
+| \<M-Right\>    | Tab Next                       |
+| \<leader\>1..9 | Go To Corresponding Tab Number |
+| \<leader\>0    | Tab Last                       |
+| \<leader\>x    | Tab Close                      |
+| \<leader\>tm   | Tab Move                       |
 
-<h5> Whats with the name?</h5>
-Woland's Vim = Wim. Get it?
+</details>
 
-<h5> What features does Wim offer? </h5>
+<details>
+    <summary>FZF</summary>
 
-- Customizability! It is lightweight and extensible without having to learn a whole new software  <br>
-- Easy tab and split navigation <br>
-- Start Screen with bookmarks and file history <br>
-- Beautiful built in colorschemes
-- Easy completion ctags, syntax check and more <br>
-- Lighline, Vim statusline <br>
-  - Choices! It is all about choices <br>
+| Key           | Function |
+| ---           | ---      |
+| \c            | Colors   |
+| \<leader\>b   | Buffers  |
+| \<leader\>ff  | Files    |
+| \<leader\>W   | Windows  |
+| \<leader\>h   | History  |
+| \<leader\>hc  | History  |
+| \<leader\>rg  | Ripgrep  |
+| \<leader\>li  | Lines    |
+| \<leader\>bli | BLines   |
+| \<leader\>ma  | Marks    |
+| \<leader\>sn  | Snippets |
+| \<leader\>com | Commands |
+| \<leader\>ag  | Ag       |
+| \<leader\>tag | Tags     |
 
-<h5> Can I expect support? </h5>
-Yes! Just ask and I will answer. When asking however, provide proper information so that I can help you <br>
+</details>
 
-<h5> Why didn't you use Neovim like everyone else? </h5>
-Because Vim is the one I use and frankly Vim is fine.
+<details>
+    <summary>Aligning Text</summary>
 
-<h5> Will you make custom vimrc configurations? </h5>
+| Key | Function          |
+| --- | ---               |
+| \at | Tabularize Tables |
+| \ta | Tabularize [char] |
 
-[Contact me](https://t.me/inlovewithapenguin)
+</details>
 
-<h5> Are you open to collaborations? </h5>
+<details>
+    <summary>Enuch Shell Commands</summary>
 
-[Contact me](https://t.me/inlovewithapenguin)
+| Key           | Function  |
+| ---           | ---       |
+| \<leader\>ch  | Chmod +x  |
+| \<leader\>suw | SudoWrite |
+| \<leader\>sue | SudoEdit  |
+| \<leader\>rm  | Remove    |
+| \<leader\>del | Delete!   |
+| \<leader\>mv  | Move      |
+| \<leader\>dup | Duplicate |
+| \<leader\>mkd | Mkdir     |
 
-<h5>But vimplug is installed with curl!</h5>
+</details>
 
-Yes! and it does only one thing, adding an easier integration for installing plugins. <br>
-<hr>
+<details>
+    <summary>Floterm</summary>
 
-<h6> Consider Supporting the project</h6>
+| Key         | Function               |
+| ---         | ---                    |
+| \\t         | FloatermToggle         |
+| \q         | FloatermKill           |
+| \n         | FloatermNext           |
+| \p         | FloatermPrev           |
+| \v         | vifm Inside FloaTerm   |
+| \ra        | ranger Inside FloaTerm |
+| \\tr        | Terminal Right         |
+| \\tb        | Terminal Bottom        |
+| \rg         | Run Go In Terminal     |
+| \rb         | Run Bash In Terminal   |
+| \rj         | Run Nodejs In Terminal |
+| \rp         | Run Python In Terminal |
+| \<leader\>l | Lf                     |
 
-<strong>BTC</strong><br>
-bc1q7tr3znnrsqq85kalk5zedak9mgn9u3ly849t8z <br>
-<strong>ETH</strong><br>
-0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>
-<strong>Monero</strong><br>
-0xd84c96dDa2E6f9ee9DD0439F6F7812c5b8869fE4<br>
-<strong>Doge</strong><br>
-DJKBgAEQ7n5GyozM8jqmGbxnhcH6U2V8hV<br>
-<strong>Tether</strong><br>
-0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>
-<strong>Tron</strong><br>
-TX8mVZajyy7cmH9vsREyAMPjgtRu23ZmxJ<br>
-<strong>ADA</strong><br>
-addr1qxhv2rfrs37qvs0cllfcnu0rd83wre609s74aufkd82da9528v7xq34usds6t8sdt7zjy0hvkcwdfnp9jwacdn0kwuesatvjx4<br>
-<strong>Avalanche</strong><br>
-0x28a60D7429a2DFdf6b009261D3814cA182B34Bb2<br>
+</details>
+
+<details>
+    <summary>Terminal</summary>
+
+| Key         | Function                                   |
+| ---         | ---                                        |
+| \<leader\>' | Vim's Terminal                             |
+| \l          | Clear Terminal In the Background (For F12) |
+| \<C-j\>     | Focus Bottom                               |
+| \<C-k\>     | Focus Top                                  |
+| \<C-DOWN\>  | Focus Bottom                               |
+| \<C-UP\>    | Focus Top                                  |
+
+</details>
+
+<details>
+    <summary>Snippets</summary>
+
+| Key     | Function                                      |
+| ---     | ---                                           |
+| \<C-j\> | Expand Snippet & Jump Forward In Placeholders |
+| \<C-k\> | Jump Backward In  Placeholders                |
+| \<C-l\> | List Snippets                                 |
+
+</details>
+
+<details>
+    <summary>bilingual</summary>
+
+| Key     | Function     |
+| ---     | ---          |
+| \<C-p\> | SwitchKeymap |
+
+</details>
+
+<details>
+    <summary>Unimpaired</summary>
+
+#### Most Useful Unimpaired Mappings.<br> 
+Refer to the [official guide](https://github.com/tpope/vim-unimpaired/blob/master/doc/unimpaired.txt) for more
+
+| Key        | Function                                               |
+| ---        | ---                                                    |
+| [b         | :bprevious                                             |
+| ]b         | :bnext                                                 |
+| [B         | :bfirst                                                |
+| ]B         | :blast                                                 |
+| [a         | :previous                                              |
+| ]a         | :next                                                  |
+| [A         | :first                                                 |
+| ]A         | :last                                                  |
+| [\<Space\> | Add [count] blank lines above the cursor.              |
+| ]\<Space\> | Add [count] blank lines below the cursor.              |
+| [e         | Exchange the current line with [count] lines above it. |
+| ]e         | Exchange the current line with [count] lines below it. |
+</details>
+
+#### To Do 
+- [x] Improve the rest of FloaTerm shortcuts that start with backslashes (DONE)

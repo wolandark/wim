@@ -108,6 +108,8 @@ After installing the dependencies, run the `install.sh` script. The script is **
 ```
 bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/master/install.sh)
 ```
+### Watch it work
+![Peek 2024-06-26 09-10](https://github.com/wolandark/wim/assets/107309764/6e8e6252-d939-4a4c-874f-9579f7430234)
 
 <br>
 

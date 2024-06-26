@@ -4,7 +4,7 @@
 _VIM_PATH="$HOME/.vim"
 _VIM_BK_PATH="$HOME/vim-bk"
 _ARCHIVE_NAME="uctags-2024.06.20-linux-x86_64.tar.gz"
-_ARCHIVE_EXTRACTED_NAME="uctags-2024.06.20"
+_ARCHIVE_EXTRACTED_NAME="uctags-2024.06.20-linux-x86_64"
 _COC_JSON="https://raw.githubusercontent.com/wolandark/wim/master/config/coc-settings.json"
 _CHEAT_FILE="https://raw.githubusercontent.com/wolandark/wim/master/config/cheat40.txt"
 _VIMRC_FILE="$_VIM_PATH/vimrc"
@@ -28,11 +28,13 @@ backup()
 # download
 downloadCtags()
 {
-    ctags_url="https://github.com/universal-ctags/ctags-nightly-build/releases/download/2024.06.20%2B8976ec3d2c48ec862593910388ae3e55f0e20a3f/uctags-2024.06.20-linux-x86_64.tar.gz"
-    curl -Lo "$_ARCHIVE_NAME" "$ctags_url"
-    tar -xzf "$_ARCHIVE_NAME"
-    mv "$_ARCHIVE_EXTRACTED_NAME" "$_VIM_PATH/uctags/"
-    rm "$_ARCHIVE_NAME"
+	ctags_url="https://github.com/universal-ctags/ctags-nightly-build/releases/download/2024.06.20%2B8976ec3d2c48ec862593910388ae3e55f0e20a3f/uctags-2024.06.20-linux-x86_64.tar.gz"
+	curl -Lo "$_ARCHIVE_NAME" "$ctags_url"
+	tar -xzf "$_ARCHIVE_NAME"
+	mkdir -p "$_VIM_PATH/uctags"
+	mv "$_ARCHIVE_EXTRACTED_NAME"/* "$_VIM_PATH/uctags/"
+	rm -rf "$_ARCHIVE_EXTRACTED_NAME"
+	rm "$_ARCHIVE_NAME"
 }
 
 getFiles()

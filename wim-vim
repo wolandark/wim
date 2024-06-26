@@ -387,7 +387,7 @@ let g:closetag_filetypes = 'html,xhtml,phtml'
 let g:closetag_shortcut = '>'
 
 "===[ Tagbar ]==="
-let g:tagbar_ctags_bin = '~/.vim/ctags/bin/ctags'
+let g:tagbar_ctags_bin = '~/.vim/uctags/bin/ctags'
 
 "===[ Terminal ]==="
 " let g:terminal_height = -10

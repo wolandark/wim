@@ -1,4 +1,4 @@
-## This repository is under maintenance. Come back later
+## This repository is under maintenance. Please come back later (like in a day)
 todo: Update keymappings in readme, wiki and cheat file.
 
 <div align="center">
@@ -93,10 +93,11 @@ todo: Update keymappings in readme, wiki and cheat file.
 The purpose of this project is to not only provide an IDE-like vimrc, but also to teach you how it is constructed. This project tries to maintain a fairly small `vimrc` and provide a **great out of the box experience**  as well serving as a ground for further customization.
 
 # Dependencies 
-- Vim 9.0 or later 
+- Vim 9.0 or later with huge features.
 	- Note: This Config Will definitely work with Vim 8.0 and later, but don't miss out on the great features of Vim 9.1! Grab the latest Vim!
 - Nodejs 
 - npm 
+- Python (For Compiling The Leaderf C Extension)
 
 **Example:**  <br> 
 Debian:<br> 

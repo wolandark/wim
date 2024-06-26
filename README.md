@@ -5,7 +5,7 @@
 </div>
 
 # Wim News
-#### Version 3.3 has been released with great improvements
+## Version 3.3 has been released with great improvements
 
 <details> 
 <summary> Expand Feature List</summary>
@@ -14,11 +14,11 @@
 - Clean installation. Everything will go where they belong, under `$HOME/.vim/`
 - Automatic Plugin Installation
 	- Plugins for LSP, completion, snippets, colors, web development, Git, usability, enhancements, jumping around, utility, integrations, etc.
-	-  Vimwiki configuration
+	- Vimwiki configuration
 	- Wim ships with a default vimwiki wiki file that you can read anytime inside Wim.
 - Set the encoding to UTF-8.
 - Auto save toggle
--  Theme setup
+- Theme setup
     - Catppuccin Mocha theme with true color support and GUI font configuration.
 - Cursor shape configuration for different modes.
 - Startify configuration
@@ -32,11 +32,13 @@
 - Various sane vim settings
     - Vim settings like autoindent, ignorecase, number, relativenumber, etc.
 - Netrw configuration
-    - : Configures netrw with hidden dotfiles and other settings.
+    - Configures netrw with hidden dotfiles and other settings.
 - Lightline statusbar
     - Lightline status bar with a custom theme and components.
 - Spell checking
     - spell checking with custom mappings and highlights.
+- Bilingual configuration with easy layout changing inside Vim.
+- hidden ZWNJ characters by default for languages like Persian.
 - Custom mappings
    - custom key mappings for various actions.
 - Split navigation
@@ -62,12 +64,12 @@
 - coc global extensions
 	 - Installs and configures various coc.nvim extensions for different languages and functionalities.
 - coc-explorer configuration
-    -  Coc Explorer as the file explorer with icons and customizations.
+    -  coc Explorer as the file explorer with icons and customizations.
+- coc-marketplace for coc extensions installation with fuzzy matching.
 - Navigation mappings
     - key mappings for navigating definitions, type definitions, implementations, references, and diagnostics using coc.nvim.
 
 </details>
-<hr> 
 <details>
 <summary> Older Versions</summary>
 
@@ -83,10 +85,10 @@
 - Updated and improved the installation script
 
 </details>
+<hr> 
 
 # Intro
 The purpose of this project is to not only provide an IDE-like vimrc, but also to teach you how it is constructed. This project tries to maintain a fairly small `vimrc` and provide a **great out of the box experience**  as well serving as a ground for further customization.
-
 
 # Dependencies 
 - Vim 9.0 or later 
@@ -102,28 +104,44 @@ Arch:<br>
 
 # Installation 
 After installing the dependencies, run the `install.sh` script. The script is **safe** and works sudo-less.
-
 ```
 bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/master/install.sh)
 ```
 
 <br>
 
-# Some of the features</h1>
+# Some of the features
+**See the exhausting feature list above**
 
 - Out of the box plugin installation <br>
+- Out of the box LSP setup for HTML, CSS, JS, TS, Bash and MORE if you want it!
 - Tab Completion and snippets for fast coding <br>
 - Easy tab and split navigation <br>
 - Start Screen with bookmarks and file history <br>
 - Beautiful catpuccino and base16 colorschemes
 - Customized Lighline statusline <br>
-- Customizability! It is lightweight and extensible without having to learn a whole new software or language  <br>
+- Customizability! It is lightweight and extensible and FAST!
 
-<h4> Notice </h4>
+#### Notes
 
-- Please keep in mind that in case your terminal emulator takes charge of some of your keys, its up to you to figure it out. Some terminals do hold unto your Ctrl or Alt or shift key for their own functions
-- You can review the list of plugins and comment out or delete the lines about the ones you dont want.
-  - If you want to delete any plugins later, delete the lines about them and run: <code>:PlugClean</code>
+- Some terminals hold unto your Ctrl or Alt or shift key for their own functions. It's up to you to use a sane terminal emulator!
+- This config has been tested on variouse GNU+Linux distros as well as MacOS, FreeBSD and Windows, but official support will only be provided for GNU+Linux distros.
+
+<details>
+<summary>Notes for Windows users</summary> 
+
+Make sure you have `nodejs` and `npm` in your `PATH` and that you have `curl` installed. <br>  
+You have to manually install `fzf` from the official repo and remove the `Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }` line from `wim-vim`. (Yes becuase you're on windows you must suffer!) <br> 
+Clone the repo and move the `wim-vim` file under `C:\Users\username\vimfiles\vimrc`. Make sure to rename it to `vimrc`. Copy over the `coc-settings.json`, `cheat40.txt` and the whole `vimwiki` directory also under the aforementioned path.
+
+Then simply start Vim and wait for the installation to finish.
+</details>
+
+<details>
+<summary>Notes for Mac users</summary> 
+
+If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
+</details>
 
 # ScreenshotsNew
 <hr>
@@ -326,7 +344,8 @@ Refer to the [official guide](https://github.com/tpope/vim-unimpaired/blob/maste
 | ]e         | Exchange the current line with [count] lines below it. |
 </details>
 
-<h6> Consider Supporting the project</h6>
+<hr> 
+<h3> Consider Supporting the project</h3>
 
 <strong>BTC</strong><br>
 bc1q7tr3znnrsqq85kalk5zedak9mgn9u3ly849t8z <br>

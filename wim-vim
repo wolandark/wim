@@ -119,7 +119,7 @@ let g:startify_custom_header = [
 			\ ]
 let g:startify_custom_footer = split(system('fortune'), '\n') + ['','']
 "Bookmarks. Syntax is clear. Add yours
-let g:startify_bookmarks = [ {'B': '~/.bashrc'},{'V': '~/.vimrc'}]
+let g:startify_bookmarks = [ {'B': '~/.bashrc'},{'V': '~/.vim/vimrc'}]
 let g:startify_lists = [
       \ { 'type': 'bookmarks' , 'header': ['   Bookmarks']      } ,
       \ { 'type': 'files'     , 'header': ['   Recent'   ]      } ,

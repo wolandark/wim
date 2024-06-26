@@ -8,28 +8,30 @@ _CONFIG_DIR="config"
 _COC_FILE="config/coc-settings.json"
 _WIKI_FILE="config/Wim.wiki"
 _VIMRC_FILE="wim-vim"
+_CHEAT_FILE="cheat40.txt"
 
 _VIMRC_FILE_DEST="$HOME/.vim/vimrc"
 _COC_FILE_DEST="$HOME/.vim/coc-settings.json"
 _WIKI_FILE_DEST="$HOME/.vim/vimwiki/Wim.wiki"
+_CHEAT_FILE_DEST="$HOME/.vim/cheat40.txt"
 
 _VIM_PATH="$HOME/.vim"
+_WIKI_DIR="$_VIM_PATH/vimwiki"
 _VIM_BK_PATH="$HOME/vim-bk"
 _ARCHIVE_NAME="uctags-2024.06.20-linux-x86_64.tar.gz"
 _ARCHIVE_EXTRACTED_NAME="uctags-2024.06.20-linux-x86_64"
-_WIKI_DIR="$_VIM_PATH/vimwiki"
 
 # backup
 backup()
 {
-    if [ -d "$_VIM_PATH" ]; then
-        mv "$_VIM_PATH" "$_VIM_BK_PATH"
-        mkdir -p "$_VIM_PATH"
-        mkdir -p "$_WIKI_DIR"
-    else
-        mkdir -p "$_VIM_PATH"
-        mkdir -p "$_WIKI_DIR"
-    fi
+	if [ -d "$_VIM_PATH" ]; then
+		mv "$_VIM_PATH" "$_VIM_BK_PATH"
+		mkdir -p "$_VIM_PATH"
+		mkdir -p "$_WIKI_DIR"
+	else
+		mkdir -p "$_VIM_PATH"
+		mkdir -p "$_WIKI_DIR"
+	fi
 }
 
 # download ctags
@@ -71,13 +73,15 @@ linkFiles()
 	ln -sf "$(pwd)/$_COC_FILE" "$_COC_FILE_DEST"
 	printf "\e[42;30mSymlinking Latest Wim Wiki\e[0m\n"
 	ln -sf "$(pwd)/$_WIKI_FILE" "$_WIKI_FILE_DEST"
+	printf "\e[42;30mSymlinking Latest Cheat File\e[0m\n"
+	ln -sf "$(pwd)/$_CHEAT_FILE" "$_CHEAT_FILE_DEST"
 	echo ""
 }
 
 main()
 {
-    backup
-    downloadCtags
+	backup
+	downloadCtags
 	checkWimExist
 	linkFiles
 }

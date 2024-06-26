@@ -7,6 +7,67 @@
 # Wim News
 #### Version 3.3 has been released with great improvements
 
+<details> 
+<summary> Expand Feature List</summary>
+<br> 
+
+- Clean installation. Everything will go where they belong, under `$HOME/.vim/`
+- Automatic Plugin Installation
+	- Plugins for LSP, completion, snippets, colors, web development, Git, usability, enhancements, jumping around, utility, integrations, etc.
+	-  Vimwiki configuration
+	- Wim ships with a default vimwiki wiki file that you can read anytime inside Wim.
+- Set the encoding to UTF-8.
+- Auto save toggle
+-  Theme setup
+    - Catppuccin Mocha theme with true color support and GUI font configuration.
+- Cursor shape configuration for different modes.
+- Startify configuration
+    - Customized Startify start screen with a custom header, footer, and bookmarks.
+- Clipboard configuration
+    - Uses the system clipboard for copy-paste.
+- Remember cursor position
+    - Remembers the cursor position in files.
+- Persistent undo history
+    - Sets up persistent undo history with a custom directory.
+- Various sane vim settings
+    - Vim settings like autoindent, ignorecase, number, relativenumber, etc.
+- Netrw configuration
+    - : Configures netrw with hidden dotfiles and other settings.
+- Lightline statusbar
+    - Lightline status bar with a custom theme and components.
+- Spell checking
+    - spell checking with custom mappings and highlights.
+- Custom mappings
+   - custom key mappings for various actions.
+- Split navigation
+    - key mappings for split window navigation and resizing.
+- Floaterm configuration
+    - floaterm plugin with custom key mappings and settings.
+- Gitgutter configuration
+    -  GitGutter signs for added, modified, and removed lines.
+- Tagbar configuration
+    - Tagbar with a custom ctags binary path.
+- Terminal mappings
+    - Sets up key mappings for terminal usage within Vim.
+- Runtime macros
+    -  Load custom runtime macros for various functionalities such as justification, emojis and matchit.
+- Ultisnips configuration
+    - UltiSnips with custom key bindings for snippet expansion and navigation.
+- Clever-f configuration
+    - Clever-F plugin with custom settings for enhanced f/F/t/T motions.
+- Disable unnecessary internal plugins
+    -  Disabled several built-in Vim plugins to optimize startup time.
+- coc.nvim configuration
+    - coc.nvim for autocompletion, diagnostics, and other LSP s.
+- coc global extensions
+	 - Installs and configures various coc.nvim extensions for different languages and functionalities.
+- coc-explorer configuration
+    -  Coc Explorer as the file explorer with icons and customizations.
+- Navigation mappings
+    - key mappings for navigating definitions, type definitions, implementations, references, and diagnostics using coc.nvim.
+
+</details>
+<hr> 
 <details>
 <summary> Older Versions</summary>
 
@@ -315,3 +376,7 @@ Because Vim is the one I use and frankly Vim is better!
 
 #### To Do 
 - [x] Improve the rest of FloaTerm shortcuts that start with backslashes (DONE)
+
+<!--
+vim: cole=0 
+-->

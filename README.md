@@ -3,7 +3,7 @@ todo:
 
 Update keymappings in readme, wiki and cheat file.
 
-Add symlink method of installation to keey users up to date with upstream
+Add symlink method of installation to keey users up to date with upstream [done]
 
 <div align="center">
 <img src="https://github.com/wolandark/wim/assets/107309764/8bf3528b-9751-4bda-95e4-70c3b958cd5f" style="width:50%;">

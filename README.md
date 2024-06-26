@@ -14,8 +14,9 @@
 - Clean installation. Everything will go where they belong, under `$HOME/.vim/`
 - Automatic Plugin Installation
 	- Plugins for LSP, completion, snippets, colors, web development, Git, usability, enhancements, jumping around, utility, integrations, etc.
-	- Vimwiki configuration
+- Vimwiki configuration
 	- Wim ships with a default vimwiki wiki file that you can read anytime inside Wim.
+- Execute python, bash, js, go files without leaving Vim.
 - Set the encoding to UTF-8.
 - Auto save toggle
 - Theme setup
@@ -44,7 +45,7 @@
 - Split navigation
     - key mappings for split window navigation and resizing.
 - Floaterm configuration
-    - floaterm plugin with custom key mappings and settings.
+    - floaterm plugin with custom key mappings and settings for executing various languages inside Vim.
 - Gitgutter configuration
     -  GitGutter signs for added, modified, and removed lines.
 - Tagbar configuration

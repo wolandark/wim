@@ -61,4 +61,6 @@ main()
 
 main
 
+printf "\nFile Accusation Successful! Launching Vim!\n"
 
+vim

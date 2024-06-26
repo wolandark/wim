@@ -47,6 +47,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/vim-peekaboo'
 Plug 'itchyny/lightline.vim'
+Plug 'mengelbrecht/lightline-bufferline'
 Plug 'voldikss/vim-floaterm'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-repeat'
@@ -58,10 +59,11 @@ Plug 'https://github.com/godlygeek/tabular.git'
 Plug 'https://github.com/markonm/traces.vim.git'
 Plug 'https://github.com/907th/vim-auto-save.git'
 Plug 'mhinz/vim-startify'
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 
 " Jumping Around
 Plug 'https://github.com/rhysd/clever-f.vim.git'
-Plug 'https://github.com/justinmk/vim-sneak.git'
+" Plug 'https://github.com/justinmk/vim-sneak.git'
 Plug 'https://github.com/monkoose/vim9-stargate.git'
 
 " Utility, Integrations
@@ -69,11 +71,8 @@ Plug 'ptzz/lf.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'https://github.com/preservim/tagbar.git'
 Plug 'lifepillar/vim-cheat40'
-
+Plug 'wolandark/vimdict'
 call plug#end()
-
-"===[ Auto Save ]==="
-nnoremap <nowait>\a :call AutoSaveToggle()<CR>
 
 "===[ Theme ]==="
 set background=dark
@@ -239,26 +238,28 @@ nnoremap gs :call FixSpell()<CR>
 "===[ Custom Mappings ]==="
 let mapleader =" "
 
-nnoremap <leader>t :FloatermToggle<CR>
+"===[ Auto Save ]==="
+nnoremap <nowait>\a :call AutoSaveToggle()<CR>
+
+" nnoremap <leader>t :FloatermToggle<CR>
 nnoremap <nowait><leader>M :Maps <CR>
 
 " Switch Buffers
 nnoremap <PageUp> :bn<Cr>
 nnoremap <PageDown> :bp<CR>
+nnoremap <Del> :bd<CR>
 
-" Center Cursor Easier
-nnoremap <C-m> gM
-
-" Border Around 
+" Border Around (Uses the toilet cli tool)
 nnoremap <leader>\ :.!toilet -w 200 -f term -F border<CR>
 
 " nnoremap <leader>e :Ex <CR>
 nnoremap <space>e <Cmd>CocCommand explorer<CR>
 
 nnoremap <leader>T :tabnew file <CR>
-nnoremap <leader>mk :mkview <CR>
 
 nnoremap <leader>i :Startify <CR> 
+
+nnoremap <silent><ESC> <ESC>:noh<CR><ESC>
 
 "adding empty line above and below cursor
 nnoremap <leader>S :normal! O<ESC>jo<ESC>kzzk<CR>
@@ -269,10 +270,11 @@ nnoremap <leader>] :normal! o<ESC>k
 nnoremap <nowait><leader>w :w!<CR>
 nnoremap <leader>so :w<CR>:source %<CR>
 
-vnoremap <leader>k :m .-2<CR>
-vnoremap <leader>j :m .+1<CR>
 nnoremap <leader>k :m .-2<CR>
 nnoremap <leader>j :m .+1<CR>
+vnoremap K :m .-2<CR>gv=gv
+vnoremap J :m .+1<CR>gv=gv
+
 inoremap <nowait> jj <ESC>
 
 " VimPlug
@@ -317,7 +319,6 @@ nnoremap <leader>8 8gt
 nnoremap <leader>9 9gt
 nnoremap <leader>0 :tablast<CR>
 nnoremap <leader>x :tabclose<CR>
-nnoremap <leader>tm :tabmove<CR>
 
 " FZF 🙂 
 nnoremap \c :Colors<CR>
@@ -335,6 +336,11 @@ nnoremap <nowait><leader>bu :Buffers<CR>
 " nnoremap <nowait><leader>com :Commands <CR>
 " nnoremap <nowait><leader>ag :Ag <CR>
 " nnoremap <nowait><leader>tag :Tags <CR>
+
+" Tabular
+if exists(":Tabularize")
+	vnoremap \\ta :Tabularize /\|<CR> 
+endif
 
 "===[ Enuch ]==="
 nnoremap <nowait><leader>ch :Chmod +x <CR>
@@ -361,8 +367,8 @@ nnoremap \p  :FloatermPrev<CR>
 nnoremap \v :FloatermNew! vifm <CR>
 nnoremap \ra :FloatermNew! ranger <CR>
 " Terminal Right/Bottom
-nnoremap \\tr :FloatermNew --wintype=vsplit --position=right --width=0.4
-nnoremap \\tb :FloatermNew --wintype=split --position=bottom --height=0.2
+nnoremap \\tr :FloatermNew --wintype=vsplit --position=right --width=0.4 <CR>
+nnoremap \\tb :FloatermNew --wintype=split --position=bottom --height=0.2 <CR>
 
 " Run Go Files
 nnoremap \rg :FloatermNew --autoclose=0 --wintype=split --position=bottom --height=0.3 go run % <Cr>
@@ -382,8 +388,8 @@ let g:gitgutter_sign_removed_first_line ='▲'
 let g:gitgutter_sign_modified_removed = '-'
 
 "===[ Close Tag ]==="
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.md'
-let g:closetag_filetypes = 'html,xhtml,phtml'
+let g:closetag_filenames = '*.html,*xml,*.php,*.phtml,*.md'
+let g:closetag_filetypes = 'html,xhtml,phtml,php,md'
 let g:closetag_shortcut = '>'
 
 "===[ Tagbar ]==="
@@ -555,7 +561,7 @@ function! CompileAndRun()
 endfunction
 
 "===[ Execute From Vim ]==="
-function! ExecuteCustomCommand()
+function! CodeRunner()
     if &ft ==# 'python'
         execute 'RPy'
     elseif &ft ==# 'sh'
@@ -568,13 +574,13 @@ function! ExecuteCustomCommand()
 endfunction
 
 " Define several language specific Run commands 
-augroup custom_commands
+augroup code_runner
     au!
     au FileType python command! RPy :!python3 %
     au FileType sh command! RB :!bash %
 	au FileType javascript command! RJs :!node %
 	au FileType go command! RGo :!go run %
-    nnoremap <F12> :call ExecuteCustomCommand()<CR>
+    nnoremap <F12> :call CodeRunner()<CR>
 augroup end
 
 "===[ ZWNJ ]==="
@@ -582,23 +588,24 @@ call matchadd('Conceal', '\%u200c', 10, -1, {'conceal':'|'})
 set conceallevel=2 concealcursor=nv
 
 "=== [ Bilingual Settings ] ==="
-function! SetPersianKeymapAndCursorColor()
-    set keymap=persian
-	silent !echo -ne "\033]12;cyan\007"
-	redraw!
-	autocmd VimLeave * silent !echo -ne "\033]112\007"
-endfunction
-command! SetPersian call SetPersianKeymapAndCursorColor()
-
-function! SetBackToEng()
-    set keymap=
-	silent !echo -ne "\033]112\007"
-	redraw!
-endfunction
-command! SetEng call SetBackToEng()
-
 let g:alt_keymap = 'persian'
 let g:alt_enabled = 1
+
+" function! SetAltKeymapAndCursorColor()
+"     set keymap=persian
+" 	silent !echo -ne "\033]12;cyan\007"
+" 	redraw!
+" 	autocmd VimLeave * silent !echo -ne "\033]112\007"
+" endfunction
+" command! SetAlt call SetAltKeymapAndCursorColor()
+
+" function! SetBackToEng()
+"     set keymap=
+" 	silent !echo -ne "\033]112\007"
+" 	redraw!
+" endfunction
+" command! SetEng call SetBackToEng()
+
 
 function! CallToggleKeymap()
     if g:alt_enabled
@@ -626,7 +633,7 @@ function! ListKeymapFiles()
 endfunction
 
 " Bilingual Mappings
-inoremap <C-p> <C-o>:SwitchKeymap<CR>
+inoremap <C-a> <C-o>:SwitchKeymap<CR>
 nnoremap <C-p> :SwitchKeymap<CR>
 
 "===[ Abbreviations ]==="
@@ -652,4 +659,3 @@ nnoremap <leader>l :Lf<CR>
 
 "===[ Custom Cheat40.txt ]==="
 let g:cheat40_use_default = 0
-

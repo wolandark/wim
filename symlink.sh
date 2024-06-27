@@ -7,8 +7,8 @@ msg=$(git log -1 --pretty=%B)
 _CONFIG_DIR="config"
 _COC_FILE="config/coc-settings.json"
 _WIKI_FILE="config/Wim.wiki"
+_CHEAT_FILE="config/cheat40.txt"
 _VIMRC_FILE="wim-vim"
-_CHEAT_FILE="cheat40.txt"
 _VIMWIKI_INDEX="index.wiki"
 
 _VIMRC_FILE_DEST="$HOME/.vim/vimrc"

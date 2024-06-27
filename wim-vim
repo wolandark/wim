@@ -658,7 +658,7 @@ iab Lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent at
 let g:lf_map_keys = 0
 let g:lf_width = 100
 let g:lf_height = 40
-nnoremap <leader>l :Lf<CR>
+nnoremap <leader>lf :Lf<CR>
 
 "===[ Custom Cheat40.txt ]==="
 let g:cheat40_use_default = 0

@@ -1,5 +1,20 @@
-
 = Table of Keybindings =
+
+== CoC LSP Keybindings ==
+
+| Keys       | Function                 |
+| ---        | ---                      |
+| gd         | Jump To Definition       |
+| gy         | Type Definition          |
+| gi         | Implementation           |
+| gr         | References               |
+| [g         | Diagnostics Prev         |
+| ]g         | Diagnostics Next         |
+| <leader>ca | Code Action              |
+| <leader>f  | Format Selected Code     |
+| K          | Show Hover Documentation |
+
+
 == Misc Keybindings ==
 
 | Keys        | Function                                  |
@@ -9,13 +24,13 @@
 | <F12>       | Execute Bash, Python, Nodejs & Go Files   |
 | gs          | Fix Spelling To The First Immediate Match |
 | <ESC><ESC>  | Turn Off Search Highlights                |
-| a           | Auto Save Toggle                          |
-| <leader>t   | FloatermToggle                            |
+| \a          | Auto Save Toggle                          |
+| \t          | FloatermToggle                            |
 | <leader>M   | Maps                                      |
 | <PageUp>    | Buffer Next                               |
 | <PageDown>  | Buffer Previous                           |
-| <C-m>       | gM, Center Cursor                         |
-| <leader>    | Border Around Current Line Using Toilet   |
+| <Del>       | Buffer Delete                             |
+| <leader>\   | Border Around Current Line Using Toilet   |
 | <space>e    | File Explorer                             |
 | <leader>T   | New Tab                                   |
 | <leader>mk  | Make View                                 |
@@ -27,6 +42,8 @@
 | <leader>so  | Save & Source Buffer                      |
 | <leader>k   | Move Line Up                              |
 | <leader>j   | Move Line Down                            |
+| K           | Move Line Up In Visual Mode               |
+| J           | Move Line Down In Visual Mode             |
 | jj          | <ESC>                                     |
 | <leader>pli | PlugInstall                               |
 | <leader>plc | PlugClean                                 |
@@ -61,9 +78,9 @@
 | <leader>1..9 | Go To Corresponding Tab Number |
 | <leader>0    | Tab Last                       |
 | <leader>x    | Tab Close                      |
-| <leader>tm   | Tab Move                       |
 
 == FZF ==
+Other than `:Colors` and `:Buffers`, the rest of these are commented out. You can enable them at your will.
 
 | Key         | Function |
 | ---         | ---      |
@@ -84,12 +101,12 @@
 
 == Aligning Text ==
 
-| Key | Function          |
-| --- | ---               |
-| \at | Tabularize Tables |
-| \ta | Tabularize [char] |
+| Key  | Function          |
+| ---  | ---               |
+| \\ta | Tabularize Tables |
 
 == Enuch Shell Commands ==
+Other than ':Chmod', the rest of these are commented out. You can enable them at your will.
 
 | Key         | Function  |
 | ---         | ---       |
@@ -104,21 +121,21 @@
 
 == Floterm ==
 
-| Key       | Function               |
-| ---       | ---                    |
-| \\t       | FloatermToggle         |
-| \q        | FloatermKill           |
-| \n        | FloatermNext           |
-| \p        | FloatermPrev           |
-| \v        | vifm Inside FloaTerm   |
-| \ra       | ranger Inside FloaTerm |
-| \\tr      | Terminal Right         |
-| \\tb      | Terminal Bottom        |
-| \rg       | Run Go In Terminal     |
-| \rb       | Run Bash In Terminal   |
-| \rj       | Run Nodejs In Terminal |
-| \rp       | Run Python In Terminal |
-| <leader>l | Lf                     |
+| Key        | Function               |
+| ---        | ---                    |
+| \t         | FloatermToggle         |
+| \q         | FloatermKill           |
+| \n         | FloatermNext           |
+| \p         | FloatermPrev           |
+| \v         | vifm Inside FloaTerm   |
+| \ra        | ranger Inside FloaTerm |
+| \\tr       | Terminal Right         |
+| \\tb       | Terminal Bottom        |
+| \rg        | Run Go In Terminal     |
+| \rb        | Run Bash In Terminal   |
+| \rj        | Run Nodejs In Terminal |
+| \rp        | Run Python In Terminal |
+| <leader>lf | Lf                     |
 
 == Terminal ==
 
@@ -141,9 +158,10 @@
 
 == bilingual ==
 
-| Key   | Function     |
-| ---   | ---          |
-| <C-p> | SwitchKeymap |
+| Key   | Function                    |
+| ---   | ---                         |
+| <C-a> | SwitchKeymap In Insert Mode |
+| <C-p> | SwitchKeymap In Normal Mode |
 
 == Unimpaired ==
 === Most Useful Unimpaired Mappings ===

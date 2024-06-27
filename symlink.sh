@@ -90,7 +90,7 @@ main()
 }
 
 main
-sed -i '85,87{s/^\([^#]\)/#\1/}' "$script"
+sed -i '86,87{s/^\([^#]\)/#\1/}' "$script"
 
 printf "\e[43;30mPress Enter To Continue...\e[0m\n"
 printf "\e[44;30mWhen You See C Extension Of Python3 Installed Successfully, Exit Vim. (you might have to scroll to see the msg)\e[0m\n"

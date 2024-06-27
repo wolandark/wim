@@ -1,16 +1,7 @@
-
-= How To Use This Wiki =
-Press Enter on the index titles to jump to that topic.
-	( Pressing Enter on any other word, creates a wiki page under that word! )
-To follow URLs in your browser, press `gx` on them.
-To learn more about VimWiki and how to use it to take note and make your 
-second brain, see the following links:
-	https://github.com/vimwiki/vimwiki
-	https://zettelkasten.de/introduction/
-	https://en.wikipedia.org/wiki/Zettelkasten
-
 *Index of Topics:* 
 * [[#How To Use This Wiki|How To Use This Wiki]]
+* [[#How To Update Wim|How To Update Wim]]
+* [[#What Are All These Set Options Doing?|What Are All These Set Options Doing?]]
 * [[#Plugins Guide|Plugins Guide]]
 	* [[#Leaderf|Leaderf]]
 	* [[#Stargate|Stargate]]
@@ -19,7 +10,6 @@ second brain, see the following links:
 	* [[#vim-ddgpb|vim-ddgpb]]
 	* [[#vim-live-server|vim-live-server]]
 * [[#Full PLugins List|Full Plugins List]]
-
 * [[#Table of Keybindings|Table of Keybindings]]
 	* [[#CoC LSP Keybindings|CoC LSP Keybindings]]
 	* [[#Misc Keybindings|Misc Keybindings]]
@@ -35,6 +25,65 @@ second brain, see the following links:
 	* [[#Unimpaired|Unimpaired]]
 		* [[#Most Useful Unimpaired Mappings|Most Useful Unimpaired Mappings]]
 
+= How To Use This Wiki =
+press Tab to jumo to the next link (Shift-Tab to go to the previous one), Press
+Enter on the index titles to jump to that topic.
+	( Pressing Enter on any other word, creates a wiki page under that word! )
+To follow URLs in your browser, press `gx` on them.
+To learn more about VimWiki and how to use it to take note and make your 
+second brain, see the following links:
+	https://github.com/vimwiki/vimwiki
+	https://zettelkasten.de/introduction/
+	https://en.wikipedia.org/wiki/Zettelkasten
+
+= How To Update Wim =
+If you used the recommended installation method, a simple `git pull` inside the
+`wim` directory is enough to update all the configs.
+Use the _VimPlug_ commands to update the plugins. See: [[#Misc Keybindings|Misc Keybindings]] 
+
+If for some reason you corrupt or destroy the symlinks that are setup between
+the `wim` directory and the `~/.vim` directory, you will only have to run the
+`update.sh` script that will be automatically generated after the initial
+installation.
+
+= What Are All These Set Options Doing? =
+
+| Setting                   | Explanation                                                                    |
+| ------------------------  | -----------------------------------------------------------------------------  |
+| set emoji                 | Enables emoji support.                                                         |
+| set autochdir             | Automatically changes the working directory to the directory of the open file. |
+| set hidden                | Allows switching between unsaved buffers without requiring to save them.       |
+| set modifiable            | Allows modifications to the buffer.                                            |
+| set conceallevel=0        | Sets the level of concealing text. 0 means no concealment.                     |
+| set concealcursor=n       | Conceals text in normal mode.                                                  |
+| set scrolloff=6           | Keeps 6 lines visible above and below the cursor when scrolling.               |
+| set autoread              | Automatically reads a file if it was modified outside of Vim.                  |
+| set cmdheight=1           | Sets the command line height to 1 line.                                        |
+| set foldmethod=manual     | Allows manual folding of code sections.                                        |
+| set foldlevel=0           | Starts with all folds closed.                                                  |
+| set foldclose=all         | Automatically closes all folds when moving out of them.                        |
+| set path+=**              | Adds all subdirectories to the search path for files.                          |
+| set noswapfile            | Disables swap file creation.                                                   |
+| set autoindent            | Automatically indents new lines to match the previous line.                    |
+| set ignorecase            | Ignores case in search patterns.                                               |
+| set incsearch             | Shows search results incrementally as you type.                                |
+| set noerrorbells          | Disables error bells.                                                          |
+| set novisualbell          | Disables visual bell.                                                          |
+| set t_vb=                 | Disables screen flash for visual bell.                                         |
+| set relativenumber        | Shows line numbers relative to the current line.                               |
+| set number                | Shows absolute line numbers.                                                   |
+| set hlsearch              | Highlights search results.                                                     |
+| set termbidi              | Enables bidirectional text support in the terminal.                            |
+| set autowrite             | Automatically writes changes before certain commands (e.g., `:next`, `:make`). |
+| set autowriteall          | Automatically writes changes to all modified files before certain commands.    |
+| set laststatus=2          | Always displays the status line.                                               |
+| set showtabline=2         | Always shows the tab line.                                                     |
+| set noshowmode            | Disables showing the current mode (insert, normal, etc.) in the command line.  |
+| set colorcolumn=80        | Highlights the 80th column to guide line length.                               |
+| set shiftwidth=4          | Sets the number of spaces to use for each step of (auto)indent.                |
+| set tabstop=4             | Sets the number of spaces that a tab character represents.                     |
+| syntax on                 | Enables syntax highlighting.                                                   |
+| filetype plugin indent on | Enables file type detection, plugin, and indent settings.                      |
 
 = Plugins Guide = 
 This plugins guide is not about including a Tl;Dr to every plugin! Yet it will 

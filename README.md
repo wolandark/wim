@@ -129,6 +129,12 @@ After installing the dependencies, clone the repo and run the `symlink.sh` scrip
 - cd Into The Cloned Repo `cd wim`
 - Run the `symlink.sh` script `./symlink.sh`
 
+This method enables you to update Wim without having to clone the repo again or
+run the install script. Simply `git pull` every once in a while and as long as
+you don't mess up the symlinks, you won't have to do anything else. **If** you
+happen to mess up the symlinks, just run the update.sh script that will be
+generated after the first time of running the `symlink.sh` script.
+
 #### Watch it work
 
 ![Peek 2024-06-27 00-35](https://github.com/wolandark/wim/assets/107309764/a5be2192-4e3c-44fc-a257-a05398280f05)
@@ -146,8 +152,6 @@ bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/master/install.sh
 
 - Install Dependencies
 - Run the `install.sh` Using Curl
-
-This method enables you to update Wim without having to clone the repo again or run the install script. Simply `git pull` every once in a while and re-run the `symlink.sh` script.
 
 #### Watch it work
 

@@ -594,22 +594,6 @@ set conceallevel=2 concealcursor=nv
 let g:alt_keymap = 'persian'
 let g:alt_enabled = 1
 
-" function! SetAltKeymapAndCursorColor()
-"     set keymap=persian
-" 	silent !echo -ne "\033]12;cyan\007"
-" 	redraw!
-" 	autocmd VimLeave * silent !echo -ne "\033]112\007"
-" endfunction
-" command! SetAlt call SetAltKeymapAndCursorColor()
-
-" function! SetBackToEng()
-"     set keymap=
-" 	silent !echo -ne "\033]112\007"
-" 	redraw!
-" endfunction
-" command! SetEng call SetBackToEng()
-
-
 function! CallToggleKeymap()
     if g:alt_enabled
         call ToggleKeymap()

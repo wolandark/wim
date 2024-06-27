@@ -2,6 +2,8 @@
 * [[#How To Use This Wiki|How To Use This Wiki]]
 * [[#How To Update Wim|How To Update Wim]]
 * [[#What Are All These Set Options Doing?|What Are All These Set Options Doing?]]
+* [[#What If I Forget The Keybindings?|What If I Forget The Keybindings?]]
+	* [[#How To Read The Cheat File|How To Read The Cheat File]]
 * [[#Plugins Guide|Plugins Guide]]
 	* [[#Leaderf|Leaderf]]
 	* [[#Stargate|Stargate]]
@@ -45,6 +47,15 @@ If for some reason you corrupt or destroy the symlinks that are setup between
 the `wim` directory and the `~/.vim` directory, you will only have to run the
 `update.sh` script that will be automatically generated after the initial
 installation.
+
+=  What If I Forget The Keybindings? =
+Either enter this wiki and consult the mappings tables, or read the Cheat40
+file inside vim, or run the fzf `:Maps` command by pressing `<Leader>M` in
+normal mode.
+
+= How To Read The Cheat File =
+Simply issue `:Cheat40` inside Vim
+
 
 = What Are All These Set Options Doing? =
 

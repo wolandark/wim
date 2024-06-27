@@ -48,7 +48,7 @@ setupVimWiki()
 {
     mkdir -p "$_VIMWIKI_PATH"
     curl -fLo "$_VIMWIKI_PATH/$_VIMWIKI_WIM" "$_VIMWIKI_WIM_REMOTE"
-    echo "[[Wim]]" > "$_VIMWIKI_PATH/$_VIMWIKI_INDEX"
+    echo "[[Wim]]" >> "$_VIMWIKI_PATH/$_VIMWIKI_INDEX"
 }
 
 main()

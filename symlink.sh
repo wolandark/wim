@@ -77,7 +77,7 @@ linkFiles()
 	printf "\e[42;30mSymlinking Latest Cheat File\e[0m\n"
 	ln -sf "$(pwd)/$_CHEAT_FILE" "$_CHEAT_FILE_DEST"
 	echo ""
-    echo "[[Wim]]" > "$_WIKI_DIR/$_VIMWIKI_INDEX"
+    echo "[[Wim]]" >> "$_WIKI_DIR/$_VIMWIKI_INDEX"
 }
 
 createUpdateScript()
@@ -115,7 +115,7 @@ linkFiles()
 	printf "\e[42;30mSymlinking Latest Cheat File\e[0m\n"
 	ln -sf "$(pwd)/$_CHEAT_FILE" "$_CHEAT_FILE_DEST"
 	echo ""
-	echo "[[Wim]]" > "$_WIKI_DIR/$_VIMWIKI_INDEX"
+	echo "[[Wim]]" >> "$_WIKI_DIR/$_VIMWIKI_INDEX"
 }
 EOF
 

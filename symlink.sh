@@ -85,6 +85,9 @@ createUpdateScript()
 cat << 'EOF' > update.sh
 #!/bin/sh
 
+parent_dir=$(basename "$(pwd)")
+msg=$(git log -1 --pretty=%B)
+
 # Check parent wim dir exists
 checkWimExist()
 {
@@ -119,6 +122,8 @@ linkFiles()
 }
 checkWimExist 
 linkFiles
+
+printf "\e[43;30mMessage From Woland: %s\e[0m\n" "$msg"
 EOF
 
 chmod +x update.sh

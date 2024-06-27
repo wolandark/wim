@@ -3,6 +3,7 @@
 # vars
 parent_dir=$(basename "$(pwd)")
 msg=$(git log -1 --pretty=%B)
+script="$0"
 
 _CONFIG_DIR="config"
 _COC_FILE="config/coc-settings.json"
@@ -89,6 +90,7 @@ main()
 }
 
 main
+sed -i '85,87{s/^\([^#]\)/#\1/}' "$script"
 
 printf "\e[43;30mPress Enter To Continue...\e[0m\n"
 printf "\e[44;30mWhen You See C Extension Of Python3 Installed Successfully, Exit Vim. (you might have to scroll to see the msg)\e[0m\n"

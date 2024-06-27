@@ -2,7 +2,7 @@
 
 todo:
 
-Update keymappings in readme, wiki and cheat file.
+Update keymappings in readme, wiki and cheat file. [done]
 
 Add symlink method of installation to keep users up to date with upstream [done]
 

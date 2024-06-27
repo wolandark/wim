@@ -11,6 +11,7 @@
 	* [[#vimdict|vimdict]]
 	* [[#vim-ddgpb|vim-ddgpb]]
 	* [[#vim-live-server|vim-live-server]]
+	* [[#commentary|commentary]]
 * [[#Full PLugins List|Full Plugins List]]
 * [[#Table of Keybindings|Table of Keybindings]]
 	* [[#CoC LSP Keybindings|CoC LSP Keybindings]]
@@ -25,7 +26,6 @@
 	* [[#Snippets|Snippets]]
 	* [[#bilingual|bilingual]]
 	* [[#Unimpaired|Unimpaired]]
-		* [[#Most Useful Unimpaired Mappings|Most Useful Unimpaired Mappings]]
 
 = How To Use This Wiki =
 press Tab to jumo to the next link (Shift-Tab to go to the previous one), Press
@@ -199,6 +199,31 @@ See: https://github.com/wolandark/vim-ddgpb/tree/master
 Yet another one of my own plugins.😁 
 A liveserver plugin for Vim. 
 See: https://github.com/wolandark/vim-live-server
+
+= commentary =
+Use [count]`gc`[motion] to comment out code.
+
+Example: 
+`3gcj` will comment out `3` lines to the direction of `j`, which is down.
+`gcc` will comment whole lines.
+`gcG` will comment from current line to the end of the file.
+etc ...
+
+See: https://github.com/tpope/vim-commentary
+
+_Note:_ if you're using Vim 9.1+, there is an internal _comment_ plugin from
+habamax. To use that instead of tpop's _commentary_ do the following:
+
+- Disable _commentary_ by commenting out it's entry in the plugins section of the `vimrc`
+
+- Inside Vim, issue:
+`:packadd comment` 
+
+- Use the internal _comment_ plugin the same way as _commentary_. The
+  Keybindings are the same.
+
+- To make the addition of the plugin permenant, add `packadd comment` to the
+  end of the `vimrc`
 
 = Full Plugins List =
 	*LSP, Completion, Snippers*
@@ -421,8 +446,6 @@ Other than ':Chmod', the rest of these are commented out. You can enable them at
 | <C-p> | SwitchKeymap In Normal Mode |
 
 == Unimpaired ==
-=== Most Useful Unimpaired Mappings ===
-Refer to the [official guide](https://github.com/tpope/vim-unimpaired/blob/master/doc/unimpaired.txt) for more
 
 | Key      | Function                                               |
 | ---      | ---                                                    |
@@ -439,3 +462,4 @@ Refer to the [official guide](https://github.com/tpope/vim-unimpaired/blob/maste
 | [e       | Exchange the current line with [count] lines above it. |
 | ]e       | Exchange the current line with [count] lines below it. |
 
+See: https://github.com/tpope/vim-unimpaired/blob/master/doc/unimpaired.txt) for more

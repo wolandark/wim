@@ -34,7 +34,7 @@ Plug 'chriskempson/base16-vim'
 Plug 'wolandark/vim-live-server'
 Plug 'alvan/vim-closetag'
 Plug 'https://github.com/ap/vim-css-color.git'
-Plug 'DougBeney/pickachu'
+Plug 'DougBeney/pickachu', {'for':['css','html']}
 
 " Git
 Plug 'airblade/vim-gitgutter'

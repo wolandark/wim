@@ -117,6 +117,8 @@ linkFiles()
 	echo ""
 	echo "[[Wim]]" >> "$_WIKI_DIR/$_VIMWIKI_INDEX"
 }
+checkWimExist 
+linkFiles
 EOF
 
 chmod +x update.sh

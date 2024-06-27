@@ -4,7 +4,7 @@ todo:
 
 Update keymappings in readme, wiki and cheat file.
 
-Add symlink method of installation to keey users up to date with upstream [done]
+Add symlink method of installation to keep users up to date with upstream [done]
 
 <div align="center">
 <img src="https://github.com/wolandark/wim/assets/107309764/8bf3528b-9751-4bda-95e4-70c3b958cd5f" style="width:50%;">
@@ -20,7 +20,7 @@ Add symlink method of installation to keey users up to date with upstream [done]
 
 - Clean installation. Everything will go where they belong, under `$HOME/.vim/`
 - Automatic Plugin Installation
-  - Plugins for LSP, completion, snippets, colors, web development, Git, usability, enhancements, jumping around, utility, integrations, etc.
+  - Plugins for LSP, completion, snippets, colors, web development, Git, usability, enhancements, jumping around, utility, integration, etc.
 - Vimwiki configuration
   - Wim ships with a default vimwiki wiki file that you can read anytime inside Wim.
 - Execute python, bash, js, go files without leaving Vim.
@@ -105,7 +105,7 @@ The purpose of this project is to not only provide an IDE-like vimrc, but also t
 # Dependencies
 
 - Vim 9.0 or later with huge features.
-  - Note: This Config Will definitely work with Vim 8.0 and later, but don't miss out on the great features of Vim 9.1! Grab the latest Vim!
+  - Note: This config will definitely work with Vim 8.0 and later, but don't miss out on the great features of Vim 9.1! Grab the latest Vim!
 - Nodejs
 - npm
 - Python (For Compiling The Leaderf C Extension)
@@ -172,13 +172,13 @@ This is recorded on Devuan (in case that matters).
 #### Notes
 
 - Some terminals hold unto your Ctrl or Alt or shift key for their own functions. It's up to you to use a sane terminal emulator!
-- This config has been tested on variouse GNU+Linux distros as well as MacOS, FreeBSD and Windows, but official support will only be provided for GNU+Linux distros.
+- This config has been tested on various GNU+Linux distros as well as MacOS, FreeBSD and Windows, but official support will only be provided for GNU+Linux distros.
 
 <details>
 <summary>Notes for Windows users</summary>
 
 Make sure you have `nodejs` and `npm` in your `PATH` and that you have `curl` installed. <br>  
-You have to manually install `fzf` from the official repo and remove the `Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }` line from `wim-vim`. (Yes becuase you're on windows you must suffer!) <br>
+You have to manually install `fzf` from the official repo and remove the `Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }` line from `wim-vim`. (Yes because you're on windows you must suffer!) <br>
 Clone the repo and move the `wim-vim` file under `C:\Users\username\vimfiles\vimrc`. Make sure to rename it to `vimrc`. Copy over the `coc-settings.json`, `cheat40.txt` and the whole `vimwiki` directory also under the aforementioned path.
 
 Then simply start Vim and wait for the installation to finish.
@@ -247,7 +247,7 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
 
 | Keys           | Function                                  |
 | -------------- | ----------------------------------------- |
-| \<F6\>         | Turn on SpellChecking                     |
+| \<F6\>         | Turn on Spell Checking                    |
 | \<F8\>         | Compile and Run Basic C Code              |
 | \<F12\>        | Execute Bash, Python, Nodejs & Go Files   |
 | gs             | Fix Spelling To The First Immediate Match |
@@ -471,19 +471,19 @@ Woland's Vim = Wim. Get it?
 
 <h5> What features does Wim offer? </h5>
 
-- Maintainace, extensiblility and customizability!
+- Maintenance, extensibility and customizability!
+- Easy LSP setup, completion, intellisense etc ...
 - Easy tab and split navigation <br>
 - Start Screen with bookmarks and file history <br>
 - Beautiful built in colorschemes
-- Easy completion ctags, syntax check and more <br>
-- Lighline, Vim statusline <br>
-  - Choices! It is all about choices <br>
+- Thorough Docs!
+- See the exhausting feature list above for more in depth information
 
 <h5> Can I expect support? </h5>
 Yes! Just ask and I will answer. When asking however, provide proper information so that I can help you <br>
 
 <h5> Why didn't you use Neovim like everyone else? </h5>
-Because Vim is the one I use and frankly Vim is better!
+Because Vim is the one I use and imo Vim is better!
 
 <h5> Will you make custom vimrc configurations? </h5>
 
@@ -493,10 +493,12 @@ Because Vim is the one I use and frankly Vim is better!
 
 [Contact me](https://t.me/inlovewithapenguin)
 
-#### To Do
 
-- [x] Improve the rest of FloaTerm shortcuts that start with backslashes (DONE)
 
 <!--
+#### To Do
+- [x] Improve the rest of FloaTerm shortcuts that start with backslashes (DONE)
+
 vim: cole=0
+
 -->

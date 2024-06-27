@@ -86,6 +86,7 @@ cat << 'EOF' > update.sh
 #!/bin/sh
 
 parent_dir=$(basename "$(pwd)")
+_CONFIG_DIR="config"
 msg=$(git log -1 --pretty=%B)
 
 # Check parent wim dir exists

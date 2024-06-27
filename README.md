@@ -1,5 +1,6 @@
 ## This repository is under maintenance. Please come back later (like in a day)
-todo: 
+
+todo:
 
 Update keymappings in readme, wiki and cheat file.
 
@@ -10,139 +11,153 @@ Add symlink method of installation to keey users up to date with upstream [done]
 </div>
 
 # Wim News
+
 ## Version 3.3 has been released with great improvements
 
 <details> 
 <summary> Expand Feature List</summary>
-<br> 
+<br>
 
 - Clean installation. Everything will go where they belong, under `$HOME/.vim/`
 - Automatic Plugin Installation
-	- Plugins for LSP, completion, snippets, colors, web development, Git, usability, enhancements, jumping around, utility, integrations, etc.
+  - Plugins for LSP, completion, snippets, colors, web development, Git, usability, enhancements, jumping around, utility, integrations, etc.
 - Vimwiki configuration
-	- Wim ships with a default vimwiki wiki file that you can read anytime inside Wim.
+  - Wim ships with a default vimwiki wiki file that you can read anytime inside Wim.
 - Execute python, bash, js, go files without leaving Vim.
 - Set the encoding to UTF-8.
 - Auto save toggle
 - Theme setup
-    - Catppuccin Mocha theme with true color support and GUI font configuration.
+  - Catppuccin Mocha theme with true color support and GUI font configuration.
 - Cursor shape configuration for different modes.
 - Startify configuration
-    - Customized Startify start screen with a custom header, footer, and bookmarks.
+  - Customized Startify start screen with a custom header, footer, and bookmarks.
 - Clipboard configuration
-    - Uses the system clipboard for copy-paste.
+  - Uses the system clipboard for copy-paste.
 - Remember cursor position
-    - Remembers the cursor position in files.
+  - Remembers the cursor position in files.
 - Persistent undo history
-    - Sets up persistent undo history with a custom directory.
+  - Sets up persistent undo history with a custom directory.
 - Various sane vim settings
-    - Vim settings like autoindent, ignorecase, number, relativenumber, etc.
+  - Vim settings like autoindent, ignorecase, number, relativenumber, etc.
 - Netrw configuration
-    - Configures netrw with hidden dotfiles and other settings.
+  - Configures netrw with hidden dotfiles and other settings.
 - Lightline statusbar
-    - Lightline status bar with a custom theme and components.
+  - Lightline status bar with a custom theme and components.
 - Spell checking
-    - spell checking with custom mappings and highlights.
+  - spell checking with custom mappings and highlights.
 - Bilingual configuration with easy layout changing inside Vim.
 - hidden ZWNJ characters by default for languages like Persian.
 - Custom mappings
-   - custom key mappings for various actions.
+  - custom key mappings for various actions.
 - Split navigation
-    - key mappings for split window navigation and resizing.
+  - key mappings for split window navigation and resizing.
 - Floaterm configuration
-    - floaterm plugin with custom key mappings and settings for executing various languages inside Vim.
+  - floaterm plugin with custom key mappings and settings for executing various languages inside Vim.
 - Gitgutter configuration
-    -  GitGutter signs for added, modified, and removed lines.
+  - GitGutter signs for added, modified, and removed lines.
 - Tagbar configuration
-    - Tagbar with a custom ctags binary path.
+  - Tagbar with a custom ctags binary path.
 - Terminal mappings
-    - Sets up key mappings for terminal usage within Vim.
+  - Sets up key mappings for terminal usage within Vim.
 - Runtime macros
-    -  Load custom runtime macros for various functionalities such as justification, emojis and matchit.
+  - Load custom runtime macros for various functionalities such as justification, emojis and matchit.
 - Ultisnips configuration
-    - UltiSnips with custom key bindings for snippet expansion and navigation.
+  - UltiSnips with custom key bindings for snippet expansion and navigation.
 - Clever-f configuration
-    - Clever-F plugin with custom settings for enhanced f/F/t/T motions.
+  - Clever-F plugin with custom settings for enhanced f/F/t/T motions.
 - Disable unnecessary internal plugins
-    -  Disabled several built-in Vim plugins to optimize startup time.
+  - Disabled several built-in Vim plugins to optimize startup time.
 - coc.nvim configuration
-    - coc.nvim for autocompletion, diagnostics, and other LSP s.
+  - coc.nvim for autocompletion, diagnostics, and other LSP s.
 - coc global extensions
-	 - Installs and configures various coc.nvim extensions for different languages and functionalities.
+  - Installs and configures various coc.nvim extensions for different languages and functionalities.
 - coc-explorer configuration
-    -  coc Explorer as the file explorer with icons and customizations.
+  - coc Explorer as the file explorer with icons and customizations.
 - coc-marketplace for coc extensions installation with fuzzy matching.
 - Navigation mappings
-    - key mappings for navigating definitions, type definitions, implementations, references, and diagnostics using coc.nvim.
+  - key mappings for navigating definitions, type definitions, implementations, references, and diagnostics using coc.nvim.
 
 </details>
 <details>
 <summary> Older Versions</summary>
 
 #### Version 3.1 has been released
+
 - Improved style and workflow
 - Cleaned up the config
 - Corrections on Coc.nvim's behavior
 - and many more ...
+
 #### Version 3.2 has been released
+
 - Replaced vim-css plugin with vim-hexokinase due to vim-css's inability to highlight colors in C files properly (you need go for this new plugin which the installation script will take care of)
 - Improved easy motion bindings
 - Added Catpuccino theme
 - Updated and improved the installation script
 
 </details>
-<hr> 
+<hr>
 
 # Intro
-The purpose of this project is to not only provide an IDE-like vimrc, but also to teach you how it is constructed. This project tries to maintain a fairly small `vimrc` and provide a **great out of the box experience**  as well serving as a ground for further customization.
 
-# Dependencies 
+The purpose of this project is to not only provide an IDE-like vimrc, but also to teach you how it is constructed. This project tries to maintain a fairly small `vimrc` and provide a **great out of the box experience** as well serving as a ground for further customization.
+
+# Dependencies
+
 - Vim 9.0 or later with huge features.
-	- Note: This Config Will definitely work with Vim 8.0 and later, but don't miss out on the great features of Vim 9.1! Grab the latest Vim!
-- Nodejs 
-- npm 
+  - Note: This Config Will definitely work with Vim 8.0 and later, but don't miss out on the great features of Vim 9.1! Grab the latest Vim!
+- Nodejs
+- npm
 - Python (For Compiling The Leaderf C Extension)
 
-**Example:**  <br> 
-Debian:<br> 
-`sudo apt install nodejs npm` <br> 
-Arch:<br> 
+**Example:** <br>
+Debian:<br>
+`sudo apt install nodejs npm` <br>
+Arch:<br>
 `sudo pacman -S nodejs npm`
 
-# Installation 
+# Installation
+
 ### Method I (Recommended)
+
 After installing the dependencies, clone the repo and run the `symlink.sh` script. Then simply launch vim and wait for the setup to complete.
 
 **Tl;Dr:**
-- Install Dependencies 
+
+- Install Dependencies
 - Clone This Repo ` git clone https://github.com/wolandark/wim.git`
 - cd Into The Cloned Repo `cd wim`
 - Run the `symlink.sh` script `./symlink.sh`
 
 #### Watch it work
+
 ![Peek 2024-06-27 00-35](https://github.com/wolandark/wim/assets/107309764/a5be2192-4e3c-44fc-a257-a05398280f05)
 This is recorded on Devuan (in case that matters).
 
-
 ### Method II
+
 After installing the dependencies, run the `install.sh` script. The script is **safe** and works sudo-less.
+
 ```
 bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/master/install.sh)
 ```
 
 **Tl;Dr:**
-- Install Dependencies 
+
+- Install Dependencies
 - Run the `install.sh` Using Curl
 
 This method enables you to update Wim without having to clone the repo again or run the install script. Simply `git pull` every once in a while and re-run the `symlink.sh` script.
 
 #### Watch it work
+
 ![Peek 2024-06-26 09-10](https://github.com/wolandark/wim/assets/107309764/6e8e6252-d939-4a4c-874f-9579f7430234)
 This is recorded on Devuan (in case that matters).
 
 <br>
 
 # Some of the features
+
 **See the exhausting feature list above**
 
 - Out of the box plugin installation <br>
@@ -160,22 +175,25 @@ This is recorded on Devuan (in case that matters).
 - This config has been tested on variouse GNU+Linux distros as well as MacOS, FreeBSD and Windows, but official support will only be provided for GNU+Linux distros.
 
 <details>
-<summary>Notes for Windows users</summary> 
+<summary>Notes for Windows users</summary>
 
 Make sure you have `nodejs` and `npm` in your `PATH` and that you have `curl` installed. <br>  
-You have to manually install `fzf` from the official repo and remove the `Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }` line from `wim-vim`. (Yes becuase you're on windows you must suffer!) <br> 
+You have to manually install `fzf` from the official repo and remove the `Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }` line from `wim-vim`. (Yes becuase you're on windows you must suffer!) <br>
 Clone the repo and move the `wim-vim` file under `C:\Users\username\vimfiles\vimrc`. Make sure to rename it to `vimrc`. Copy over the `coc-settings.json`, `cheat40.txt` and the whole `vimwiki` directory also under the aforementioned path.
 
 Then simply start Vim and wait for the installation to finish.
+
 </details>
 
 <details>
-<summary>Notes for Mac users</summary> 
+<summary>Notes for Mac users</summary>
 
 If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
+
 </details>
 
 # Screenshots
+
 ![image](https://github.com/wolandark/wim/assets/107309764/743a4d18-0218-4318-b9c8-b9d85aa3b4ee)
 
 <!--![image](https://github.com/wolandark/wim/assets/107309764/fa6b3775-951f-4c97-aebc-b97341cabdd3)
@@ -205,22 +223,41 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
 <hr>
 
 ## Table of Keybindings
+
+<details>
+<summary>CoC LSP Keybindings</summary>
+
+| Keys              | Function                                  |
+| --------------    | ----------------------------------------- |
+| gd                | Jump To Definition                        |
+| gy                | Type Definition                           |
+| gi                | Implementation                            |
+| gr                | References                                |
+| [g                | Diagnostics Prev                          |
+| ]g                | Diagnostics Next                          |
+| \<leader\>ca      | Code Action                               |
+| \<leader\>f       | Format Selected Code                      |
+| K                 | Show Hover Documentation                  |
+
+</details>
+
+
 <details>
   <summary>Misc Keybindings</summary>
 
 | Keys           | Function                                  |
-| ---            | ---                                       |
+| -------------- | ----------------------------------------- |
 | \<F6\>         | Turn on SpellChecking                     |
 | \<F8\>         | Compile and Run Basic C Code              |
 | \<F12\>        | Execute Bash, Python, Nodejs & Go Files   |
 | gs             | Fix Spelling To The First Immediate Match |
 | \<ESC\>\<ESC\> | Turn Off Search Highlights                |
 | \a             | Auto Save Toggle                          |
-| \<leader\>t    | FloatermToggle                            |
+| \\t            | FloatermToggle                            |
 | \<leader\>M    | Maps                                      |
 | \<PageUp\>     | Buffer Next                               |
 | \<PageDown\>   | Buffer Previous                           |
-| \<C-m\>        | gM, Center Cursor                         |
+| \<Del\>        | Buffer Delete                             |
 | \<leader\>\    | Border Around Current Line Using Toilet   |
 | \<space\>e     | File Explorer                             |
 | \<leader\>T    | New Tab                                   |
@@ -233,6 +270,8 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
 | \<leader\>so   | Save & Source Buffer                      |
 | \<leader\>k    | Move Line Up                              |
 | \<leader\>j    | Move Line Down                            |
+| K              | Move Line Up In Visual Mode               |
+| J              | Move Line Down In Visual Mode             |
 | jj             | \<ESC\>                                   |
 | \<leader\>pli  | PlugInstall                               |
 | \<leader\>plc  | PlugClean                                 |
@@ -245,7 +284,7 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
   <summary>Split Navigation</summary>
 
 | Key         | Function                 |
-| ---         | ---                      |
+| ----------- | ------------------------ |
 | \<C-h\>     | Focus Left Split         |
 | \<C-j\>     | Focus Bottom Split       |
 | \<C-k\>     | Focus Top Split          |
@@ -267,21 +306,21 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
     <summary>Tabs</summary>
 
 | Key            | Function                       |
-| ---            | ---                            |
+| -------------- | ------------------------------ |
 | \<M-Left\>     | Tab Previous                   |
 | \<M-Right\>    | Tab Next                       |
 | \<leader\>1..9 | Go To Corresponding Tab Number |
 | \<leader\>0    | Tab Last                       |
 | \<leader\>x    | Tab Close                      |
-| \<leader\>tm   | Tab Move                       |
 
 </details>
 
 <details>
     <summary>FZF</summary>
+<p>Other than <code>:Colors</code> and <code>:Buffers</code>, the rest of these are commented out. You can enable them at your will.</p>
 
 | Key           | Function |
-| ---           | ---      |
+| ------------- | -------- |
 | \c            | Colors   |
 | \<leader\>b   | Buffers  |
 | \<leader\>ff  | Files    |
@@ -302,18 +341,18 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
 <details>
     <summary>Aligning Text</summary>
 
-| Key | Function          |
-| --- | ---               |
-| \at | Tabularize Tables |
-| \ta | Tabularize [char] |
+| Key   | Function          |
+| ----- | ----------------- |
+| \\\ta | Tabularize [char] |
 
 </details>
 
 <details>
     <summary>Enuch Shell Commands</summary>
+<p>Other than <code>:Chmod</code>, the rest of these are commented out. You can enable them at your will.</p>
 
 | Key           | Function  |
-| ---           | ---       |
+| ------------- | --------- |
 | \<leader\>ch  | Chmod +x  |
 | \<leader\>suw | SudoWrite |
 | \<leader\>sue | SudoEdit  |
@@ -328,21 +367,21 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
 <details>
     <summary>Floterm</summary>
 
-| Key         | Function               |
-| ---         | ---                    |
-| \\t         | FloatermToggle         |
-| \q         | FloatermKill           |
-| \n         | FloatermNext           |
-| \p         | FloatermPrev           |
-| \v         | vifm Inside FloaTerm   |
-| \ra        | ranger Inside FloaTerm |
-| \\tr        | Terminal Right         |
-| \\tb        | Terminal Bottom        |
-| \rg         | Run Go In Terminal     |
-| \rb         | Run Bash In Terminal   |
-| \rj         | Run Nodejs In Terminal |
-| \rp         | Run Python In Terminal |
-| \<leader\>l | Lf                     |
+| Key          | Function               |
+| -----------  | ---------------------- |
+| \t           | FloatermToggle         |
+| \q           | FloatermKill           |
+| \n           | FloatermNext           |
+| \p           | FloatermPrev           |
+| \v           | vifm Inside FloaTerm   |
+| \ra          | ranger Inside FloaTerm |
+| \\\tr        | Terminal Right         |
+| \\\tb        | Terminal Bottom        |
+| \rg          | Run Go In Terminal     |
+| \rb          | Run Bash In Terminal   |
+| \rj          | Run Nodejs In Terminal |
+| \rp          | Run Python In Terminal |
+| \<leader\>lf | Lf                     |
 
 </details>
 
@@ -350,7 +389,7 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
     <summary>Terminal</summary>
 
 | Key         | Function                                   |
-| ---         | ---                                        |
+| ----------- | ------------------------------------------ |
 | \<leader\>' | Vim's Terminal                             |
 | \l          | Clear Terminal In the Background (For F12) |
 | \<C-j\>     | Focus Bottom                               |
@@ -364,9 +403,9 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
     <summary>Snippets</summary>
 
 | Key     | Function                                      |
-| ---     | ---                                           |
+| ------- | --------------------------------------------- |
 | \<C-j\> | Expand Snippet & Jump Forward In Placeholders |
-| \<C-k\> | Jump Backward In  Placeholders                |
+| \<C-k\> | Jump Backward In Placeholders                 |
 | \<C-l\> | List Snippets                                 |
 
 </details>
@@ -374,20 +413,22 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
 <details>
     <summary>bilingual</summary>
 
-| Key     | Function     |
-| ---     | ---          |
-| \<C-p\> | SwitchKeymap |
+| Key     | Function                    |
+| ------- | --------------------------- |
+| \<C-a\> | SwitchKeymap In Insert Mode |
+| \<C-p\> | SwitchKeymap In Normal Mode |
 
 </details>
 
 <details>
     <summary>Unimpaired</summary>
 
-#### Most Useful Unimpaired Mappings.<br> 
+#### Most Useful Unimpaired Mappings.<br>
+
 Refer to the [official guide](https://github.com/tpope/vim-unimpaired/blob/master/doc/unimpaired.txt) for more
 
 | Key        | Function                                               |
-| ---        | ---                                                    |
+| ---------- | ------------------------------------------------------ |
 | [b         | :bprevious                                             |
 | ]b         | :bnext                                                 |
 | [B         | :bfirst                                                |
@@ -400,6 +441,7 @@ Refer to the [official guide](https://github.com/tpope/vim-unimpaired/blob/maste
 | ]\<Space\> | Add [count] blank lines below the cursor.              |
 | [e         | Exchange the current line with [count] lines above it. |
 | ]e         | Exchange the current line with [count] lines below it. |
+
 </details>
 
 <hr> 
@@ -451,9 +493,10 @@ Because Vim is the one I use and frankly Vim is better!
 
 [Contact me](https://t.me/inlovewithapenguin)
 
-#### To Do 
+#### To Do
+
 - [x] Improve the rest of FloaTerm shortcuts that start with backslashes (DONE)
 
 <!--
-vim: cole=0 
+vim: cole=0
 -->

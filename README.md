@@ -239,6 +239,7 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
 | \<leader\>f       | Format Selected Code                      |
 | \<leader\>?       | diagnosticInfo                            |
 | K                 | Show Hover Documentation                  |
+| \rc               | Restart CoC                               |
 
 </details>
 

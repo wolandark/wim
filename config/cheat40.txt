@@ -17,6 +17,7 @@ CoC {{{2
  \rc 				Restart CoC
 }}}
 Misc Bindings {{{2
+== Misc Bindings ==
    Keys             Function                                   
    --               --                                          
  <F2>               StartBrowserSync                        
@@ -159,6 +160,7 @@ Bilingual {{{2
  }}}
 
 LeaderF {{{2
+== LeaderF ==
 
 file                search files
 tag                 navigate tags using the tags file

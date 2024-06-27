@@ -14,6 +14,7 @@ CoC {{{2
  <leader>ca 		codeaction
  <leader>f  		format-selected
  <leader>?  		diagnosticInfo
+ \rc 				Restart CoC
 }}}
 Misc Bindings {{{2
    Keys             Function                                   

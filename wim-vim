@@ -63,7 +63,6 @@ Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 
 " Jumping Around
 Plug 'https://github.com/rhysd/clever-f.vim.git'
-" Plug 'https://github.com/justinmk/vim-sneak.git'
 Plug 'https://github.com/monkoose/vim9-stargate.git'
 
 " Utility, Integrations
@@ -475,7 +474,7 @@ autocmd FileType * let b:coc_pairs_disabled = ["<"]
 nnoremap <silent> <leader>? :call CocAction('diagnosticInfo') <CR>
 " refresh 
 " nnoremap <silent><expr> \co coc#refresh()
- nnoremap <silent> \r :CocRestart<CR>
+ nnoremap <silent> \rc :CocRestart<CR>
 "===[ Coc-Explorer ]==="
 " set up coc-explorer to open in the current directory
 let g:coc_explorer_global_mirror = 0

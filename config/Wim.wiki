@@ -1,3 +1,199 @@
+
+= How To Use This Wiki =
+Press Enter on the index titles to jump to that topic.
+	( Pressing Enter on any other word, creates a wiki page under that word! )
+To follow URLs in your browser, press `gx` on them.
+To learn more about VimWiki and how to use it to take note and make your 
+second brain, see the following links:
+	https://github.com/vimwiki/vimwiki
+	https://zettelkasten.de/introduction/
+	https://en.wikipedia.org/wiki/Zettelkasten
+
+*Index of Topics:* 
+* [[#How To Use This Wiki|How To Use This Wiki]]
+* [[#Plugins Guide|Plugins Guide]]
+	* [[#Leaderf|Leaderf]]
+	* [[#Stargate|Stargate]]
+	* [[#Surround|Surround]]
+	* [[#vimdict|vimdict]]
+	* [[#vim-ddgpb|vim-ddgpb]]
+	* [[#vim-live-server|vim-live-server]]
+* [[#Full PLugins List|Full Plugins List]]
+
+* [[#Table of Keybindings|Table of Keybindings]]
+	* [[#CoC LSP Keybindings|CoC LSP Keybindings]]
+	* [[#Misc Keybindings|Misc Keybindings]]
+	* [[#Split Navigation|Split Navigation]]
+	* [[#Tabs|Tabs]]
+	* [[#FZF|FZF]]
+	* [[#Aligning Text|Aligning Text]]
+	* [[#Enuch Shell Commands|Enuch Shell Commands]]
+	* [[#Floaterm|Floaterm]]
+	* [[#Terminal|Terminal]]
+	* [[#Snippets|Snippets]]
+	* [[#bilingual|bilingual]]
+	* [[#Unimpaired|Unimpaired]]
+		* [[#Most Useful Unimpaired Mappings|Most Useful Unimpaired Mappings]]
+
+
+= Plugins Guide = 
+This plugins guide is not about including a Tl;Dr to every plugin! Yet it will 
+cover some of the important ones that are not covered in the tables below. You 
+can always check out the individual repos of each plugin and see their README
+
+== Leaderf ==
+This is one of the most useful plugins. Although fzf can also do most of these 
+things, I prefer to keep them both around. 
+Wim doesn't provide any mappings for leaderf, and I advise you against it! 
+use leaderf from Vim's Ex Mode (command mode).
+
+*Example:*
+fuzzy match file names
+`:Leaderf file`
+fuzzy match history
+`:Leaderf mru`
+etc ...
+
+file                search files
+tag                 navigate tags using the tags file
+function            navigate functions or methods in the buffer
+mru                 search most recently used files
+searchHistory       execute the search command in the history
+cmdHistory          execute the command in the history
+help                navigate the help tags
+line                search a line in the buffer
+colorscheme         switch between colorschemes
+gtags               navigate tags using the gtags
+self                execute the commands of itself
+bufTag              navigate tags in the buffer
+buffer              search buffers
+rg                  grep using rg
+filetype            navigate the filetype
+command             execute built-in/user-defined Ex commands.
+window              search windows.
+quickfix            navigate the quickfix.
+loclist             navigate the location list.
+
+*optional arguments:*
+	-h, --help            show this help message and exit
+	--reverse             show results in bottom-up order
+	--stayOpen            don't quit LeaderF after accepting an entry
+	--input <INPUT>       specifies INPUT as the pattern inputted in advance
+	--cword               current word under cursor is inputted in advance
+	--top                 the LeaderF window is at the top of the screen
+	--bottom              the LeaderF window is at the bottom of the screen
+	--left                the LeaderF window is at the left of the screen
+	--right               the LeaderF window is at the right of the screen
+	--belowright          the LeaderF window is at the belowright of the screen
+	--aboveleft           the LeaderF window is at the aboveleft of the screen
+	--fullScreen          the LeaderF window takes up the full screen
+	--popup               the LeaderF window is a popup window or floating window
+	--nameOnly            LeaderF is in NameOnly mode by default
+	--fullPath            LeaderF is in FullPath mode by default
+	--fuzzy               LeaderF is in Fuzzy mode by default
+	--regexMode           LeaderF is in Regex mode by default
+	--nowrap              long lines in the LeaderF window won't wrap
+	--next                Jump to the next result.
+	--previous            Jump to the previous result.
+	--recall              Recall last search. If the result window is closed, reopen it.
+	--popup-height <POPUP_HEIGHT>
+	                      specifies the maximum height of popup window, only available in popup mode.
+	--popup-width <POPUP_WIDTH>
+	                      specifies the width of popup window, only available in popup mode.
+	--no-sort             do not sort the result.
+	--case-insensitive    fuzzy search case insensitively.
+	--auto-preview        open preview window automatically.
+	--no-auto-preview     don't open preview window automatically.
+
+See: https://github.com/Yggdroot/LeaderF
+
+= Stargate =
+Literally magic! Written in vim9script, super fast and super efficient!
+ type `\f` in normal mode, followed by a character you want to jump to and 
+ follow the hints.
+See: https://github.com/monkoose/vim9-stargate 
+
+= Surround =
+See: https://github.com/tpope/vim-surround
+
+= vimdict =
+My own humble plugin for integrating dict cli into vim in a seamless way.
+
+You can either place your cursor on a word and issue `:Dict`, or optionally map
+it to a key:
+	`nnoremap <F2> :Dict<CR>`
+See: https://github.com/wolandark/vimdict
+
+= vim-ddgpb =
+Another one of my own plugins.
+Yea the name is trash but its pretty useful. 
+Once enabled, you can search a word under the cursor in your browser, or a
+chunk of text that is visually selected. This plugin also allows you to submit
+a visually selected text to the 0x0.st paste bin.
+
+This plugin binds `\s` and `\p` and `F3` key for visual search, paste bin and 
+word under cursor respectively.
+See: https://github.com/wolandark/vim-ddgpb/tree/master
+
+= vim-live-server = 
+Yet another one of my own plugins.😁 
+A liveserver plugin for Vim. 
+See: https://github.com/wolandark/vim-live-server
+
+= Full Plugins List =
+	*LSP, Completion, Snippers*
+	Plug 'sheerun/vim-polyglot'
+	Plug 'honza/vim-snippets'
+	Plug 'SirVer/ultisnips'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+	*Colors*
+	Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+	Plug 'chriskempson/base16-vim'
+
+	*Web Development*
+	Plug 'wolandark/vim-live-server'
+	Plug 'alvan/vim-closetag'
+	Plug 'https://github.com/ap/vim-css-color.git'
+	Plug 'DougBeney/pickachu'
+
+	*Git*
+	Plug 'airblade/vim-gitgutter'
+	Plug 'tpope/vim-fugitive'
+	Plug 'rhysd/git-messenger.vim'
+
+	*Usability, Enhancements*
+	Plug 'ryanoasis/vim-devicons'
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
+	Plug 'junegunn/vim-peekaboo'
+	Plug 'itchyny/lightline.vim'
+	Plug 'mengelbrecht/lightline-bufferline'
+	Plug 'voldikss/vim-floaterm'
+	Plug 'tpope/vim-rsi'
+	Plug 'tpope/vim-repeat'
+	Plug 'tpope/vim-commentary'
+	Plug 'tpope/vim-eunuch'
+	Plug 'tpope/vim-surround'
+	Plug 'tpope/vim-unimpaired'
+	Plug 'https://github.com/godlygeek/tabular.git'
+	Plug 'https://github.com/markonm/traces.vim.git'
+	Plug 'https://github.com/907th/vim-auto-save.git'
+	Plug 'mhinz/vim-startify'
+	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+
+	*Jumping Around*
+	Plug 'https://github.com/rhysd/clever-f.vim.git'
+	Plug 'https://github.com/monkoose/vim9-stargate.git'
+
+	*Utility, Integrations*
+	Plug 'ptzz/lf.vim'
+	Plug 'vimwiki/vimwiki'
+	Plug 'https://github.com/preservim/tagbar.git'
+	Plug 'lifepillar/vim-cheat40'
+	Plug 'wolandark/vimdict'
+			
+
 = Table of Keybindings =
 == CoC LSP Keybindings ==
 
@@ -13,6 +209,7 @@
 | <leader>f  | Format Selected Code     |
 | <leader>?  | diagnosticInfo           |
 | K          | Show Hover Documentation |
+| \rc        | Restart CoC              |
 
 
 == Misc Keybindings ==
@@ -119,7 +316,7 @@ Other than ':Chmod', the rest of these are commented out. You can enable them at
 | <leader>dup | Duplicate |
 | <leader>mkd | Mkdir     |
 
-== Floterm ==
+== Floaterm ==
 
 | Key        | Function               |
 | ---        | ---                    |

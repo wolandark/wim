@@ -80,12 +80,55 @@ linkFiles()
     echo "[[Wim]]" > "$_WIKI_DIR/$_VIMWIKI_INDEX"
 }
 
+createUpdateScript()
+{
+cat << 'EOF' > update.sh
+#!/bin/sh
+
+# Check parent wim dir exists
+checkWimExist()
+{
+	if [ "$parent_dir" = "wim" ]; then
+		printf "Wim Directory Exists!\nProceeding ...\n"
+	else
+		printf "Wim Directory Does Not Exists!\nBreaking! ...\n"
+		exit 1
+	fi
+
+	if [ -d "$_CONFIG_DIR" ]; then
+		printf "Config Directory Exists!\nProceeding ...\n"
+	else
+		printf "Config Directory Does Not Exists!\nBreaking! ...\n"
+		exit 1
+	fi
+}
+
+# link the files
+linkFiles()
+{
+	printf "\e[42;30mSymlinking Latest Vimrc\e[0m\n"
+	ln -sf "$(pwd)/$_VIMRC_FILE" "$_VIMRC_FILE_DEST"
+	printf "\e[42;30mSymlinking Latest CoC Settings\e[0m\n"
+	ln -sf "$(pwd)/$_COC_FILE" "$_COC_FILE_DEST"
+	printf "\e[42;30mSymlinking Latest Wim Wiki\e[0m\n"
+	ln -sf "$(pwd)/$_WIKI_FILE" "$_WIKI_FILE_DEST"
+	printf "\e[42;30mSymlinking Latest Cheat File\e[0m\n"
+	ln -sf "$(pwd)/$_CHEAT_FILE" "$_CHEAT_FILE_DEST"
+	echo ""
+	echo "[[Wim]]" > "$_WIKI_DIR/$_VIMWIKI_INDEX"
+}
+EOF
+
+chmod +x update.sh
+echo "Update Script Generated!"
+}
 main()
 {
 	backup
 	downloadCtags
 	checkWimExist
 	linkFiles
+	createUpdateScript
 }
 
 main

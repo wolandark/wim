@@ -1,6 +1,4 @@
 {
-	"phpactor.enable": true,
-	"phpactor.path": "/usr/bin/phpactor",
 	"suggest.noselect": true,
 	"css.completion.completePropertyWithSemicolon": false,
 	"scss.completion.completePropertyWithSemicolon": false,
@@ -11,7 +9,7 @@
 	"pyright.inlayHints.parameterTypes": false,
 	"explorer.icon.enableNerdfont": true,
 	"explorer.file.reveal.auto": true,
-	"coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "html"]
+	"coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "html", "javascript"]
 }
 
 

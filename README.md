@@ -16,6 +16,7 @@ clean up bilingual Keybindings [ ]
 
 ## Version 3.3 has been released with great improvements
 
+### Feature List
 <details> 
 <summary> Expand Feature List</summary>
 <br>
@@ -122,7 +123,7 @@ Arch:<br>
 
 ### Method I (Recommended)
 
-After installing the dependencies, clone the repo and run the `symlink.sh` script. Then simply launch vim and wait for the setup to complete.
+After installing the dependencies, clone the repo and run the `symlink.sh` script. Then simply wait for the setup to complete.
 
 **Tl;Dr:**
 

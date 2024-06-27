@@ -86,8 +86,21 @@ cat << 'EOF' > update.sh
 #!/bin/sh
 
 parent_dir=$(basename "$(pwd)")
-_CONFIG_DIR="config"
 msg=$(git log -1 --pretty=%B)
+_CONFIG_DIR="config"
+_COC_FILE="config/coc-settings.json"
+_WIKI_FILE="config/Wim.wiki"
+_CHEAT_FILE="config/cheat40.txt"
+_VIMRC_FILE="wim-vim"
+_VIMWIKI_INDEX="index.wiki"
+
+_VIMRC_FILE_DEST="$HOME/.vim/vimrc"
+_COC_FILE_DEST="$HOME/.vim/coc-settings.json"
+_WIKI_FILE_DEST="$HOME/.vim/vimwiki/Wim.wiki"
+_CHEAT_FILE_DEST="$HOME/.vim/cheat40.txt"
+
+_VIM_PATH="$HOME/.vim"
+_WIKI_DIR="$_VIM_PATH/vimwiki"
 
 # Check parent wim dir exists
 checkWimExist()

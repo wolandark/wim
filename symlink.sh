@@ -72,8 +72,8 @@ linkFiles()
 	ln -sf "$(pwd)/$_VIMRC_FILE" "$_VIMRC_FILE_DEST"
 	printf "\e[42;30mSymlinking Latest CoC Settings\e[0m\n"
 	ln -sf "$(pwd)/$_COC_FILE" "$_COC_FILE_DEST"
-	printf "\e[42;30mSymlinking Latest Wim Wiki\e[0m\n"
-	ln -sf "$(pwd)/$_WIKI_FILE" "$_WIKI_FILE_DEST"
+	printf "\e[42;30mCopying Latest Wim Wiki\e[0m\n"
+	cp "$(pwd)/$_WIKI_FILE" "$_WIKI_FILE_DEST"
 	printf "\e[42;30mSymlinking Latest Cheat File\e[0m\n"
 	ln -sf "$(pwd)/$_CHEAT_FILE" "$_CHEAT_FILE_DEST"
 	echo ""
@@ -85,6 +85,7 @@ createUpdateScript()
 cat << 'EOF' > update.sh
 #!/bin/sh
 
+# vars
 parent_dir=$(basename "$(pwd)")
 msg=$(git log -1 --pretty=%B)
 _CONFIG_DIR="config"
@@ -127,12 +128,11 @@ linkFiles()
 	ln -sf "$(pwd)/$_VIMRC_FILE" "$_VIMRC_FILE_DEST"
 	printf "\e[42;30mSymlinking Latest CoC Settings\e[0m\n"
 	ln -sf "$(pwd)/$_COC_FILE" "$_COC_FILE_DEST"
-	printf "\e[42;30mSymlinking Latest Wim Wiki\e[0m\n"
-	ln -sf "$(pwd)/$_WIKI_FILE" "$_WIKI_FILE_DEST"
+	printf "\e[42;30mCopying Latest Wim Wiki\e[0m\n"
+	cp "$(pwd)/$_WIKI_FILE" "$_WIKI_FILE_DEST"
 	printf "\e[42;30mSymlinking Latest Cheat File\e[0m\n"
 	ln -sf "$(pwd)/$_CHEAT_FILE" "$_CHEAT_FILE_DEST"
 	echo ""
-	echo "[[Wim]]" >> "$_WIKI_DIR/$_VIMWIKI_INDEX"
 }
 checkWimExist 
 linkFiles

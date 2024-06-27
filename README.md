@@ -237,6 +237,7 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
 | ]g                | Diagnostics Next                          |
 | \<leader\>ca      | Code Action                               |
 | \<leader\>f       | Format Selected Code                      |
+| \<leader\>?       | diagnosticInfo                            |
 | K                 | Show Hover Documentation                  |
 
 </details>
@@ -259,7 +260,7 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
 | \<PageDown\>   | Buffer Previous                           |
 | \<Del\>        | Buffer Delete                             |
 | \<leader\>\    | Border Around Current Line Using Toilet   |
-| \<space\>e     | File Explorer                             |
+| \<leader\>e    | File Explorer                             |
 | \<leader\>T    | New Tab                                   |
 | \<leader\>mk   | Make View                                 |
 | \<leader\>i    | Startify Dashboard                        |

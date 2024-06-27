@@ -63,7 +63,7 @@ main
 
 printf "\e[42;30mFile Accusation Successful! Launching Vim!\e[0m\n"
 printf "\e[43;30mPress Enter To Continue...\e[0m\n"
-printf "\e[44;30mWhen You See C Extension Of Python3 Installed Successfully, Exit Vim. (you might have to scroll to see the msg)\e[0m\n"
+printf "\e[44;30mWhen CoC finishes installing a few extensions, you can exit Vim.\e[0m\n"
 
 vim
 

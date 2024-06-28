@@ -587,8 +587,8 @@ augroup code_runner
 augroup end
 
 "===[ ZWNJ ]==="
-call matchadd('Conceal', '\%u200c', 10, -1, {'conceal':'|'})
-set conceallevel=2 concealcursor=nv
+"call matchadd('Conceal', '\%u200c', 10, -1, {'conceal':'|'})
+"set conceallevel=2 concealcursor=nv
 
 "=== [ Bilingual Settings ] ==="
 let g:alt_keymap = 'persian'

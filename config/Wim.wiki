@@ -15,6 +15,9 @@
 	* [[#vim-live-server|vim-live-server]]
 	* [[#commentary|commentary]]
 	* [[#rsi|rsi]]
+	* [[#CoC|CoC]]
+		* [[#coc-marketplace|coc-marketplace]]
+		* [[#coc-explorer|coc-explorer]]
 * [[#Full PLugins List|Full Plugins List]]
 * [[#Table of Keybindings|Table of Keybindings]]
 	* [[#CoC LSP Keybindings|CoC LSP Keybindings]]
@@ -252,6 +255,36 @@ mode. Such as `C-a` to go to the beginning of the line, `C-e` to go to the end
 of the line etc ...
 
 See: https://github.com/tpope/vim-rsi/blob/master/doc/rsi.txt
+
+== CoC ==
+coc.nvim is really straight Forward LSP client. If you want to add LSP support
+for a language, you only have to install the appropriate LSP server. Consult 
+the list [here](https://github.com/neoclide/coc.nvim/wiki/Language-servers) and
+pick a language server to install,
+
+Then simply install it by following the guide on the README which is usually
+something like, `:CocInstall coc-pyright` or `:CocInstall coc-css` etc ...
+
+When you install the language server, you can start using it right away. 
+CoC usually doesn't need much messing around with to get things to work
+properly, unlike most other similar plugins.
+
+To avoid going to the browser, you can also use coc-marketplace. See [[#coc-marketplace|coc-marketplace]]
+
+== coc-marketplace ==
+Issue this command: 
+`CocList marketplace` 
+
+Then start searching for the language server or programming language that you need. 
+Press enter and install the language server.
+
+== coc-explorer == 
+explorer is coc's file explorer. I personally think they are much better ways
+to open files than to waste time with a file explorer, but still, coc-explorer
+is automatically installed in Wim.
+
+Inside explorer window, press `?` to see the commands. You can make dirs,
+files, rename, copy, paste etc from explorer
 
 = Full Plugins List =
 	*LSP, Completion, Snippers*

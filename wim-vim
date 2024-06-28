@@ -620,7 +620,7 @@ function! ListKeymapFiles()
 endfunction
 
 " Bilingual Mappings
-inoremap <C-a> <C-o>:SwitchKeymap<CR>
+inoremap <C-p> <C-o>:SwitchKeymap<CR>
 nnoremap <C-p> :SwitchKeymap<CR>
 
 "===[ Abbreviations ]==="

@@ -60,6 +60,7 @@ Plug 'https://github.com/markonm/traces.vim.git'
 Plug 'https://github.com/907th/vim-auto-save.git'
 Plug 'mhinz/vim-startify'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+Plug 'ubaldot/vim-highlight-yanked'
 
 " Jumping Around
 Plug 'https://github.com/rhysd/clever-f.vim.git'
@@ -71,6 +72,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'https://github.com/preservim/tagbar.git'
 Plug 'lifepillar/vim-cheat40'
 Plug 'wolandark/vimdict'
+Plug 'wolandark/vim-ddgpb'
 call plug#end()
 
 "===[ Theme ]==="

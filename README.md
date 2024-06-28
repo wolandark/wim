@@ -224,6 +224,11 @@ Once the installation is finished, launch vim and enter your wiki index by
 issuing `<Leader>vw` (leader means space) in normal mode. Then open the Wim
 wiki page and read at your own leisure.
 
+You can use Vim as you normally would and gradually learn about the features of Wim's config,
+and the plugins it comes with. 
+
+Any time you feel lost, remember `:Cheat40` and
+`:Maps` are your best friends, after the wiki of course 😉.
 
 # Table of Keybindings
 _(leader is the space key)_

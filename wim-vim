@@ -592,7 +592,7 @@ set conceallevel=2 concealcursor=nv
 
 "=== [ Bilingual Settings ] ==="
 let g:alt_keymap = 'persian'
-let g:alt_enabled = 1
+let g:alt_enabled = 0
 
 function! CallToggleKeymap()
     if g:alt_enabled

@@ -5,6 +5,7 @@
 * [[#What If I Forget The Keybindings?|What If I Forget The Keybindings?]]
 	* [[#How To Read The Cheat File|How To Read The Cheat File]]
 * [[#How To Use An Alternative Keymap?|How To Use An Alternative Keymap?]]
+* [[#ZWNJ|ZWNJ]]
 * [[#Plugins Guide|Plugins Guide]]
 	* [[#Leaderf|Leaderf]]
 	* [[#Stargate|Stargate]]
@@ -68,6 +69,13 @@ keymap.
 
 Now you can use `C-p` in normal mode and insert mode to change your keymap and
 still be able to use the usual vim normal commands.
+
+= ZWNJ =
+You can uncomment the two lines at line _590_ of the `vimrc` to enable vim to
+hide/conceal the ZWNJ character and replace it with `|` sign. 
+
+`call matchadd('Conceal', '\%u200c', 10, -1, {'conceal':'|'})`
+`set conceallevel=2 concealcursor=nv`
 
 = What Are All These Set Options Doing? =
 

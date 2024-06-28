@@ -154,11 +154,12 @@ This is recorded on Devuan (in case that matters).
 
 # Some of the features
 
-**See the exhausting feature list above**
+**See the exhaustive feature list above**
 
 - Out of the box plugin installation <br>
 - Out of the box LSP setup for HTML, CSS, JS, TS, Bash and MORE if you want it!
 - Tab Completion and snippets for fast coding <br>
+- Thoroughly documented in build-it wiki (<leader>vw to access it anytime!)
 - Easy tab and split navigation <br>
 - Start Screen with bookmarks and file history <br>
 - Beautiful catpuccino and base16 colorschemes
@@ -218,7 +219,14 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
 </table>
 <hr>
 
-## Table of Keybindings
+# Usage
+Once the installation is finished, launch vim and enter your wiki index by
+issuing `<Leader>vw` (leader means space) in normal mode. Then open the Wim
+wiki page and read at your own leisure.
+
+
+# Table of Keybindings
+_(leader is the space key)_
 
 <details>
 <summary>CoC LSP Keybindings</summary>
@@ -465,7 +473,7 @@ addr1qxhv2rfrs37qvs0cllfcnu0rd83wre609s74aufkd82da9528v7xq34usds6t8sdt7zjy0hvkcw
 <h1>FAQ</h1>
 
 <h5> Whats with the name?</h5>
-Woland's Vim = Wim. Get it?
+Woland's Vim = Wim. Get it? 😉 
 
 <h5> What features does Wim offer? </h5>
 
@@ -475,7 +483,7 @@ Woland's Vim = Wim. Get it?
 - Start Screen with bookmarks and file history <br>
 - Beautiful built in colorschemes
 - Thorough Docs!
-- See the exhausting feature list above for more in depth information
+- See the exhaustive feature list above for more in depth information
 
 <h5> Can I expect support? </h5>
 Yes! Just ask and I will answer. When asking however, provide proper information so that I can help you <br>
@@ -485,18 +493,19 @@ Because Vim is the one I use and imo Vim is better!
 
 <h5> Will you make custom vimrc configurations? </h5>
 
-[Contact me](https://t.me/inlovewithapenguin)
+[Contact me](https://t.me/Wolandarkside) at Telegram or [Email](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white) me.
 
 <h5> Are you open to collaborations? </h5>
 
-[Contact me](https://t.me/inlovewithapenguin)
+Of course! All collaborations and contributions as well as issues etc are welcomed!
 
+<hr> 
+<div align="center">
 
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/wolandarkside)
+[![Protonmail](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:contact-woland@proton.me)
 
+</div>
 <!--
-#### To Do
-- [x] Improve the rest of FloaTerm shortcuts that start with backslashes (DONE)
-
 vim: cole=0
-
 -->

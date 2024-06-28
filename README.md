@@ -1,14 +1,11 @@
-## This repository is under maintenance. Please come back later (like in a day)
-
 <div align="center">
 <img src="https://github.com/wolandark/wim/assets/107309764/8bf3528b-9751-4bda-95e4-70c3b958cd5f" style="width:50%;">
 </div>
 
 # Wim News
-
 ## Version 3.3 has been released with great improvements
 
-### Feature List
+## Feature List
 <details> 
 <summary> Expand Feature List</summary>
 <br>

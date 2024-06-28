@@ -155,7 +155,7 @@ Snippets {{{2
 }}}
 Bilingual {{{2
 == Bilingual ==
- <C-a>  			SwitchKeymap In Insert Mode
+ <C-p>  			SwitchKeymap In Insert Mode
  <C-p>  			SwitchKeymap In Normal Mode
  }}}
 

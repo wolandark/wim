@@ -424,7 +424,7 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
 
 | Key     | Function                    |
 | ------- | --------------------------- |
-| \<C-a\> | SwitchKeymap In Insert Mode |
+| \<C-p\> | SwitchKeymap In Insert Mode |
 | \<C-p\> | SwitchKeymap In Normal Mode |
 
 </details>

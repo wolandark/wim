@@ -12,6 +12,7 @@
 	* [[#vim-ddgpb|vim-ddgpb]]
 	* [[#vim-live-server|vim-live-server]]
 	* [[#commentary|commentary]]
+	* [[#rsi|rsi]]
 * [[#Full PLugins List|Full Plugins List]]
 * [[#Table of Keybindings|Table of Keybindings]]
 	* [[#CoC LSP Keybindings|CoC LSP Keybindings]]
@@ -225,6 +226,13 @@ _commentary_ do the following:
 
 - To make the addition of the plugin permanent, add `packadd comment` to the
   end of the `vimrc`
+
+== rsi == 
+rsi is another tpop plugin that provides basic readline bindings in vim's insert
+mode. Such as `C-a` to go to the beginning of the line, `C-e` to go to the end
+of the line etc ...
+
+See: https://github.com/tpope/vim-rsi/blob/master/doc/rsi.txt
 
 = Full Plugins List =
 	*LSP, Completion, Snippers*
@@ -443,7 +451,7 @@ Other than ':Chmod', the rest of these are commented out. You can enable them at
 
 | Key   | Function                    |
 | ---   | ---                         |
-| <C-a> | SwitchKeymap In Insert Mode |
+| <C-p> | SwitchKeymap In Insert Mode |
 | <C-p> | SwitchKeymap In Normal Mode |
 
 == Unimpaired ==
@@ -464,3 +472,4 @@ Other than ':Chmod', the rest of these are commented out. You can enable them at
 | ]e       | Exchange the current line with [count] lines below it. |
 
 See: https://github.com/tpope/vim-unimpaired/blob/master/doc/unimpaired.txt) for more
+

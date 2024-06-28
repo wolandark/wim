@@ -4,6 +4,7 @@
 * [[#What Are All These Set Options Doing?|What Are All These Set Options Doing?]]
 * [[#What If I Forget The Keybindings?|What If I Forget The Keybindings?]]
 	* [[#How To Read The Cheat File|How To Read The Cheat File]]
+* [[#How To Use An Alternative Keymap?|How To Use An Alternative Keymap?]]
 * [[#Plugins Guide|Plugins Guide]]
 	* [[#Leaderf|Leaderf]]
 	* [[#Stargate|Stargate]]
@@ -57,6 +58,16 @@ normal mode.
 = How To Read The Cheat File =
 Simply issue `:Cheat40` inside Vim
 
+= How To Use An Alternative Keymap? =
+If you are bilingual, or wish to use a secondry keymap, do the following:
+
+At line _594_ of `vimrc` change `g:alt_enabled = 0` to `1` to enable the alt
+keymap functions Then use `:call ListKeymapFiles()` to find your desired
+keymap. Change the value of `g:alt_keymap = 'persian'` to match your language
+keymap.
+
+Now you can use `C-p` in normal mode and insert mode to change your keymap and
+still be able to use the usual vim normal commands.
 
 = What Are All These Set Options Doing? =
 

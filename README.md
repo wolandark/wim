@@ -128,8 +128,8 @@ happen to mess up the symlinks, just run the update.sh script that will be
 generated after the first time of running the `symlink.sh` script.
 
 #### Watch it work
-
-![Peek 2024-06-27 00-35](https://github.com/wolandark/wim/assets/107309764/a5be2192-4e3c-44fc-a257-a05398280f05)
+https://github.com/wolandark/wim/assets/107309764/bfcc50df-684f-40ee-8bdc-a27b1bb65cf8
+<!-- ![Peek 2024-06-27 00-35](https://github.com/wolandark/wim/assets/107309764/a5be2192-4e3c-44fc-a257-a05398280f05)-->
 This is recorded on Devuan (in case that matters).
 
 <!-- ![symlink](https://github.com/wolandark/wim/assets/107309764/61467483-f83d-452d-8c67-1d037ab466ca) -->
@@ -148,8 +148,8 @@ bash <(curl -s https://raw.githubusercontent.com/wolandark/wim/master/install.sh
 - Run the `install.sh` Using Curl
 
 #### Watch it work
-
-![Peek 2024-06-26 09-10](https://github.com/wolandark/wim/assets/107309764/6e8e6252-d939-4a4c-874f-9579f7430234)
+https://github.com/wolandark/wim/assets/107309764/40c70e11-6a5a-4fcc-a0b2-4340316d8463
+<!-- ![Peek 2024-06-26 09-10](https://github.com/wolandark/wim/assets/107309764/6e8e6252-d939-4a4c-874f-9579f7430234)-->
 This is recorded on Devuan (in case that matters).
 	
 <!-- ![install](https://github.com/wolandark/wim/assets/107309764/1f3d631c-92d3-4049-8059-b5a5b271beef) -->

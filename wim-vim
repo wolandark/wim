@@ -90,9 +90,9 @@ if &term =~ '256color'
 		colorscheme catppuccin_mocha
 	endif
 else
-	colorscheme catppuccin_mocha
 	let &t_TI = ""
 	let &t_TE = ""
+	colorscheme catppuccin_mocha
 endif
 
 if has('gui_running')

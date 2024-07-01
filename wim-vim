@@ -33,7 +33,7 @@ Plug 'chriskempson/base16-vim'
 " Web Development
 Plug 'wolandark/vim-live-server'
 Plug 'alvan/vim-closetag'
-Plug 'https://github.com/ap/vim-css-color.git'
+Plug 'ap/vim-css-color'
 Plug 'DougBeney/pickachu', {'for':['css','html']}
 
 " Git
@@ -55,21 +55,21 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'https://github.com/godlygeek/tabular.git'
-Plug 'https://github.com/markonm/traces.vim.git'
-Plug 'https://github.com/907th/vim-auto-save.git'
+Plug 'godlygeek/tabular'
+Plug 'markonm/traces.vim'
+Plug '907th/vim-auto-save'
 Plug 'mhinz/vim-startify'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'ubaldot/vim-highlight-yanked'
 
 " Jumping Around
-Plug 'https://github.com/rhysd/clever-f.vim.git'
-Plug 'https://github.com/monkoose/vim9-stargate.git'
+Plug 'rhysd/clever-f.vim'
+Plug 'monkoose/vim9-stargate'
 
 " Utility, Integrations
 Plug 'ptzz/lf.vim'
 Plug 'vimwiki/vimwiki'
-Plug 'https://github.com/preservim/tagbar.git'
+Plug 'preservim/tagbar'
 Plug 'lifepillar/vim-cheat40'
 Plug 'wolandark/vimdict'
 Plug 'wolandark/vim-ddgpb'

@@ -1,0 +1,527 @@
+*Index of Topics:* 
+* [[#How To Use This Wiki|How To Use This Wiki]]
+* [[#How To Update Wim|How To Update Wim]]
+* [[#What Are All These Set Options Doing?|What Are All These Set Options Doing?]]
+* [[#What If I Forget The Keybindings?|What If I Forget The Keybindings?]]
+	* [[#How To Read The Cheat File|How To Read The Cheat File]]
+* [[#How To Use An Alternative Keymap?|How To Use An Alternative Keymap?]]
+* [[#ZWNJ|ZWNJ]]
+* [[#Plugins Guide|Plugins Guide]]
+	* [[#Leaderf|Leaderf]]
+	* [[#Stargate|Stargate]]
+	* [[#Surround|Surround]]
+	* [[#vimdict|vimdict]]
+	* [[#vim-ddgpb|vim-ddgpb]]
+	* [[#vim-live-server|vim-live-server]]
+	* [[#commentary|commentary]]
+	* [[#rsi|rsi]]
+	* [[#CoC|CoC]]
+		* [[#coc-marketplace|coc-marketplace]]
+		* [[#coc-explorer|coc-explorer]]
+* [[#Full PLugins List|Full Plugins List]]
+* [[#Table of Keybindings|Table of Keybindings]]
+	* [[#CoC LSP Keybindings|CoC LSP Keybindings]]
+	* [[#Misc Keybindings|Misc Keybindings]]
+	* [[#Split Navigation|Split Navigation]]
+	* [[#Tabs|Tabs]]
+	* [[#FZF|FZF]]
+	* [[#Aligning Text|Aligning Text]]
+	* [[#Enuch Shell Commands|Enuch Shell Commands]]
+	* [[#Floaterm|Floaterm]]
+	* [[#Terminal|Terminal]]
+	* [[#Snippets|Snippets]]
+	* [[#bilingual|bilingual]]
+	* [[#Unimpaired|Unimpaired]]
+
+= How To Use This Wiki =
+press Tab to jump to the next link (Shift-Tab to go to the previous one), Press
+Enter on the index titles to jump to that topic.
+	( Pressing Enter on any other word, creates a wiki page under that word! )
+To follow URLs in your browser, press `gx` on them.
+To learn more about VimWiki and how to use it to take note and make your 
+second brain, see the following links:
+	https://github.com/vimwiki/vimwiki
+	https://zettelkasten.de/introduction/
+	https://en.wikipedia.org/wiki/Zettelkasten
+
+= How To Update Wim =
+If you used the recommended installation method, a simple `git pull` inside the
+`wim` directory is enough to update all the configs.
+Use the _VimPlug_ commands to update the plugins. See: [[#Misc Keybindings|Misc Keybindings]] 
+
+If for some reason you corrupt or destroy the symlinks that are setup between
+the `wim` directory and the `~/.vim` directory, you will only have to run the
+`update.sh` script that will be automatically generated after the initial
+installation.
+
+=  What If I Forget The Keybindings? =
+Either enter this wiki and consult the mappings tables, or read the Cheat40
+file inside vim, or run the fzf `:Maps` command by pressing `<Leader>M` in
+normal mode.
+
+= How To Read The Cheat File =
+Simply issue `:Cheat40` inside Vim
+
+= How To Use An Alternative Keymap? =
+If you are bilingual, or wish to use a secondry keymap, do the following:
+
+At line _594_ of `vimrc` change `g:alt_enabled = 0` to `1` to enable the alt
+keymap functions Then use `:call ListKeymapFiles()` to find your desired
+keymap. Change the value of `g:alt_keymap = 'persian'` to match your language
+keymap.
+
+Now you can use `C-p` in normal mode and insert mode to change your keymap and
+still be able to use the usual vim normal commands.
+
+= ZWNJ =
+You can uncomment the two lines at line _590_ of the `vimrc` to enable vim to
+hide/conceal the ZWNJ character and replace it with `|` sign. 
+
+`call matchadd('Conceal', '\%u200c', 10, -1, {'conceal':'|'})`
+`set conceallevel=2 concealcursor=nv`
+
+= What Are All These Set Options Doing? =
+
+| Setting                   | Explanation                                                                    |
+| ------------------------  | -----------------------------------------------------------------------------  |
+| set emoji                 | Enables emoji support.                                                         |
+| set autochdir             | Automatically changes the working directory to the directory of the open file. |
+| set hidden                | Allows switching between unsaved buffers without requiring to save them.       |
+| set modifiable            | Allows modifications to the buffer.                                            |
+| set conceallevel=0        | Sets the level of concealing text. 0 means no concealment.                     |
+| set concealcursor=n       | Conceals text in normal mode.                                                  |
+| set scrolloff=6           | Keeps 6 lines visible above and below the cursor when scrolling.               |
+| set autoread              | Automatically reads a file if it was modified outside of Vim.                  |
+| set cmdheight=1           | Sets the command line height to 1 line.                                        |
+| set foldmethod=manual     | Allows manual folding of code sections.                                        |
+| set foldlevel=0           | Starts with all folds closed.                                                  |
+| set foldclose=all         | Automatically closes all folds when moving out of them.                        |
+| set path+=**              | Adds all subdirectories to the search path for files.                          |
+| set noswapfile            | Disables swap file creation.                                                   |
+| set autoindent            | Automatically indents new lines to match the previous line.                    |
+| set ignorecase            | Ignores case in search patterns.                                               |
+| set incsearch             | Shows search results incrementally as you type.                                |
+| set noerrorbells          | Disables error bells.                                                          |
+| set novisualbell          | Disables visual bell.                                                          |
+| set t_vb=                 | Disables screen flash for visual bell.                                         |
+| set relativenumber        | Shows line numbers relative to the current line.                               |
+| set number                | Shows absolute line numbers.                                                   |
+| set hlsearch              | Highlights search results.                                                     |
+| set termbidi              | Enables bidirectional text support in the terminal.                            |
+| set autowrite             | Automatically writes changes before certain commands (e.g., `:next`, `:make`). |
+| set autowriteall          | Automatically writes changes to all modified files before certain commands.    |
+| set laststatus=2          | Always displays the status line.                                               |
+| set showtabline=2         | Always shows the tab line.                                                     |
+| set noshowmode            | Disables showing the current mode (insert, normal, etc.) in the command line.  |
+| set colorcolumn=80        | Highlights the 80th column to guide line length.                               |
+| set shiftwidth=4          | Sets the number of spaces to use for each step of (auto)indent.                |
+| set tabstop=4             | Sets the number of spaces that a tab character represents.                     |
+| syntax on                 | Enables syntax highlighting.                                                   |
+| filetype plugin indent on | Enables file type detection, plugin, and indent settings.                      |
+
+= Plugins Guide = 
+This plugins guide is not about including a Tl;Dr to every plugin! Yet it will 
+cover some of the important ones that are not covered in the tables below. You 
+can always check out the individual repos of each plugin and see their README
+
+== Leaderf ==
+This is one of the most useful plugins. Although fzf can also do most of these 
+things, I prefer to keep them both around. 
+Wim doesn't provide any mappings for leaderf, and I advise you against it! 
+use leaderf from Vim's Ex Mode (command mode).
+
+*Example:*
+fuzzy match file names
+`:Leaderf file`
+fuzzy match history
+`:Leaderf mru`
+etc ...
+
+file                search files
+tag                 navigate tags using the tags file
+function            navigate functions or methods in the buffer
+mru                 search most recently used files
+searchHistory       execute the search command in the history
+cmdHistory          execute the command in the history
+help                navigate the help tags
+line                search a line in the buffer
+colorscheme         switch between colorschemes
+gtags               navigate tags using the gtags
+self                execute the commands of itself
+bufTag              navigate tags in the buffer
+buffer              search buffers
+rg                  grep using rg
+filetype            navigate the filetype
+command             execute built-in/user-defined Ex commands.
+window              search windows.
+quickfix            navigate the quickfix.
+loclist             navigate the location list.
+
+*optional arguments:*
+	-h, --help            show this help message and exit
+	--reverse             show results in bottom-up order
+	--stayOpen            don't quit LeaderF after accepting an entry
+	--input <INPUT>       specifies INPUT as the pattern inputted in advance
+	--cword               current word under cursor is inputted in advance
+	--top                 the LeaderF window is at the top of the screen
+	--bottom              the LeaderF window is at the bottom of the screen
+	--left                the LeaderF window is at the left of the screen
+	--right               the LeaderF window is at the right of the screen
+	--belowright          the LeaderF window is at the belowright of the screen
+	--aboveleft           the LeaderF window is at the aboveleft of the screen
+	--fullScreen          the LeaderF window takes up the full screen
+	--popup               the LeaderF window is a popup window or floating window
+	--nameOnly            LeaderF is in NameOnly mode by default
+	--fullPath            LeaderF is in FullPath mode by default
+	--fuzzy               LeaderF is in Fuzzy mode by default
+	--regexMode           LeaderF is in Regex mode by default
+	--nowrap              long lines in the LeaderF window won't wrap
+	--next                Jump to the next result.
+	--previous            Jump to the previous result.
+	--recall              Recall last search. If the result window is closed, reopen it.
+	--popup-height <POPUP_HEIGHT>
+	                      specifies the maximum height of popup window, only available in popup mode.
+	--popup-width <POPUP_WIDTH>
+	                      specifies the width of popup window, only available in popup mode.
+	--no-sort             do not sort the result.
+	--case-insensitive    fuzzy search case insensitively.
+	--auto-preview        open preview window automatically.
+	--no-auto-preview     don't open preview window automatically.
+
+See: https://github.com/Yggdroot/LeaderF
+
+= Stargate =
+Literally magic! Written in vim9script, super fast and super efficient!
+ type `\f` in normal mode, followed by a character you want to jump to and 
+ follow the hints.
+See: https://github.com/monkoose/vim9-stargate 
+
+= Surround =
+See: https://github.com/tpope/vim-surround
+
+= vimdict =
+My own humble plugin for integrating dict cli into vim in a seamless way.
+
+You can either place your cursor on a word and issue `:Dict`, or optionally map
+it to a key:
+	`nnoremap <F2> :Dict<CR>`
+See: https://github.com/wolandark/vimdict
+
+= vim-ddgpb =
+Another one of my own plugins.
+Yea the name is trash but its pretty useful. 
+Once enabled, you can search a word under the cursor in your browser, or a
+chunk of text that is visually selected. This plugin also allows you to submit
+a visually selected text to the 0x0.st paste bin.
+
+This plugin binds `\s` and `\p` and `F3` key for visual search, paste bin and 
+word under cursor respectively.
+See: https://github.com/wolandark/vim-ddgpb/tree/master
+
+= vim-live-server = 
+Yet another one of my own plugins.😁 
+A liveserver plugin for Vim. 
+See: https://github.com/wolandark/vim-live-server
+
+= commentary =
+Use [count]`gc`[motion] to comment out code.
+
+Example: 
+`3gcj` will comment out `3` lines to the direction of `j`, which is down.
+`gcc` will comment whole lines.
+`gcG` will comment from current line to the end of the file.
+etc ...
+
+See: https://github.com/tpope/vim-commentary
+
+_Note:_ if you're using Vim 9.1+, there is an internal _comment_ plugin from
+habamax which is writen in vim9script. To use that instead of tpop's
+_commentary_ do the following:
+
+- Disable _commentary_ by commenting out it's entry in the plugins section of the `vimrc`
+
+- Inside Vim, issue:
+`:packadd comment` 
+
+- Use the internal _comment_ plugin the same way as _commentary_. The
+  Keybindings are the same.
+
+- To make the addition of the plugin permanent, add `packadd comment` to the
+  end of the `vimrc`
+
+== rsi == 
+rsi is another tpop plugin that provides basic readline bindings in vim's insert
+mode. Such as `C-a` to go to the beginning of the line, `C-e` to go to the end
+of the line etc ...
+
+See: https://github.com/tpope/vim-rsi/blob/master/doc/rsi.txt
+
+== CoC ==
+coc.nvim is really straight Forward LSP client. If you want to add LSP support
+for a language, you only have to install the appropriate LSP server. Consult 
+the list [here](https://github.com/neoclide/coc.nvim/wiki/Language-servers) and
+pick a language server to install,
+
+Then simply install it by following the guide on the README which is usually
+something like, `:CocInstall coc-pyright` or `:CocInstall coc-css` etc ...
+
+When you install the language server, you can start using it right away. 
+CoC usually doesn't need much messing around with to get things to work
+properly, unlike most other similar plugins.
+
+To avoid going to the browser, you can also use coc-marketplace. See [[#coc-marketplace|coc-marketplace]]
+
+== coc-marketplace ==
+Issue this command: 
+`CocList marketplace` 
+
+Then start searching for the language server or programming language that you need. 
+Press enter and install the language server.
+
+== coc-explorer == 
+explorer is coc's file explorer. I personally think they are much better ways
+to open files than to waste time with a file explorer, but still, coc-explorer
+is automatically installed in Wim.
+
+Inside explorer window, press `?` to see the commands. You can make dirs,
+files, rename, copy, paste etc from explorer
+
+= Full Plugins List =
+	*LSP, Completion, Snippers*
+	Plug 'sheerun/vim-polyglot'
+	Plug 'honza/vim-snippets'
+	Plug 'SirVer/ultisnips'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+	*Colors*
+	Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+	Plug 'chriskempson/base16-vim'
+
+	*Web Development*
+	Plug 'wolandark/vim-live-server'
+	Plug 'alvan/vim-closetag'
+	Plug 'https://github.com/ap/vim-css-color.git'
+	Plug 'DougBeney/pickachu'
+
+	*Git*
+	Plug 'airblade/vim-gitgutter'
+	Plug 'tpope/vim-fugitive'
+	Plug 'rhysd/git-messenger.vim'
+
+	*Usability, Enhancements*
+	Plug 'ryanoasis/vim-devicons'
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
+	Plug 'junegunn/vim-peekaboo'
+	Plug 'itchyny/lightline.vim'
+	Plug 'mengelbrecht/lightline-bufferline'
+	Plug 'voldikss/vim-floaterm'
+	Plug 'tpope/vim-rsi'
+	Plug 'tpope/vim-repeat'
+	Plug 'tpope/vim-commentary'
+	Plug 'tpope/vim-eunuch'
+	Plug 'tpope/vim-surround'
+	Plug 'tpope/vim-unimpaired'
+	Plug 'https://github.com/godlygeek/tabular.git'
+	Plug 'https://github.com/markonm/traces.vim.git'
+	Plug 'https://github.com/907th/vim-auto-save.git'
+	Plug 'mhinz/vim-startify'
+	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+
+	*Jumping Around*
+	Plug 'https://github.com/rhysd/clever-f.vim.git'
+	Plug 'https://github.com/monkoose/vim9-stargate.git'
+
+	*Utility, Integrations*
+	Plug 'ptzz/lf.vim'
+	Plug 'vimwiki/vimwiki'
+	Plug 'https://github.com/preservim/tagbar.git'
+	Plug 'lifepillar/vim-cheat40'
+	Plug 'wolandark/vimdict'
+			
+
+= Table of Keybindings =
+== CoC LSP Keybindings ==
+
+| Keys       | Function                 |
+| ---        | ---                      |
+| gd         | Jump To Definition       |
+| gy         | Type Definition          |
+| gi         | Implementation           |
+| gr         | References               |
+| [g         | Diagnostics Prev         |
+| ]g         | Diagnostics Next         |
+| <leader>ca | Code Action              |
+| <leader>f  | Format Selected Code     |
+| <leader>?  | diagnostic Info          |
+| K          | Show Hover Documentation |
+| \rc        | Restart CoC              |
+
+
+== Misc Keybindings ==
+
+| Keys        | Function                                  |
+| ---         | ---                                       |
+| <F6>        | Turn on SpellChecking                     |
+| <F8>        | Compile and Run Basic C Code              |
+| <F12>       | Execute Bash, Python, Nodejs & Go Files   |
+| gs          | Fix Spelling To The First Immediate Match |
+| <ESC><ESC>  | Turn Off Search Highlights                |
+| \a          | Auto Save Toggle                          |
+| \t          | FloatermToggle                            |
+| <leader>M   | Maps                                      |
+| <PageUp>    | Buffer Next                               |
+| <PageDown>  | Buffer Previous                           |
+| <Del>       | Buffer Delete                             |
+| <leader>\   | Border Around Current Line Using Toilet   |
+| <leader>e   | File Explorer                             |
+| <leader>T   | New Tab                                   |
+| <leader>mk  | Make View                                 |
+| <leader>i   | Startify Dashboard                        |
+| <leader>S   | Add Empty Line Above & Below Current Line |
+| <leader>[   | Add Empty Line Above                      |
+| <leader>]   | Add Empty Line Below                      |
+| <leader>w   | Save                                      |
+| <leader>so  | Save & Source Buffer                      |
+| <leader>k   | Move Line Up                              |
+| <leader>j   | Move Line Down                            |
+| K           | Move Line Up In Visual Mode               |
+| J           | Move Line Down In Visual Mode             |
+| jj          | <ESC>                                     |
+| <leader>pli | PlugInstall                               |
+| <leader>plc | PlugClean                                 |
+| <leader>plu | PlugUpdate                                |
+| <leader>pld | PlugUpgrade                               |
+
+== Split Navigation ==
+
+| Key       | Function                 |
+| ---       | ---                      |
+| <C-h>     | Focus Left Split         |
+| <C-j>     | Focus Bottom Split       |
+| <C-k>     | Focus Top Split          |
+| <C-l>     | Focus Right Split        |
+| <C-LEFT>  | Focus Left Split         |
+| <C-DOWN>  | Focus Bottom Split       |
+| <C-UP>    | Focus Top Split          |
+| <C-RIGHT> | Focus Right Split        |
+| <leader>R | Rotate Window Up/Left    |
+| <leader>r | Rotate Window Down/Right |
+| <s-Right> | Resize Split Right       |
+| <s-LEFT>  | Resize Split Left        |
+| <s-UP>    | Resize Split Up          |
+| <s-DOWN>  | Resize Split Down        |
+
+== Tabs ==
+
+| Key          | Function                       |
+| ---          | ---                            |
+| <M-Left>     | Tab Previous                   |
+| <M-Right>    | Tab Next                       |
+| <leader>1..9 | Go To Corresponding Tab Number |
+| <leader>0    | Tab Last                       |
+| <leader>x    | Tab Close                      |
+
+== FZF ==
+Other than `:Colors` and `:Buffers`, the rest of these are commented out. You can enable them at your will.
+
+| Key         | Function |
+| ---         | ---      |
+| \c          | Colors   |
+| <leader>b   | Buffers  |
+| <leader>ff  | Files    |
+| <leader>W   | Windows  |
+| <leader>h   | History  |
+| <leader>hc  | History  |
+| <leader>rg  | Ripgrep  |
+| <leader>li  | Lines    |
+| <leader>bli | BLines   |
+| <leader>ma  | Marks    |
+| <leader>sn  | Snippets |
+| <leader>com | Commands |
+| <leader>ag  | Ag       |
+| <leader>tag | Tags     |
+
+== Aligning Text ==
+
+| Key  | Function          |
+| ---  | ---               |
+| \\ta | Tabularize Tables |
+
+== Enuch Shell Commands ==
+Other than ':Chmod', the rest of these are commented out. You can enable them at your will.
+
+| Key         | Function  |
+| ---         | ---       |
+| <leader>ch  | Chmod +x  |
+| <leader>suw | SudoWrite |
+| <leader>sue | SudoEdit  |
+| <leader>rm  | Remove    |
+| <leader>del | Delete!   |
+| <leader>mv  | Move      |
+| <leader>dup | Duplicate |
+| <leader>mkd | Mkdir     |
+
+== Floaterm ==
+
+| Key        | Function               |
+| ---        | ---                    |
+| \t         | FloatermToggle         |
+| \q         | FloatermKill           |
+| \n         | FloatermNext           |
+| \p         | FloatermPrev           |
+| \v         | vifm Inside FloaTerm   |
+| \ra        | ranger Inside FloaTerm |
+| \\tr       | Terminal Right         |
+| \\tb       | Terminal Bottom        |
+| \rg        | Run Go In Terminal     |
+| \rb        | Run Bash In Terminal   |
+| \rj        | Run Nodejs In Terminal |
+| \rp        | Run Python In Terminal |
+| <leader>lf | Lf                     |
+
+== Terminal ==
+
+| Key       | Function                                   |
+| ---       | ---                                        |
+| <leader>' | Vim's Terminal                             |
+| \l        | Clear Terminal In the Background (For F12) |
+| <C-j>     | Focus Bottom                               |
+| <C-k>     | Focus Top                                  |
+| <C-DOWN>  | Focus Bottom                               |
+| <C-UP>    | Focus Top                                  |
+
+== Snippets ==
+
+| Key   | Function                                      |
+| ---   | ---                                           |
+| <C-j> | Expand Snippet & Jump Forward In Placeholders |
+| <C-k> | Jump Backward In  Placeholders                |
+| <C-l> | List Snippets                                 |
+
+== bilingual ==
+
+| Key   | Function                    |
+| ---   | ---                         |
+| <C-p> | SwitchKeymap In Insert Mode |
+| <C-p> | SwitchKeymap In Normal Mode |
+
+== Unimpaired ==
+
+| Key      | Function                                               |
+| ---      | ---                                                    |
+| [b       | :bprevious                                             |
+| ]b       | :bnext                                                 |
+| [B       | :bfirst                                                |
+| ]B       | :blast                                                 |
+| [a       | :previous                                              |
+| ]a       | :next                                                  |
+| [A       | :first                                                 |
+| ]A       | :last                                                  |
+| [<Space> | Add [count] blank lines above the cursor.              |
+| ]<Space> | Add [count] blank lines below the cursor.              |
+| [e       | Exchange the current line with [count] lines above it. |
+| ]e       | Exchange the current line with [count] lines below it. |
+
+See: https://github.com/tpope/vim-unimpaired/blob/master/doc/unimpaired.txt) for more
+

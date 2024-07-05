@@ -510,6 +510,9 @@ Because Vim is the one I use and imo Vim is better!
 
 Of course! All collaborations and contributions as well as issues etc are welcomed!
 
+# Contribution Guide
+Please follow contribution conventions when submiting pull requests. See [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) for more information.
+
 <hr> 
 <div align="center">
 

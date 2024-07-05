@@ -171,7 +171,7 @@ This is recorded on Devuan (in case that matters).
 - Customizability! It is lightweight and extensible and FAST!
 
 # Notes
-- Make sure to setup your $TERM variable properly. On Unix and Unix-like systems the $TERM must report `xterm-256color`. 
+- Make sure to setup your $TERM variable properly. On Unix and Unix-like systems the $TERM must report `xterm-256color`.  See [this](https://github.com/wolandark/wim/wiki#how-to-setup-term) wiki note.
 - Some terminals hold unto your Ctrl or Alt or shift key for their own functions. It's up to you to use a sane terminal emulator!
 - This config has been tested on various GNU+Linux distros as well as MacOS, FreeBSD and Windows, but official support will only be provided for GNU+Linux distros.
 

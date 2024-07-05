@@ -170,8 +170,8 @@ This is recorded on Devuan (in case that matters).
 - Customized Lighline statusline <br>
 - Customizability! It is lightweight and extensible and FAST!
 
-#### Notes
-
+# Notes
+- Make sure to setup your $TERM variable properly. On Unix and Unix-like systems the $TERM must report `xterm-256color`. 
 - Some terminals hold unto your Ctrl or Alt or shift key for their own functions. It's up to you to use a sane terminal emulator!
 - This config has been tested on various GNU+Linux distros as well as MacOS, FreeBSD and Windows, but official support will only be provided for GNU+Linux distros.
 
@@ -230,6 +230,8 @@ wiki page and read at your own leisure.
 
 You can use Vim as you normally would and gradually learn about the features of Wim's config,
 and the plugins it comes with. 
+
+Check out the [wiki](https://github.com/wolandark/wim/wiki) which has more information than the integrated wiki and will be updated more regularly. 
 
 Any time you feel lost, remember `:Cheat40` and
 `:Maps` are your best friends, after the wiki of course 😉.

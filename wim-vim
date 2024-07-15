@@ -444,6 +444,13 @@ let g:clever_f_show_prompt=0
 let g:clever_f_mark_char_color = "SpellBad"
 let g:clever_f_mark_cursor_color = "DiffDelete"
 
+"===[ Stargate ]==="
+" For 1 character to search before showing hint
+noremap \f <Cmd>call stargate#OKvim(1)<CR>
+
+" For 2 consecutive characters to search
+noremap \F <Cmd>call stargate#OKvim(2)<CR>
+
 "===[ Disable a lot of unnecessary internal plugins ]==="
 let g:loaded_2html_plugin = 1
 let g:loaded_getscriptPlugin = 1

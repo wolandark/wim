@@ -59,7 +59,6 @@ Plug 'godlygeek/tabular'
 Plug 'markonm/traces.vim'
 Plug '907th/vim-auto-save'
 Plug 'mhinz/vim-startify'
-Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'ubaldot/vim-highlight-yanked'
 
 " Jumping Around

@@ -17,7 +17,7 @@
 	* [[#CoC|CoC]]
 		* [[#coc-marketplace|coc-marketplace]]
 		* [[#coc-explorer|coc-explorer]]
-* [[#Full PLugins List|Full Plugins List]]
+* [[#Full PLugins List|Full-Plugins-List]]
 * [[#Table of Keybindings|Table of Keybindings]]
 	* [[#CoC LSP Keybindings|CoC LSP Keybindings]]
 	* [[#Misc Keybindings|Misc Keybindings]]
@@ -308,7 +308,6 @@ files, rename, copy, paste etc from explorer
 | <Del>       | Buffer Delete                             |
 | <leader>\   | Border Around Current Line Using Toilet   |
 | <leader>e   | File Explorer                             |
-| <leader>T   | New Tab                                   |
 | <leader>mk  | Make View                                 |
 | <leader>i   | Startify Dashboard                        |
 | <leader>S   | Add Empty Line Above & Below Current Line |
@@ -349,6 +348,7 @@ files, rename, copy, paste etc from explorer
 
 | Key          | Function                       |
 | ---          | ---                            |
+| <leader>T    | New Tab                        |
 | <M-Left>     | Tab Previous                   |
 | <M-Right>    | Tab Next                       |
 | <leader>1..9 | Go To Corresponding Tab Number |

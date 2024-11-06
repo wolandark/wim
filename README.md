@@ -207,7 +207,6 @@ If you plan to use Vim from the terminal, FOR THE LOVE OF CHRIST USE ITERM!
   <tr>
     <td><img src="https://github.com/wolandark/wim/assets/107309764/31cc76e9-7670-4f2c-9507-e558fc377882" alt="image" width="400">Startify Dashboard</td>
     <td><img src="https://github.com/wolandark/wim/assets/107309764/fa6b3775-951f-4c97-aebc-b97341cabdd3" alt="image" width="400">Diagnostics </td>
-    %% <td><img src="https://github.com/wolandark/wim/assets/107309764/762c507c-0654-42a5-bb8f-8426720a3356" alt="image" width="400">Leaderf</td>
   </tr>
   <tr>
     <td><img src="https://github.com/wolandark/wim/assets/107309764/1524dfda-4362-4a86-8f7b-5268b392b792" alt="image" width="400">Floating Terminal</td>

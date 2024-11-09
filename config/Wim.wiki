@@ -17,7 +17,7 @@
 	* [[#CoC|CoC]]
 		* [[#coc-marketplace|coc-marketplace]]
 		* [[#coc-explorer|coc-explorer]]
-* [[#Full PLugins List|Full-Plugins-List]]
+* [[#Full Plugins List|Full Plugins List]]
 * [[#Table of Keybindings|Table of Keybindings]]
 	* [[#CoC LSP Keybindings|CoC LSP Keybindings]]
 	* [[#Misc Keybindings|Misc Keybindings]]
@@ -259,7 +259,6 @@ files, rename, copy, paste etc from explorer
 	Plug 'https://github.com/markonm/traces.vim.git'
 	Plug 'https://github.com/907th/vim-auto-save.git'
 	Plug 'mhinz/vim-startify'
-	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 
 	*Jumping Around*
 	Plug 'https://github.com/rhysd/clever-f.vim.git'
